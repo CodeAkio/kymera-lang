@@ -10,7 +10,7 @@
 ## Syntax and Semantics
 
 * [Basic Concepts](syntax-and-semantics/basic-concepts.md)
-* [Types](syntax-and-semantics/types.md)
+* [Data Types](syntax-and-semantics/types.md)
 
 ## Tools
 
