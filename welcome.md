@@ -104,5 +104,27 @@ writeln("Universe!")
 
 ### Console User Input
 
+To print something on console you can use the 'Console' class methods, that is 'read'. This is based on C\#. The 'Console' class can be implicit when you use the syntaxe sugar.
 
+**Syntaxe:**
+
+```text
+Console.read
+```
+
+**Syntaxe Sugar:**
+
+```text
+read
+```
+
+ **Sample:**
+
+```text
+name = read
+write("My name is ${name}")
+
+# Output
+> My name is Michael
+```
 
