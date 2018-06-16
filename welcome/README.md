@@ -12,7 +12,40 @@ The variables work with optional typing similar to TypeScript and Go, but with t
 
 #### Declaration and Assignment
 
- types of scope
+ **Syntax:**
+
+```text
+# With type definition
+[type] <variable name> = <value>
+
+# Without type definition
+<variable name> := <value>
+
+# Assignment value after declaration
+<variable name> = <value>
+```
+
+**Sample:**
+
+```text
+int number = 10
+write(number)
+
+animal := 'Dog'
+write(animal)
+
+animal = 'Cat'
+write(animal)
+
+# Output
+> 10
+> 'Dog'
+> 'Cat'
+```
+
+####  Types of scope
+
+Kymera works with three traditional scopes: Global, Block and Function.
 
 #### del
 
