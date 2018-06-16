@@ -114,7 +114,7 @@ class Post(){
 
 func main() {
 
-    post = Post(0, 'Chewbacca' 'Programming language', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...')
+    post = Post(0, 'Chewbacca', 'Programming language', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...')
 
     writeln("The title is: ${post.title}.")
     writeln("The author is: ${post.author}.")
