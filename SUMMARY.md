@@ -12,7 +12,7 @@
   * [Loops](welcome/loops.md)
   * [Methods](welcome/methods.md)
   * [Classes & Objects](welcome/classes-and-objects.md)
-  * [Arrays](welcome/arrays.md)
+  * [List](welcome/arrays.md)
   * [Strings](welcome/strings.md)
   * [Structs](welcome/structs.md)
   * [Enums](welcome/enums.md)
@@ -23,4 +23,5 @@
   * [Dictionary](welcome/dictionary.md)
   * [Interface](welcome/interface.md)
   * [Symbol](welcome/symbol.md)
+  * [Set](welcome/set.md)
 
