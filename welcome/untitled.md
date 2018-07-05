@@ -48,15 +48,15 @@ Este método imprime uma mensagem passada como argumento na tela e ao final queb
 ```text
 Console.writeLn(<mensagem>)
 # OR
-writeLn(<mensagem>)
+writeln(<mensagem>)
 ```
 
 **Exemplo:**
 
 ```text
 nome = "Marcos"
-writeLn("Meu nome é ")
-writeLn(nome)
+writeln("Meu nome é ")
+writeln(nome)
 
 # Output
 > Meu nome é 
