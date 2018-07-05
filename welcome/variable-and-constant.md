@@ -41,3 +41,35 @@ write(animal)
 > 'Cat'
 ```
 
+## Constants
+
+In Kymera constants can be declared explicitly with the keyword **const** than most languages.
+
+**Syntaxe:**
+
+```text
+const PI = <value>
+```
+
+**Sample:**
+
+```text
+const PI = 3.141592653589793
+```
+
+or implicit form using a word that start with uppercase like Ruby Lang.
+
+**Note:** We recommend that all characters must be in the upper case.
+
+**Syntaxe:**
+
+```text
+<CONSTANT NAME WITH UPPERCASE> = <value>
+```
+
+**Sample:**
+
+```text
+PI = 3.141592653589793
+```
+
