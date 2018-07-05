@@ -36,7 +36,7 @@ write("Meu nome é ")
 write(nome)
 
 # Output
-> "Meu nome é Marcos"
+> Meu nome é Marcos
 ```
 
 ## Console.writeLn
@@ -46,8 +46,20 @@ Este método imprime uma mensagem passada como argumento na tela e ao final queb
 **Syntax:**
 
 ```text
-Console.WriteLn(<mensagem>)
+Console.writeLn(<mensagem>)
 # OR
 writeLn(<mensagem>)
+```
+
+**Exemplo:**
+
+```text
+nome = "Marcos"
+writeLn("Meu nome é ")
+writeLn(nome)
+
+# Output
+> Meu nome é 
+> Marcos
 ```
 
