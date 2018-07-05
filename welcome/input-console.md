@@ -10,13 +10,13 @@ Estes métodos podem ser chamados sem precisar explicitar a classe Console, atra
 **Exemplo:**
 
 ```text
-Console.Read() #Forma explicita
-read() #sugar syntax de Console.Read()
+Console.read() #Forma explicita
+read() #sugar syntax de Console.read()
 ```
 
 Recomenda-se que utilize o sugar syntax por ser menos verboso e natural para ler.
 
-## Console.Read
+## Console.read
 
 O método Read serve para possibilitar a entrada de dados do usuário pelo teclado e retorna uma string do que foi digitado.
 
@@ -25,7 +25,7 @@ O método Read pode receber opcionalmente uma string como argumento. Esta string
 **Syntax:**
 
 ```text
-Console.Read(<user input>)
+Console.read(<user input>)
 # OR
 read(<user input>)
 ```
