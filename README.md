@@ -99,10 +99,10 @@ package main # Define main module like Go lang.
 
 from standard import *
 
-class Post(){
+class Post {
 
     get int id
-    get_set string title, string body, string author
+    getSet string title, string body, string author
 
     # Initialize method
     func constructor(int id, string author, string title, string body){
@@ -112,7 +112,7 @@ class Post(){
     }
 }
 
-func main() {
+func main {
 
     post = Post(0, 'Chewbacca', 'Programming language', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...')
 
