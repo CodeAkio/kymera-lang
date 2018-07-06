@@ -10,7 +10,7 @@
   * [Arithmetic Operators](welcome/arithmetic-operators.md)
   * [Conditionals](welcome/conditionals.md)
   * [Loops](welcome/loops.md)
-  * [Methods](welcome/methods.md)
+  * [Functions](welcome/methods.md)
   * [Classes & Objects](welcome/classes-and-objects.md)
   * [List](welcome/arrays.md)
   * [Strings](welcome/strings.md)
