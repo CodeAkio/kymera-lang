@@ -19,7 +19,7 @@ if (<expression>) {
 }
 ```
 
-## elsif
+## elif
 
 ```text
 
