@@ -44,6 +44,29 @@ write("Seu nome é ${nome}.")
 
 ### Parâmetros
 
+Existem vários parâmetros utilizados pelo método read:
+
+#### &lt;type&gt;
+
+É possível definir qual o tipo de dado é aceito como entrada passando o tipo no parâmetro no formato de simbolo.  
+Definido um tipo além de restringir o tipo de dado a ser aceito como entrada, o método read em vez de retornar uma string, ele retornará o valor recebido com o tipo de dado definido, ou seja, se definir o tipo como inteiro, ele só aceita números inteiros e retorna inteiros.  
+Caso informe um tipo de dado diferente do suportado, será retornado uma exceção do tipo TypeError.
+
+```text
+name = read('What's your name?', :string) # Jorge
+age = read('How old are you?', :int) # 23
+gender = read('Are you man(M) or woman(W)?', :char) # M
+
+write(name) 
+write(age)
+write(gender)
+
+# Output
+> "Jorge"
+> 23
+> 'M'
+```
+
 ## Console.ReadOption
 
 ## Console.ReadOptions
