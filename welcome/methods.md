@@ -7,7 +7,7 @@ A definição do retorno é opcional, caso não informe nada, ele será declarad
 **Syntax:**
 
 ```text
-func <identificado>([tipo] <parâmetro>): <tipo retorno> {
+func <identificado>(<parâmetro>: [tipo]): <tipo retorno> {
     <código>
 }
 ```
@@ -15,7 +15,7 @@ func <identificado>([tipo] <parâmetro>): <tipo retorno> {
 **Exemplo¹:**
 
 ```text
-func somarDoisNumeros(float num1, float num2): float {
+func somarDoisNumeros(num1: float, num2: float): float {
     resultado = num1 + num2
     return resultado
 }
