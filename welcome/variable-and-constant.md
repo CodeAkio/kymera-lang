@@ -14,7 +14,7 @@ The variables work with optional typing similar to TypeScript and Go, but with t
 
 ```text
 # With type definition
-[type] <variable name> = <value>
+<variable name>: [type] = <value>
 
 # Without type definition
 <variable name> := <value>
@@ -26,7 +26,7 @@ The variables work with optional typing similar to TypeScript and Go, but with t
 **Sample:**
 
 ```text
-int number = 10
+number: int = 10
 write(number)
 
 animal := 'Dog'
