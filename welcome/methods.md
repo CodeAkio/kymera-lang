@@ -1,13 +1,13 @@
 # Functions
 
-Uma função é definida com a palavra reservada **func** e utiliza a notação de pascal em sua declaração.
+Uma função é definida com um identificador seguido de parenteses abrindo e fechando **\(\)** e utiliza a notação de pascal em sua declaração.
 
-A definição do retorno é opcional, caso não informe nada, ele será declarado como **void**.
+A definição do tipo de retorno é opcional, caso não informe nada, ele utilizará como padrão o tipo **void**.
 
 **Syntax:**
 
 ```text
-func <identificado>(<parâmetro>: [tipo]): <tipo retorno> {
+<identificador> (<parâmetro>: [tipo]): <tipo retorno> {
     <código>
 }
 ```
@@ -15,7 +15,7 @@ func <identificado>(<parâmetro>: [tipo]): <tipo retorno> {
 **Exemplo¹:**
 
 ```text
-func somarDoisNumeros(num1: float, num2: float): float {
+somarDoisNumeros(num1: float, num2: float): float {
     resultado = num1 + num2
     return resultado
 }
