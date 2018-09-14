@@ -101,8 +101,10 @@ from standard import *
 
 class Post {
 
-    get int id
-    getSet string title, string body, string author
+    get id: int
+    getSet title: string
+    getSet body: string
+    getSet author: string
 
     # Initialize method
     func constructor(int id, string author, string title, string body){
