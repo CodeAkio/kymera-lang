@@ -19,7 +19,7 @@ A declaração de uma variável ou contante List pode ser feito de forma duas fo
 * **Explícita:** Deverá definir o tipo de variável explicitamente como List.
 
 ```text
-List fruit
+fruit: List
 fruit = ['Apple', 'Orange', 'Banana']
 ```
 
@@ -37,7 +37,7 @@ Também é possível restringir o tipo de dados que a lista pode receber usando 
 Caso tente atribuir um valor com um tipo de dado diferente, será retornado uma exceção do tipo TypeError.
 
 ```text
-List<int> numbers
+numbers: List<int>
 numbers = [1, 2, 3, 4, 5]
 
 write(numbers)
