@@ -4,6 +4,7 @@
 * [Getting Started](getting-started.md)
 * [Syntax and Semantics](welcome/README.md)
   * [Variable and Constant](welcome/variable-and-constant.md)
+  * [Basic types](welcome/basic-types.md)
   * [Output Console](welcome/untitled.md)
   * [Input Console](welcome/input-console.md)
   * [Comments](welcome/comments.md)
