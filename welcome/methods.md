@@ -7,24 +7,32 @@ A definição do tipo de retorno é opcional, caso não informe nada, ele utiliz
 **Syntax:**
 
 ```text
-<identificador> (<parâmetro>: [tipo]): <tipo retorno> {
+fun <identificador> (<parâmetro> [tipo]) [tipo retorno] {
     <código>
 }
 ```
 
-**Exemplo¹:**
+**Exemplo:**
 
 ```text
-somarDoisNumeros(num1: float, num2: float): float {
+fun somarDoisNumeros (num1 folat, num2 float) float {
     resultado = num1 + num2
     return resultado
 }
 
-valor_soma = somarDoisNumeros(10.0, 2.0)
+valor_soma := somarDoisNumeros(10.0, 2.0)
 
 write(valor_soma)
 
 # Output
 > 12.0
+```
+
+Também é possível ter múltiplos retornos:
+
+```text
+fun swap (num1 int, num2 int) (int, int) {
+    return num2, num1
+}
 ```
 
