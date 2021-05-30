@@ -7,15 +7,15 @@ A definição do tipo de retorno é opcional, caso não informe nada, ele utiliz
 **Syntax:**
 
 ```text
-<identificador> (<parâmetro>: [tipo]): <tipo retorno> {
+fun <identificador> ([tipo] <parâmetro>) -> [tipo retorno] {
     <código>
 }
 ```
 
-**Exemplo¹:**
+**Exemplo:**
 
 ```text
-somarDoisNumeros(num1: float, num2: float): float {
+fun somarDoisNumeros (float num1, float num2) -> float {
     resultado = num1 + num2
     return resultado
 }

@@ -8,54 +8,68 @@ description: Syntax and semantics of variables and constants
 
 The variables work with optional typing similar to TypeScript and Go, but with the possibility to use the types available through C\# language.
 
-You need to use **var** keyword to declare a variable.
-
 ### Declaration and Assignment
 
  **Syntax:**
 
 ```text
 # With type definition
-var <variable_name> [type] = <value>
+<variable name>: [type] = <value>
 
-# With type inference
-<variable_name> := <value>
+# Without type definition
+<variable name> := <value>
 
 # Assignment value after declaration
-<variable_name> = <value>
+<variable name> = <value>
 ```
 
 **Sample:**
 
-```go
-var number int = 10
+```text
+number: int = 10
 write(number)
 
-animal := "Dog"
+animal := 'Dog'
 write(animal)
 
-animal = "Cat"
+animal = 'Cat'
 write(animal)
 
 # Output
 > 10
-> "Dog"
-> "Cat"
+> 'Dog'
+> 'Cat'
 ```
 
 ## Constants
 
-Constants need to be declared with the keyword **const** and have **uppercase** name.
+In Kymera constants can be declared explicitly with the keyword **const** than most languages.
 
 **Syntaxe:**
 
 ```text
-const <CONSTANT_NAME> := <value>
+const PI = <value>
 ```
 
 **Sample:**
 
 ```text
-const PI := 3.141592653589793
+const PI = 3.141592653589793
+```
+
+or implicit form using a word that start with uppercase like Ruby Lang.
+
+**Note:** We recommend that all characters must be in the upper case.
+
+**Syntaxe:**
+
+```text
+<CONSTANT NAME WITH UPPERCASE> = <value>
+```
+
+**Sample:**
+
+```text
+PI = 3.141592653589793
 ```
 
