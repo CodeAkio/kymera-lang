@@ -3,7 +3,7 @@
 ## if
 
 ```text
-if (<expression>) {
+if <expression> {
     <commands>
 }
 ```
@@ -12,7 +12,7 @@ if (<expression>) {
 
 ```text
 
-if (<expression>) {
+if <expression> {
     <commands>
 } else {
     <commands>
@@ -23,15 +23,13 @@ if (<expression>) {
 
 ```text
 
-if (<expression>) {
+if <expression> {
     <commands>
-} elif (<expression>) {
+} elseif <expression> {
     <commands>
-} elif (<expression>) {
+} elseif <expression> do
     <commands>
-} elif (<expression>) {
-    <commands>
-} else {
+else {
     <commands>
 }
 ```
@@ -42,20 +40,20 @@ if (<expression>) {
 <variable or constant> = <expression> ? <command 1> : <command 2>
 ```
 
-## Switch
+## Case
 
 ```text
-switch(<expression>) {
-    case <value>:
+case <expression> {
+    when <value>:
         <commands>
         break
-    case <value>:
+    when <value>:
         <commands>
         break
-    case <value>:
+    when <value>:
         <commands>
         break
-    default:
+    else:
         <commands>
         break
 }

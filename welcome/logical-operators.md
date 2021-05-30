@@ -5,21 +5,70 @@ Kymera tem um conjunto mais completo de operadores lógicos com relação a dema
 ## AND
 
 ```text
-# Expression
+> true and true
+true
 
-write(true and true)
-write(false and false)
-write(true and fase)
-write(false and true)
+> false and false
+false
 
+> true and fase
+false
 
+> false and true
+false
+```
+
+Também pode ser feito em cadeia:
+
+```text
+> ands(true, true, true)
+true
+
+> ands(true, false, true, false)
+false
 ```
 
 ## OR
 
+```text
+> true or true
+true
+
+> false or false
+false
+
+> true or fase
+true
+
+> false or true
+true
+```
+
 ## XOR
 
+```text
+> true xor true
+false
+
+> false xor false
+false
+
+> true xor fase
+true
+
+> false xor true
+true
+```
+
 ## NOT
+
+```text
+> not true
+false
+
+> not false
+true
+```
 
 ## NOR
 
