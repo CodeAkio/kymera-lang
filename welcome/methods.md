@@ -36,6 +36,18 @@ fun swap (num1 int, num2 int) (int, int) {
 }
 ```
 
+Podemos trabalhar com sobre carga que funciona em cima de pattern matching.
+
+```text
+fun log (%[:error, message String]) {
+    write("Something went wrong: ${message}")
+}
+
+fun log (%[:ok, message String]) {
+    write("It works: ${message}")
+}
+```
+
 As funções podem ter clausula de guarda, que são decorators que definem uma condição para a função ser executada:
 
 ```text
