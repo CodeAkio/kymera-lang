@@ -36,3 +36,17 @@ fun swap (num1 int, num2 int) (int, int) {
 }
 ```
 
+As funções podem ter clausula de guarda, que são decorators que definem uma condição para a função ser executada:
+
+```text
+@when(idade >= 18)
+fun verificaIdade (idade int) {
+    write('Maior de idade')
+}
+
+@when(idade < 18)
+fun verificaIdade (idade int) {
+    write('Menor de idade')
+}
+```
+
