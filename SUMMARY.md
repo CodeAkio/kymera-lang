@@ -15,6 +15,7 @@
   * [Symbol](welcome/symbol.md)
   * [Conditionals](welcome/conditionals.md)
   * [Loops](welcome/loops.md)
+  * [Pointer](welcome/pointer.md)
   * [Functions](welcome/methods.md)
   * [Set](welcome/set.md)
   * [Hash](welcome/dictionary.md)
