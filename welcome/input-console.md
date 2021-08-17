@@ -15,13 +15,13 @@ O método Read pode receber opcionalmente uma string como argumento. Esta string
 
 **Syntax:**
 
-```text
-read <user input>
+```go
+read([text to print])
 ```
 
 **Exemplo:**
 
-```text
+```go
 nome := read("Informe seu nome: ")
 write("Seu nome é ${nome}.")
 
@@ -37,14 +37,14 @@ Existem vários parâmetros utilizados pelo método read e readkey:
 
 #### &lt;type&gt;
 
-É possível definir qual o tipo de dado é aceito como entrada passando o tipo no parâmetro.  
+É possível definir qual o tipo de dado é aceito como entrada passando o tipo no generic.  
 Definido um tipo além de restringir o tipo de dado a ser aceito como entrada, o método read em vez de retornar uma string, ele retornará o valor recebido com o tipo de dado definido, ou seja, se definir o tipo como inteiro, ele só aceita números inteiros e retorna inteiros.  
 Caso informe um tipo de dado diferente do suportado, será retornado uma exceção do tipo TypeError.
 
-```text
-name := read("What's your name?", String) // Jorge
-age := read('How old are you?', int) // 23
-gender := read('Are you man(M) or woman(W)?', char) // M
+```go
+name := read(String, "What's your name?") // Jorge
+age := read(int, 'How old are you?') // 23
+gender := read(char, 'Are you man(M) or woman(W)?') // M
 
 write(name)
 write(age)
@@ -60,28 +60,15 @@ write(gender)
 
 É possível definir qual a cor da letra que será exibida na tela, para isso, basta passar o parâmetro nomeado 'color' e a cor.
 
-## readkey
-
-Diferente do método read, o readkey faz a leitura apenas de um caractere e já retorna o valor digitado.
-
-```text
-gender := readkey('Are you man(M) or woman(W)?') # M
-
-write(gender)
-
-# Output
-> 'M'
-```
-
-## Console.ReadOption
+## ReadOption
 
 Em breve
 
-## Console.ReadOptions
+## ReadOptions
 
 Em breve
 
-## Console.ReadSlider
+## ReadSlider
 
 Em breve
 
