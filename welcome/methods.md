@@ -49,7 +49,7 @@ fun log(%[:error, string message]) {
     write("Something went wrong: ${message}")
 }
 
-fun log(%[:ok, String message]) {
+fun log(%[:ok, string message]) {
     write("It works: ${message}")
 }
 ```
