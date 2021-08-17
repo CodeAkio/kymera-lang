@@ -7,14 +7,14 @@ description: Ele permite utilizar recursos de baixo nível como ponteiros que ne
 Assim ele cria uma **variável do tipo ponteiro** para um determinado tipo:
 
 ```go
-*int p = nil
+int* p = nil
 ```
 
 Quando queremos pegar o endereço de memória de uma variável qualquer, usamos o **'&'** ante do nome da variável:
 
 ```go
 numero := 1
-*int p = nil
+int* p = nil
 
 p = &numero
 
@@ -30,7 +30,7 @@ Para que a variável de ponteiro consiga se referenciar ao valor, usamos um **'\
 
 ```go
 numero := 1
-*int p = nil
+int* p = nil
 
 p = &numero
 
