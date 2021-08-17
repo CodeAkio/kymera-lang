@@ -24,7 +24,7 @@ class Pessoa {
 
 ```kotlin
 class Pessoa {
-    constructor(string nome, int idade) {}
+    constructor(public string nome, public int idade) {}
 }
 ```
 
