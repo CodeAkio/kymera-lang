@@ -8,13 +8,13 @@ Para definir uma variável que armazenará um ponteiro, basta que no tipo tenha 
 
 Assim ele cria uma **variável do tipo ponteiro** para um determinado tipo:
 
-```go
+```csharp
 int* p = nil
 ```
 
 Quando queremos pegar o endereço de memória de uma variável qualquer, usamos o **'&'** ante do nome da variável:
 
-```go
+```csharp
 numero := 1
 int* p = nil
 
@@ -30,7 +30,7 @@ writeln(&numero)
 
 Para que a variável de ponteiro consiga se referenciar ao valor, usamos um **'\*'** na **variável**:
 
-```go
+```csharp
 numero := 1
 int* p = nil
 
