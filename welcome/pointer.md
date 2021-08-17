@@ -4,6 +4,8 @@ description: Ele permite utilizar recursos de baixo nível como ponteiros que ne
 
 # Pointer
 
+Para definir uma variável que armazenará um ponteiro, basta que no tipo tenha um **'\*'** como sufixo.
+
 Assim ele cria uma **variável do tipo ponteiro** para um determinado tipo:
 
 ```go
