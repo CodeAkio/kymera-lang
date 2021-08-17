@@ -36,6 +36,12 @@ fun swap(int num1, int num2) -> (int, int) {
 }
 ```
 
+```kotlin
+fun swap(int num1, int num2) -> (int, int) | Error {
+    return num2, num1
+}
+```
+
 Podemos trabalhar com sobre carga que funciona em cima de pattern matching.
 
 ```kotlin
