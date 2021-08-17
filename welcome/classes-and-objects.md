@@ -8,25 +8,35 @@ description: 'Junta o Dart, Kotlin e C#'
 
 ```kotlin
 class Pessoa {
-    constructor() {}
+    string nome
+    int idade
+
+    constructor(string nome, int idade) {
+        this.nome = nome
+        this.idade = idade
+    }
+    
+    fun ola() -> void {
+        writeln("Olá ${this.nome}")
+    }
 }
 ```
 
 ```kotlin
 class Pessoa {
-    constructor(private String nome, private int idade) {}
+    constructor(private string nome, private int idade) {}
 }
 ```
 
 ```kotlin
-class Pessoa(private String nome, private int idade) {
+class Pessoa(private string nome, private int idade) {
     ...
 }
 ```
 
 ```kotlin
-class Pessoa(private String nome, private int idade) {
-    get nome {
+class Pessoa(private string nome, private int idade) {
+    get nome -> string {
         return this.nome.toUpper()
     }
     
@@ -40,8 +50,8 @@ class Pessoa(private String nome, private int idade) {
 
 ```kotlin
 class Pessoa {
-    constructor(private String nome, private int idade, private String cpf) {}
-    constructor.juridica(private String nome, private String cnpj) {}
+    constructor(private string nome, private int idade, private string cpf) {}
+    constructor.juridica(private string nome, private string cnpj) {}
 }
 ```
 
