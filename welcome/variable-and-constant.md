@@ -8,13 +8,15 @@ description: Syntax and semantics of variables and constants
 
 The variables work with optional typing similar to TypeScript and Go, but with the possibility to use the types available through C\# language.
 
+You need to use **var** keyword to declare a variable.
+
 ### Declaration and Assignment
 
  **Syntax:**
 
 ```text
 # With type definition
-[type] <variable_name> = <value>
+<variable_name> [type] = <value>
 
 # With type inference
 <variable_name> := <value>
@@ -26,7 +28,7 @@ The variables work with optional typing similar to TypeScript and Go, but with t
 **Sample:**
 
 ```go
-int number = 10
+number int = 10
 write(number)
 
 animal := "Dog"
@@ -49,13 +51,11 @@ Constants need to be declared with the keyword **const** and have **uppercase** 
 
 ```text
 const <CONSTANT_NAME> := <value>
-const [type] <CONSTANT_NAME> = <value>
 ```
 
 **Sample:**
 
 ```text
 const PI := 3.141592653589793
-const String NAME = "Maria"
 ```
 
