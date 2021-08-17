@@ -6,16 +6,16 @@ A definição do tipo de retorno é opcional, caso não informe nada, ele utiliz
 
 **Syntax:**
 
-```kotlin
-fun <identificador>([tipo] <parâmetro>) -> [tipo retorno] {
+```text
+fun <identificador> (<parâmetro> [tipo]) [tipo retorno] {
     <código>
 }
 ```
 
 **Exemplo:**
 
-```kotlin
-fun somarDoisNumeros(folat num1, float num2) -> float {
+```text
+fun somarDoisNumeros (num1 folat, num2 float) float {
     resultado = num1 + num2
     return resultado
 }
@@ -30,34 +30,34 @@ write(valor_soma)
 
 Também é possível ter múltiplos retornos:
 
-```kotlin
-fun swap(int num1, int num2) -> (int, int) {
+```text
+fun swap (num1 int, num2 int) (int, int) {
     return num2, num1
 }
 ```
 
 Podemos trabalhar com sobre carga que funciona em cima de pattern matching.
 
-```kotlin
-fun log(%[:error, String message]) {
+```text
+fun log (%[:error, message String]) {
     write("Something went wrong: ${message}")
 }
 
-fun log(%[:ok, String message]) {
+fun log (%[:ok, message String]) {
     write("It works: ${message}")
 }
 ```
 
 As funções podem ter clausula de guarda, que são decorators que definem uma condição para a função ser executada:
 
-```kotlin
+```text
 @when(idade >= 18)
-fun verificaIdade(int idade) {
+fun verificaIdade (idade int) {
     write('Maior de idade')
 }
 
 @when(idade < 18)
-fun verificaIdade(int idade) {
+fun verificaIdade (idade int) {
     write('Menor de idade')
 }
 ```
