@@ -182,7 +182,9 @@ numbers.each(number => writeline(number))
 ```csharp
 Set<int> numbers = (1, 2, 3, 4, 5)
 
-numbers.map(number => number * 2)
+newNumbers := numbers.map(number => number * 2)
+
+writeln(newNumbers)
 
 # Output
 > (2, 4, 6, 8, 10)
