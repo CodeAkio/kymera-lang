@@ -134,12 +134,12 @@ write(numbers.sort)
 > [1, 2, 3, 4, 5]
 ```
 
-### count
+### length
 
 ```csharp
 List<int> numbers = [1, 2, 3, 4, 5]
 
-write(numbers.count)
+write(numbers.length)
 
 # Output
 > 5
@@ -173,7 +173,52 @@ numbers.map(number => number * 2)
 
 ### indexOf
 
+```csharp
+List<int> numbers = [1, 2, 3, 4, 5]
+
+writeln(numbers.indexOf(3))
+
+# Output
+> 2
+```
+
 ### find
 
+```csharp
+List<int> numbers = [1, 2, 3, 4, 5]
 
+writeln(numbers.find(3))
+
+# Output
+> 3
+```
+
+```csharp
+List<string> colors = ["Red", "Yellow", "Blue", "Orange", "White"]
+
+writeln(colors.find(r"[ed]"))
+
+# Output
+> "Red"
+```
+
+### findAll
+
+```csharp
+List<int> numbers = [6, 2, 8, 3, 6]
+
+writeln(numbers.find(6))
+
+# Output
+> [6, 6]
+```
+
+```csharp
+List<string> colors = ["Red", "Yellow", "Blue", "Orange", "White"]
+
+writeln(colors.find(r"[w]"))
+
+# Output
+> ["Yellow", "White"]
+```
 

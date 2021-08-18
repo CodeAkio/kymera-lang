@@ -54,3 +54,7 @@ user.map((key, value) => [key, isString(name) ? value.toUpper() : value])
 }
 ```
 
+### find
+
+
+
