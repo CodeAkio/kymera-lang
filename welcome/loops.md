@@ -88,3 +88,13 @@ for {
 }
 ```
 
+Também podemos fazer em **uma linha**, para isso é obrigatório o uso de **parêntese** e omitir as ~~chaves~~.
+
+```go
+for (index := 1, index <= 10, index++) writeln(index)
+```
+
+```go
+for() writeln("In loop...")
+```
+
