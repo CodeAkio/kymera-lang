@@ -1,2 +1,168 @@
+---
+description: É uma lista que não aceita itens repetidos.
+---
+
 # Set
+
+## Introdução
+
+O `Set` permite armazenar vários valores únicos de diferentes tipos que podem ser acessados através de um índice número que começa com o número 0.
+
+Diferente de um List, o Set **não permite valores repetidos**.
+
+## Declaração e Atribuição
+
+A declaração de uma variável ou constante Set pode ser feita de forma duas formas:
+
+* **Explícita:** Deverá definir o tipo de variável explicitamente como Set.
+
+```csharp
+Set fruit = ('Apple', 'Orange', 'Banana')
+```
+
+* **Implícita:** Basta atribuir diretamente os valores a variável e o interpretador vai declara-lo implicitamente como `Set<dynamic>`, sendo que os valores ficaram dentro dos parênteses e separados por vírgula.
+
+```go
+fruit := ('Apple', 'Orange', 'Banana')
+```
+
+Também é possível restringir o tipo de dados que o set pode receber usando generics, dessa forma deverá usar sempre a forma explícita de declaração.  
+Caso tente atribuir um valor com um tipo de dado diferente, será retornado uma exceção do tipo TypeError.
+
+```csharp
+Set<int> numbers = (1, 2, 3, 4, 5)
+
+write(numbers)
+
+# Output
+> (1, 2, 3, 4, 5)
+```
+
+## Methods
+
+Um set possui vários métodos úteis que podem ser utilizados.
+
+### add
+
+```csharp
+Set<int> numbers
+numbers = (1, 2, 3, 4, 5)
+numbers.add(6)
+
+write(numbers)
+
+# Output
+> (1, 2, 3, 4, 5, 6)
+```
+
+Veja o que ocorre ao tentar adicionar um valor duplicado:
+
+```csharp
+Set<int> numbers = (1, 2, 3, 4, 5)
+numbers.add(6)
+numbers.add(4)
+numbers.add(1)
+
+write(numbers)
+
+# Output
+> (1, 2, 3, 4, 5, 6)
+```
+
+### insert
+
+```csharp
+Set<int> numbers = (1, 2, 3, 4, 5)
+numbers.insert(6, 2)
+
+write(numbers)
+
+# Output
+> (1, 2, 6, 3, 4, 5)
+```
+
+### remove
+
+```csharp
+Set<int> numbers = (1, 2, 3, 4, 5)
+numbers.remove(2)
+
+write(numbers)
+
+# Output
+> (1, 6, 3, 4, 5)
+```
+
+### pop
+
+```csharp
+Set<int> numbers = (1, 2, 3, 4, 5)
+numbers.pop()
+
+write(numbers)
+
+# Output
+> (1, 2, 6, 3, 4)
+```
+
+### reverse
+
+```csharp
+Set<int> numbers = (1, 2, 3, 4, 5)
+
+write(numbers.reverse)
+
+# Output
+> (5, 4, 3, 2, 1)
+```
+
+### contains
+
+```csharp
+Set<int> numbers = (1, 2, 3, 4, 5)
+
+write(numbers.contains(1))
+write(numbers.contains(6))
+
+# Output
+> true
+> false
+```
+
+### indexOf
+
+```csharp
+Set<int> numbers = (1, 2, 3, 4, 5)
+
+write(numbers.indexOf(1))
+
+# Output
+> 0
+```
+
+### sort
+
+```csharp
+Set<int> numbers = (4, 1, 5, 3, 2)
+
+write(numbers.sort)
+
+# Output
+> [1, 2, 3, 4, 5]
+```
+
+### length
+
+```csharp
+Set<int> numbers = (1, 2, 3, 4, 5)
+
+write(numbers.length)
+
+# Output
+> 5
+```
+
+
+
+
 
