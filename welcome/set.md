@@ -6,7 +6,7 @@ description: É uma lista que não aceita itens repetidos.
 
 ## Introdução
 
-O Set permite armazenar vários valores únicos de diferentes tipos que podem ser acessados através de um índice número que começa com o número 0.
+O `Set` permite armazenar vários valores únicos de diferentes tipos que podem ser acessados através de um índice número que começa com o número 0.
 
 Diferente de um List, o Set **não permite valores repetidos**.
 
@@ -20,7 +20,7 @@ A declaração de uma variável ou constante Set pode ser feita de forma duas fo
 Set fruit = ('Apple', 'Orange', 'Banana')
 ```
 
-* **Implícita:** Basta atribuir diretamente os valores a variável e o interpretador vai declara-lo implicitamente como _Set&lt;dynamic&gt;_, sendo que os valores ficaram dentro dos parênteses e separados por vírgula.
+* **Implícita:** Basta atribuir diretamente os valores a variável e o interpretador vai declara-lo implicitamente como `Set<dynamic>`, sendo que os valores ficaram dentro dos parênteses e separados por vírgula.
 
 ```go
 fruit := ('Apple', 'Orange', 'Banana')
