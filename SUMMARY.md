@@ -20,7 +20,7 @@
   * [Pipe Operator](welcome/pipe-operator.md)
   * [List](welcome/arrays.md)
   * [Set](welcome/set.md)
-  * [Dictionary](welcome/dictionary.md)
+  * [Dict](welcome/dictionary.md)
   * [Enums](welcome/enums.md)
   * [Structs](welcome/structs.md)
   * [Classes & Objects](welcome/classes-and-objects.md)

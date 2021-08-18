@@ -4,165 +4,219 @@ description: >-
   Map.
 ---
 
-# Dictionary
+# Dict
 
 ## Introdução
 
-O `Dic` permite armazenar vários valores únicos de diferentes tipos que podem ser acessados através de um índice número que começa com o número 0.
+O `Dict` permite armazenar dados na estrutura de chave e valor.
+
+Ele não permite que haja chaves duplicadas.
+
+Caso queira ter mais controle de chaves pré-definidas e os tipos dos valores, deverá usar um _Struct_.
 
 ## Declaração e Atribuição
 
-A declaração de uma variável ou constante Set pode ser feita de forma duas formas:
+A declaração de uma variável ou constante Dict pode ser feita de forma duas formas:
 
-* **Explícita:** Deverá definir o tipo de variável explicitamente como Set.
+* **Explícita:** Deverá definir o tipo de variável explicitamente como `Dict`.
 
 ```csharp
-Set fruit = ('Apple', 'Orange', 'Banana')
+Dict user = {
+    name: "Pedro",
+    age: 22
+}
 ```
 
-* **Implícita:** Basta atribuir diretamente os valores a variável e o interpretador vai declara-lo implicitamente como _Set&lt;dynamic&gt;_, sendo que os valores ficaram dentro dos parênteses e separados por vírgula.
+* **Implícita:** Basta atribuir diretamente as chaves e valores a variável e o interpretador vai declara-lo implicitamente como `Dict<atom, dynamic>`, sendo que as chaves e valores ficaram dentro de chaves e separados por vírgula.
 
 ```go
-fruit := ('Apple', 'Orange', 'Banana')
+user := {
+    name: "Pedro",
+    age: 22
+}
 ```
 
-Também é possível restringir o tipo de dados que o set pode receber usando generics, dessa forma deverá usar sempre a forma explícita de declaração.  
+Também é possível restringir o tipo de dados que o Dict pode receber usando generics, dessa forma deverá usar sempre a forma explícita de declaração.  
 Caso tente atribuir um valor com um tipo de dado diferente, será retornado uma exceção do tipo TypeError.
 
 ```csharp
-Set<int> numbers = (1, 2, 3, 4, 5)
+Dict<string, string> numbers = {
+    "name": "Pedro",
+    "age": "22"
+}
 
 write(numbers)
 
 # Output
-> (1, 2, 3, 4, 5)
+> {
+    "name": "Pedro",
+    "age": "22"
+}
 ```
 
 ## Methods
 
-Um set possui vários métodos úteis que podem ser utilizados.
+Um Dict possui vários métodos úteis que podem ser utilizados.
 
 ### add
 
 ```csharp
-Set<int> numbers
-numbers = (1, 2, 3, 4, 5)
-numbers.add(6)
+user := {
+    name: "Pedro",
+    age: 22
+}
 
-write(numbers)
+user.add(:email, "pedro@email.com")
+
+write(user)
 
 # Output
-> (1, 2, 3, 4, 5, 6)
+> {
+    name: "Pedro",
+    age: 22,
+    email: "pedro@email.com"
+}
 ```
 
-Veja o que ocorre ao tentar adicionar um valor duplicado:
+Ao tentar adicionar uma chave duplicada, ele chama o **update**:
 
 ```csharp
-Set<int> numbers = (1, 2, 3, 4, 5)
-numbers.add(6)
-numbers.add(4)
-numbers.add(1)
+user := {
+    name: "Pedro",
+    age: 22
+}
 
-write(numbers)
+user.add(:name, "Marcos")
+
+write(user)
 
 # Output
-> (1, 2, 3, 4, 5, 6)
+> {
+    name: "Marcos",
+    age: 22
+}
 ```
 
-### insert
+### update
 
-```csharp
-Set<int> numbers = (1, 2, 3, 4, 5)
-numbers.insert(6, 2)
+```python
+user := {
+    name: "Pedro",
+    age: 22
+}
 
-write(numbers)
+user.update(:name, "Marcos")
+
+write(user)
 
 # Output
-> (1, 2, 6, 3, 4, 5)
+> {
+    name: "Marcos",
+    age: 22
+}
 ```
 
 ### remove
 
 ```csharp
-Set<int> numbers = (1, 2, 3, 4, 5)
-numbers.remove(2)
+user := {
+    name: "Pedro",
+    age: 22
+}
 
-write(numbers)
+user.remove(:age)
 
-# Output
-> (1, 6, 3, 4, 5)
-```
-
-### pop
-
-```csharp
-Set<int> numbers = (1, 2, 3, 4, 5)
-numbers.pop()
-
-write(numbers)
+write(user)
 
 # Output
-> (1, 2, 6, 3, 4)
+> {
+    name: "Marcos"
+}
 ```
 
-### reverse
+### keys
 
-```csharp
-Set<int> numbers = (1, 2, 3, 4, 5)
+```ruby
+user := {
+    name: "Pedro",
+    age: 22
+}
 
-write(numbers.reverse)
+write(user.values)
 
 # Output
-> (5, 4, 3, 2, 1)
+> [:name, :age]
 ```
 
-### contains
+### values
 
-```csharp
-Set<int> numbers = (1, 2, 3, 4, 5)
+```ruby
+user := {
+    name: "Pedro",
+    age: 22
+}
 
-write(numbers.contains(1))
-write(numbers.contains(6))
+write(user.values)
+
+# Output
+> ["Pedro", 22]
+```
+
+### any
+
+```ruby
+user := {
+    name: "Pedro",
+    age: 22
+}
+
+write(user.has(:age, 22))
 
 # Output
 > true
+```
+
+```csharp
+user := {
+    name: "Pedro",
+    age: 22
+}
+
+write(user.has?(:age, 23))
+
+# Output
 > false
 ```
 
-### indexOf
+### hasKey
 
 ```csharp
-Set<int> numbers = (1, 2, 3, 4, 5)
+user := {
+    name: "Pedro",
+    age: 22
+}
 
-write(numbers.indexOf(1))
-
-# Output
-> 0
-```
-
-### sort
-
-```csharp
-Set<int> numbers = (4, 1, 5, 3, 2)
-
-write(numbers.sort)
+write(user.hasKey?(:age))
 
 # Output
-> [1, 2, 3, 4, 5]
+> true
 ```
 
-### count
+### hasValue
 
-```csharp
-Set<int> numbers = (1, 2, 3, 4, 5)
+```ruby
+user := {
+    name: "Pedro",
+    age: 22
+}
 
-write(numbers.count)
+write(user.hasValue?("Pedro"))
 
 # Output
-> 5
+> (:name)
 ```
 
-
+[https://ruby-doc.org/core-3.0.2/Hash.html](https://ruby-doc.org/core-3.0.2/Hash.html)
 
 
 
