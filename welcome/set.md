@@ -32,10 +32,38 @@ Caso tente atribuir um valor com um tipo de dado diferente, será retornado uma 
 ```csharp
 Set<int> numbers = (1, 2, 3, 4, 5)
 
-write(numbers)
+writeln(numbers)
 
 # Output
 > (1, 2, 3, 4, 5)
+```
+
+## Uso Básico
+
+Para acessar os valores, basta após o nome da variável usar **\[\]** passando o **índice**.
+
+Nesse caso estamos exibindo o valor armazenado em uma posição:
+
+```csharp
+Set<int> numbers = (1, 2, 3, 4, 5)
+
+writeln(numers[0])
+
+# Output
+> 1
+```
+
+E neste estamos atualizando um valor em uma posição:
+
+```csharp
+Set<int> numbers = (1, 2, 3, 4, 5)
+
+numers[1] = 8
+
+writeln(numers)
+
+# Output
+> (1, 8, 3, 4, 5)
 ```
 
 ## Methods
@@ -49,7 +77,7 @@ Set<int> numbers
 numbers = (1, 2, 3, 4, 5)
 numbers.add(6)
 
-write(numbers)
+writeln(numbers)
 
 # Output
 > (1, 2, 3, 4, 5, 6)
@@ -63,7 +91,7 @@ numbers.add(6)
 numbers.add(4)
 numbers.add(1)
 
-write(numbers)
+writeln(numbers)
 
 # Output
 > (1, 2, 3, 4, 5, 6)
@@ -75,7 +103,7 @@ write(numbers)
 Set<int> numbers = (1, 2, 3, 4, 5)
 numbers.insert(6, 2)
 
-write(numbers)
+writeln(numbers)
 
 # Output
 > (1, 2, 6, 3, 4, 5)
@@ -87,7 +115,7 @@ write(numbers)
 Set<int> numbers = (1, 2, 3, 4, 5)
 numbers.remove(2)
 
-write(numbers)
+writeln(numbers)
 
 # Output
 > (1, 6, 3, 4, 5)
@@ -99,7 +127,7 @@ write(numbers)
 Set<int> numbers = (1, 2, 3, 4, 5)
 numbers.pop()
 
-write(numbers)
+writeln(numbers)
 
 # Output
 > (1, 2, 6, 3, 4)
@@ -110,7 +138,7 @@ write(numbers)
 ```csharp
 Set<int> numbers = (1, 2, 3, 4, 5)
 
-write(numbers.reverse)
+writeln(numbers.reverse)
 
 # Output
 > (5, 4, 3, 2, 1)
@@ -121,8 +149,8 @@ write(numbers.reverse)
 ```csharp
 Set<int> numbers = (1, 2, 3, 4, 5)
 
-write(numbers.contains(1))
-write(numbers.contains(6))
+writeln(numbers.contains(1))
+writeln(numbers.contains(6))
 
 # Output
 > true
@@ -134,7 +162,7 @@ write(numbers.contains(6))
 ```csharp
 Set<int> numbers = (1, 2, 3, 4, 5)
 
-write(numbers.indexOf(1))
+writeln(numbers.indexOf(1))
 
 # Output
 > 0
@@ -145,7 +173,7 @@ write(numbers.indexOf(1))
 ```csharp
 Set<int> numbers = (4, 1, 5, 3, 2)
 
-write(numbers.sort)
+writeln(numbers.sort)
 
 # Output
 > [1, 2, 3, 4, 5]
@@ -156,7 +184,7 @@ write(numbers.sort)
 ```csharp
 Set<int> numbers = (1, 2, 3, 4, 5)
 
-write(numbers.length)
+writeln(numbers.length)
 
 # Output
 > 5
@@ -167,7 +195,7 @@ write(numbers.length)
 ```csharp
 Set<int> numbers = (1, 2, 3, 4, 5)
 
-numbers.each(number => writeline(number))
+numbers.each(number => writeln(number))
 
 # Output
 > 1
