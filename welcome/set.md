@@ -162,7 +162,62 @@ write(numbers.length)
 > 5
 ```
 
+### each
 
+```csharp
+Set<int> numbers = (1, 2, 3, 4, 5)
+
+numbers.each(number => writeline(number))
+
+# Output
+> 1
+> 2
+> 3
+> 4
+> 5
+```
+
+### map
+
+```csharp
+Set<int> numbers = (1, 2, 3, 4, 5)
+
+numbers.map(number => number * 2)
+
+# Output
+> (2, 4, 6, 8, 10)
+```
+
+### indexOf
+
+```csharp
+Set<int> numbers = (1, 2, 3, 4, 5)
+
+writeln(numbers.indexOf(3))
+
+# Output
+> 2
+```
+
+### find
+
+```csharp
+Set<int> numbers = (1, 2, 3, 4, 5)
+
+writeln(numbers.find(3))
+
+# Output
+> 3
+```
+
+```csharp
+Set<string> colors = ("Red", "Yellow", "Blue", "Orange", "White")
+
+writeln(colors.find(r"[ed]"))
+
+# Output
+> "Red"
+```
 
 
 
