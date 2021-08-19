@@ -2,6 +2,7 @@
 
 * [Welcome](README.md)
 * [Philosophy](philosophy.md)
+* [Naming](naming.md)
 * [Getting Started](getting-started.md)
 * [Syntax and Semantics](welcome/README.md)
   * [Variable and Constant](welcome/variable-and-constant.md)
