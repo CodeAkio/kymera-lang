@@ -7,14 +7,14 @@ As operações lambda podem ser feitas em qualquer coleção de dados que implem
 Percorre todos os elementos realiza alguma operação e retorna uma nova coleção.
 
 ```csharp
-name := "Kym"
+name := 'Kym'
 
-newName := name.map(letter => letter + ".")
+newName := name.map(letter => letter + '.')
 
 writeln(newName)
 
 # Output
-> "K.y.m."
+> 'K.y.m.'
 ```
 
 ```csharp
@@ -41,7 +41,7 @@ writeln(newNumbers)
 
 ```csharp
 user := {
-    name: "Pedro",
+    name: 'Pedro',
     age: 22
 }
 
@@ -49,7 +49,7 @@ user.map((key, value) => [key, isString(name) ? value.toUpper() : value])
 
 # Output
 > user := {
-    name: "PEDRO",
+    name: 'PEDRO',
     age: 22
 }
 ```
