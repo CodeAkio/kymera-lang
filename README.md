@@ -13,13 +13,11 @@ Kymera lang is a new programming language based on some parts of Python, Ruby, E
 ```go
 package main
 
-from standard import *
-
 class Post(
-    id int,
-    author String,
-    title String,
-    body String
+    int id,
+    string author,
+    string title,
+    string body,
 ) {}
 
 main() {
