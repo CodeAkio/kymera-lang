@@ -22,7 +22,7 @@ fun somarDoisNumeros(folat num1, float num2) -> float {
 
 valor_soma := somarDoisNumeros(10.0, 2.0)
 
-writeln(valor_soma)
+write(valor_soma)
 
 # Output
 > 12.0
@@ -46,11 +46,11 @@ Podemos trabalhar com sobre carga que funciona em cima de pattern matching.
 
 ```kotlin
 fun log(%[:error, string message]) {
-    writeln('Something went wrong: ${message}')
+    write("Something went wrong: ${message}")
 }
 
 fun log(%[:ok, string message]) {
-    writeln('It works: ${message}')
+    write("It works: ${message}")
 }
 ```
 
@@ -59,12 +59,12 @@ As funções podem ter clausula de guarda, que são decorators que definem uma c
 ```kotlin
 @when(idade >= 18)
 fun verificaIdade(int idade) {
-    writeln('Maior de idade')
+    write('Maior de idade')
 }
 
 @when(idade < 18)
 fun verificaIdade(int idade) {
-    writeln('Menor de idade')
+    write('Menor de idade')
 }
 ```
 
