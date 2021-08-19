@@ -80,3 +80,7 @@ Podemos trabalhar com funções anônimas:
 (float num1, float num2) : float => num1 + num2
 ```
 
+```typescript
+string name : string => 'Hello ${name}'
+```
+
