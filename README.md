@@ -21,7 +21,7 @@ class Post(
 ) {}
 
 main() {
-    post = Post(
+    post := Post(
         0,
         'Chewbacca',
         'Programming language',
