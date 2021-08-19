@@ -30,13 +30,13 @@ var <variable_name> = <value>
 
 ```go
 int number = 10
-write(number)
+writeln(number)
 
 animal := 'Dog'
-write(animal)
+writeln(animal)
 
 animal = 'Cat'
-write(animal)
+writeln(animal)
 
 # Output
 > 10
