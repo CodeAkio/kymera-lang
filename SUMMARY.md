@@ -12,7 +12,7 @@
   * [Comparison Operators](welcome/comparison-operators.md)
   * [Logical Operators](welcome/logical-operators.md)
   * [Strings](welcome/strings.md)
-  * [Symbol](welcome/symbol.md)
+  * [Atom](welcome/symbol.md)
   * [Conditionals](welcome/conditionals.md)
   * [Loops](welcome/loops.md)
   * [Pointer](welcome/pointer.md)
