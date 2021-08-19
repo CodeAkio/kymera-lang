@@ -82,9 +82,19 @@ for number := 1, number <= 10 {
 
 Caso não passe nenhum parâmetro, ele se comporta como um **loop infinito** e só para quando receber um **break**.
 
-```rust
+```csharp
 for {
-    writeln("In loop...")
+    writeln('In loop...')
 }
+```
+
+Também podemos fazer em **uma linha**, para isso é obrigatório o uso de **parêntese** e omitir as ~~chaves~~.
+
+```go
+for (index := 1, index <= 10, index++) writeln(index)
+```
+
+```go
+for() writeln('In loop...')
 ```
 
