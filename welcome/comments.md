@@ -2,11 +2,12 @@
 
 Existem dois tipos de comentários:
 
-* **One-line comment -** Utilizado quando se quer comentar apenas uma única linha. Para isto poderá utilizar o caractere **//** seguido do comentário.
+* **One-line comment -** Utilizado quando se quer comentar apenas uma única linha. Para isto poderá utilizar o caractere **\#** ou então o **//** seguido do comentário.
 
 **Sample:**
 
-```csharp
+```text
+# Commented line
 // Other commented line
 ```
 
@@ -14,7 +15,7 @@ Existem dois tipos de comentários:
 
 **Sample:**
 
-```csharp
+```text
 /*
 * This
 * is

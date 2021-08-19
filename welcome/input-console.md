@@ -22,8 +22,8 @@ read([text to print])
 **Exemplo:**
 
 ```go
-nome := read("Informe seu nome: ")
-write("Seu nome é ${nome}.")
+nome := read('Informe seu nome: ')
+write('Seu nome é ${nome}.')
 
 # Output
 # Foi digitado 'Júlio' no terminal
@@ -51,7 +51,7 @@ write(age)
 write(gender)
 
 # Output
-> "Jorge"
+> 'Jorge'
 > 23
 > 'M'
 ```

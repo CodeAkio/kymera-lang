@@ -4,71 +4,22 @@ Kymera tem um conjunto mais completo de operadores lógicos com relação a dema
 
 ## AND
 
-```python
-> true and true
-true
+```text
+# Expression
 
-> false and false
-false
+write(true and true)
+write(false and false)
+write(true and fase)
+write(false and true)
 
-> true and fase
-false
 
-> false and true
-false
-```
-
-Também pode ser feito em cadeia:
-
-```python
-> ands(true, true, true)
-true
-
-> ands(true, false, true, false)
-false
 ```
 
 ## OR
 
-```python
-> true or true
-true
-
-> false or false
-false
-
-> true or fase
-true
-
-> false or true
-true
-```
-
 ## XOR
 
-```python
-> true xor true
-false
-
-> false xor false
-false
-
-> true xor fase
-true
-
-> false xor true
-true
-```
-
 ## NOT
-
-```python
-> not true
-false
-
-> not false
-true
-```
 
 ## NOR
 
