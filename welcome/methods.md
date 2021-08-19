@@ -7,7 +7,7 @@ A definição do tipo de retorno é opcional, caso não informe nada, ele utiliz
 **Syntax:**
 
 ```kotlin
-fun <identificador>([tipo] <parâmetro>) -> [tipo retorno] {
+fun <identificador>([tipo] <parâmetro>) : [tipo retorno] {
     <código>
 }
 ```
@@ -15,7 +15,7 @@ fun <identificador>([tipo] <parâmetro>) -> [tipo retorno] {
 **Exemplo:**
 
 ```kotlin
-fun somarDoisNumeros(folat num1, float num2) -> float {
+fun somarDoisNumeros(folat num1, float num2) : float {
     resultado := num1 + num2
     return resultado
 }
@@ -31,13 +31,13 @@ writeln(valor_soma)
 Também é possível ter múltiplos retornos:
 
 ```kotlin
-fun swap(int num1, int num2) -> (int, int) {
+fun swap(int num1, int num2) : (int, int) {
     return num2, num1
 }
 ```
 
 ```kotlin
-fun swap(int num1, int num2) -> (int, int) | null {
+fun swap(int num1, int num2) : (int, int) | null {
     pass
 }
 ```
@@ -66,5 +66,17 @@ fun verificaIdade(int idade) {
 fun verificaIdade(int idade) {
     writeln('Menor de idade')
 }
+```
+
+Podemos trabalhar com funções anônimas:
+
+```typescript
+(float num1, float num2) : float => {
+    return num1 + num2
+}
+```
+
+```typescript
+(float num1, float num2) : float => num1 + num2
 ```
 
