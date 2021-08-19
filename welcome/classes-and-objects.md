@@ -17,14 +17,14 @@ class Pessoa {
     }
     
     fun ola() -> void {
-        writeln("Olá ${this.nome}")
+        writeln('Olá ${this.nome}')
     }
 }
 ```
 
 ```kotlin
 class Pessoa {
-    constructor(private string nome, private int idade) {}
+    constructor(public string nome, public int idade) {}
 }
 ```
 
