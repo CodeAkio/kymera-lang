@@ -4,6 +4,7 @@
 * [Philosophy](philosophy.md)
 * [Naming](naming.md)
 * [Getting Started](getting-started.md)
+* [CLI](cli.md)
 * [Syntax and Semantics](welcome/README.md)
   * [Variable and Constant](welcome/variable-and-constant.md)
   * [Basic types](welcome/basic-types.md)
