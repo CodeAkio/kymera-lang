@@ -22,6 +22,22 @@ Com `--type` ou `-t` poderá especificar o tipo de projeto:
 $ kym create <project_name> -t  <cli | desktop | web | api | micro>
 ```
 
+Cada tipo de projeto faz várias perguntas sobre o seu projeto e já tenta pré-configurar o ambiente, como:
+
+* Versão do projeto;
+* Github do projeto;
+* Descrição do projeto;
+* Banco de dados \(PostgreSQL, Maria DB, MySQL, MS SQL Server, Redis, MongoDB\);
+* Cache;
+* Autenticação \(JWT, PIN, e-mail + senha, usuário + senha, Autenticação social, OAUTH 2, 2FA\);
+* Envio de e-mail \(SMTP, Send Grid, Mailgun, Amazon SES, Mailchimp\);
+  * Template de e-mail \(Bootstrap E-mail, MJML, Foundation for Emails\);
+* Hospedagem \(AWS, Google App Engine, Azure, Heroku, Digital Ocean\);
+* Docker;
+* LESS, SASS ou SCSS;
+* Sistema de CI/CD;
+* Framework CSS \(Bootstrap, Bulma, Material Design\);
+
 ## Gerenciando Dependências
 
 ### Instalando Dependência
@@ -164,7 +180,7 @@ Atualiza dependência global específica:
 $ kym global update <package>
 ```
 
-### Execução
+## Execução
 
 Para executar um projeto:
 
@@ -190,7 +206,7 @@ Para abrir o modo interativo passe `--interactive` ou `-i`:
 $ kym -i
 ```
 
-### Compilação
+## Compilação
 
 Para fazer o build de um projeto:
 
@@ -203,4 +219,38 @@ Para fazer o build de um arquivo:
 ```bash
 $ kym build <arquivo>
 ```
+
+## Checagem
+
+Existem ferramentas de checagem de código.
+
+{% hint style="info" %}
+Se um arquivo não for especificado ele faz com o projeto
+{% endhint %}
+
+Faz checagem de erros no código:
+
+```bash
+$ kym check --error [arquivo]
+```
+
+Faz checagem de formatação, convenções de código e boas práticas, mas não as corrige, apenas alerta o que deve ser feito:
+
+```bash
+$ kym check --format [arquivo]
+```
+
+Faz checagem de vulnerabilidades relacionadas a pacotes ou versão do projeto:
+
+```text
+$ kym check --sec [arquivo]
+```
+
+Faz checagem de atualizações disponíveis relacionadas a pacotes ou versão do projeto:
+
+```bash
+$ kym check --update [arquivo]
+```
+
+
 
