@@ -24,6 +24,7 @@
   * [List](welcome/arrays.md)
   * [Set](welcome/set.md)
   * [Dict](welcome/dictionary.md)
+  * [Json](welcome/json.md)
   * [Lambda](welcome/lambda.md)
   * [Enums](welcome/enums.md)
   * [Structs](welcome/structs.md)
