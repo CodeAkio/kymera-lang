@@ -269,3 +269,9 @@ print('Hello Kym!'.toScreamingSnake())
 > 'HELLO_KYM'
 ```
 
+{% embed url="https://ruby-doc.org/core-3.0.2/String.html" %}
+
+{% embed url="https://docs.python.org/pt-br/3/library/string.html" %}
+
+
+
