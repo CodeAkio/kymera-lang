@@ -133,6 +133,28 @@ print(['Hello', 'Kym!'].join(' '))
 > 'Hello Kym!'
 ```
 
+### replace
+
+Ele substitui trechos que batem com a string o regex.
+
+```python
+result := 'Hello Kym!'.replace('o', '0')
+
+print(result)
+
+# Output
+> 'Hell0 Kym!'
+```
+
+```python
+result := 'Hello Kym!'.replace(/[aeiou]/, '0')
+
+print(result)
+
+# Output
+> 'H0ll0 Kym!'
+```
+
 ### toChar
 
 ```python
