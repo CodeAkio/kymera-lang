@@ -21,6 +21,7 @@ project_name/
 |---- main_test.kyms
 |-- deps.yml
 |-- deps.lock
+|-- LICENSE.md
 |-- README.md
 |-- .editorconfig
 |-- .env
