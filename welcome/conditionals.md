@@ -113,7 +113,7 @@ writeln(message)
 ## Switch
 
 ```csharp
-switch <expression>] {
+switch [<expression>] {
     case <value>:
         <commands>
     case <value>:
