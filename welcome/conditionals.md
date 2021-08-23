@@ -69,7 +69,7 @@ if <expression> {
     <commands>
 } elsif <expression> {
     <commands>
-} elsif <expression> do
+} elsif <expression> {
     <commands>
 else {
     <commands>
@@ -83,7 +83,7 @@ if nota >= 9.0 {
     writeln('Excellent')
 } elsif nota >= 7.0 and nota < 9.0 {
     writeln('Good')
-} elsif nota >= 4.0 and nota < 7.0 do
+} elsif nota >= 4.0 and nota < 7.0 {
     writeln('Bad')
 else {
     writeln('Terrible')
