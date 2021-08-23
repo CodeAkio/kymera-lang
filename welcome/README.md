@@ -16,7 +16,7 @@ The variables work with optional typing similar to TypeScript and Go, but with t
 
 ```text
 # With type definition
-var <variable name> [type] = <value>
+[type] <variable name> = <value>
 
 # Without type definition
 <variable name> := <value>
@@ -27,8 +27,8 @@ var <variable name> [type] = <value>
 
 **Sample:**
 
-```go
-var number int = 10
+```text
+int number = 10
 write(number)
 
 animal := 'Dog'
@@ -53,14 +53,14 @@ You can use 'del' to remove the variable, constants and objects from memory when
 
  **Syntax:**
 
-```python
+```text
 del <variable | constant | object>
 ```
 
  **Sample:**
 
-```python
-number := 10
+```text
+int number = 10
 writeln(number)
 
 del number
@@ -68,7 +68,7 @@ writeln(number)
 
 # Output
 > 10
-> The variable 'number' was not declared.
+> The variable 'b' was not declared.
 ```
 
 #### null
@@ -83,8 +83,8 @@ writeln(number)
 
  **Sample:**
 
-```go
-number := 42
+```text
+int number = 42
 writeln(number)
 
 number = null
