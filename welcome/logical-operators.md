@@ -85,7 +85,74 @@ Também pode ser feito em cadeia:
 
 ## NOR
 
+```python
+> true nor true
+#=> false
+
+> false nor false
+#=> true
+
+> true nor fase
+#=> false
+
+> false nor true
+#=> false
+```
+
+```python
+> nor(false, false, false)
+#=> true
+
+> nor(true, false, true, false)
+#=> false
+```
+
 ## NAND
 
+```python
+> true nand true
+#=> false
+
+> false nand false
+#=> true
+
+> true nand fase
+#=> true
+
+> false nand true
+#=> true
+```
+
+Também pode ser feito em cadeia:
+
+```python
+> nand(true, true, true)
+#=> false
+
+> nand(true, false, true, false)
+#=> true
+```
+
 ## XNOR
+
+```python
+> true nxor true
+#=> true
+
+> false nxor false
+#=> true
+
+> true nxor fase
+#=> false
+
+> false nxor true
+#=> false
+```
+
+```python
+> nxor(true, true, false)
+#=> true
+```
+
+
 
