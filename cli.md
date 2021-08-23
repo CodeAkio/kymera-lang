@@ -191,7 +191,7 @@ $ kym run
 Para executar um arquivo específico:
 
 ```bash
-$ kym run <nome_arquivo.kym>
+$ kym run <nome_arquivo>.kym
 ```
 
 Para executar em modo de debug, adicione `--debug` ou `-d`:
@@ -217,7 +217,7 @@ $ kym build
 Para fazer o build de um arquivo:
 
 ```bash
-$ kym build <arquivo.kym>
+$ kym build <arquivo>
 ```
 
 ## Checagem
@@ -231,25 +231,25 @@ Se um arquivo não for especificado ele faz com o projeto
 Faz checagem de erros no código:
 
 ```bash
-$ kym check --error [arquivo.kym]
+$ kym check --error [arquivo]
 ```
 
 Faz checagem de formatação, convenções de código e boas práticas, mas não as corrige, apenas alerta o que deve ser feito:
 
 ```bash
-$ kym check --format [arquivo.kym]
+$ kym check --format [arquivo]
 ```
 
 Faz checagem de vulnerabilidades relacionadas a pacotes ou versão do projeto:
 
 ```text
-$ kym check --sec [arquivo.kym]
+$ kym check --sec [arquivo]
 ```
 
 Faz checagem de atualizações disponíveis relacionadas a pacotes ou versão do projeto:
 
 ```bash
-$ kym check --update [arquivo.kym]
+$ kym check --update [arquivo]
 ```
 
 
