@@ -18,12 +18,6 @@ if 10 > 1 {
 }
 ```
 
-```go
-if x := 10; x > 1 {
-  writeln('x é maior que 1')
-}
-```
-
 Para evitar uma expressão gigante ou um grande encadeamento de ifs e ands, Baseado no with do Elixir, o if permite passar múltiplas expressões separadas por virgula:
 
 ```go
