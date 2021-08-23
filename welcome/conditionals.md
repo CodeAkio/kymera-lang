@@ -113,7 +113,7 @@ writeln(message)
 ## Switch
 
 ```csharp
-switch [[declaration]; <expression>] {
+switch <expression>] {
     case <value>:
         <commands>
     case <value>:
@@ -139,7 +139,7 @@ switch gender {
 ```
 
 ```go
-switch gender := 1; gender {
+switch gender {
     case 0:
         writeln('Male')
     case 1:
