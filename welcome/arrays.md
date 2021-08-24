@@ -349,17 +349,6 @@ writeln(numbers.min())
 > 2
 ```
 
-### avg
-
-```csharp
-int[] numbers = [6, 2, 8, 3, 6]
-
-writeln(numbers.avg())
-
-# Output
-> 5
-```
-
 ### sum
 
 ```csharp
@@ -369,5 +358,16 @@ writeln(numbers.sum())
 
 # Output
 > 25
+```
+
+### avg
+
+```csharp
+int[] numbers = [6, 2, 8, 3, 6]
+
+writeln(numbers.avg())
+
+# Output
+> 5
 ```
 
