@@ -22,6 +22,7 @@
   * [Pointer](welcome/pointer.md)
   * [Functions](welcome/methods.md)
   * [Pipe Operator](welcome/pipe-operator.md)
+  * [Docs](welcome/docs.md)
   * [Strings](welcome/strings.md)
   * [Range](welcome/range.md)
   * [List](welcome/arrays.md)

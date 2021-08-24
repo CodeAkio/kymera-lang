@@ -15,9 +15,11 @@ project_name/
 |---- prod.kym
 |---- stage.kym
 |---- test.kym
+|-- docs/
+|---- main.yml
 |-- src/
 |---- main.kym
-|-- test/
+|-- tests/
 |---- main_test.kyms
 |-- deps.yml
 |-- deps.lock
@@ -42,6 +44,8 @@ A pasta **config/** é onde ficam as configurações da aplicação:
 * **prod.kym** - São as configurações específicas para ambiente de produção;
 * **stage.kym** - São as configurações específicas para ambiente de staging;
 * **test.kym** - São as configurações específicas para ambiente de teste;
+
+A pasta **docs/** mantém toda a documentação do projeto.
 
 A pasta **src/** é onde vai residir o nosso código fonte.
 
