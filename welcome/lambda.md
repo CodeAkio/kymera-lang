@@ -18,7 +18,7 @@ writeln(newName)
 ```
 
 ```csharp
-int[] numbers = [1, 2, 3, 4, 5]
+List<int> numbers = [1, 2, 3, 4, 5]
 
 newNumbers := numbers.map(number => number * 2)
 
