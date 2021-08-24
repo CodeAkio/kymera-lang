@@ -23,6 +23,7 @@
   * [Functions](welcome/methods.md)
   * [Pipe Operator](welcome/pipe-operator.md)
   * [Strings](welcome/strings.md)
+  * [Range](welcome/range.md)
   * [List](welcome/arrays.md)
   * [Set](welcome/set.md)
   * [Dict](welcome/dictionary.md)
