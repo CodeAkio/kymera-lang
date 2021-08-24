@@ -40,7 +40,7 @@ writeln(numbers)
 Pode ser utilizado com o each.
 
 ```ruby
-range := 2..10
+range := 2...10
 
 range.each(n => writeln(n))
 
