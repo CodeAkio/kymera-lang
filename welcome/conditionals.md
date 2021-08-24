@@ -114,9 +114,9 @@ writeln(message)
 
 ```csharp
 switch [<expression>] {
-    case <value> -> <commands>
-    case <value> -> <commands>
-    case <value> -> {
+    <value | expression> -> <commands>
+    <value | expression> -> <commands>
+    <value | expression> -> {
         <commands>
     }
     [else] -> <commands>
@@ -127,8 +127,8 @@ switch [<expression>] {
 gender := 1
 
 switch gender {
-    case 0 -> writeln('Male')
-    case 1 -> writeln('Female')
+    0 -> writeln('Male')
+    1 -> writeln('Female')
     else -> writeln('Other')
 }
 ```
@@ -137,9 +137,9 @@ switch gender {
 rate := 4
 
 switch {
-    case rate => 4 -> writeln('Good')
-    case rate <= 2 -> writeln('Bad')
-    case rate == 3 -> writeln('Fair')
+    rate => 4 -> writeln('Good')
+    rate <= 2 -> writeln('Bad')
+    rate == 3 -> writeln('Fair')
     else -> writeln('Invalid')
 }
 ```
@@ -148,22 +148,24 @@ switch {
 x, y := 4, 5
 
 switch {
-    case isOdd(x) -> writeln('x is odd')
-    case isEven(y) -> writeln('y is even')
+    isOdd(x) -> writeln('x is odd')
+    isEven(y) -> writeln('y is even')
 }
 ```
 
 ```go
 switch {
-    case 0, 2, 4, 6, 8 -> writeln('Even')
-    case 1, 3, 5, 7, 9 -> writeln('Odd')
+    0, 2, 4, 6, 8 -> writeln('Even')
+    1, 3, 5, 7, 9 -> writeln('Odd')
 }
 ```
 
 ```go
 switch {
-    case 1..7 -> writeln('Bad')
-    case 7...10 -> writeln('Good')
+    in 1..7 -> writeln('Bad')
+    in 7...10 -> writeln('Good')
 }
 ```
+
+[https://kotlinlang.org/docs/control-flow.html\#when-expression](https://kotlinlang.org/docs/control-flow.html#when-expression)
 
