@@ -60,6 +60,8 @@ writeln(numbers)
 
 ## Slice
 
+Cria uma novo List baseado em partes de outro List.
+
 ```csharp
 List<int> numbers = [1, 2, 3, 4, 5]
 
