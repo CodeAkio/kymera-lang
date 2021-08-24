@@ -36,6 +36,28 @@ writeln(numbers)
 > [1, 2, 3, 4, 5]
 ```
 
+## Referência de Valores
+
+```csharp
+List<int> numbers = [1, 2, 3, 4, 5]
+
+writeln(numbers[1])
+
+# Output
+> 2
+```
+
+```csharp
+List<int> numbers = [1, 2, 3, 4, 5]
+
+numbers[2] = 7
+
+writeln(numbers)
+
+# Output
+> [1, 2, 7, 4, 5]
+```
+
 ## Slice
 
 ```csharp
