@@ -36,7 +36,7 @@ writeln(numbers)
 > [1, 2, 3, 4, 5]
 ```
 
-Podemos trabalhar com slice:
+## Slice
 
 ```csharp
 List<int> numbers = [1, 2, 3, 4, 5]
