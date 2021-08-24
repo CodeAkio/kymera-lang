@@ -82,34 +82,9 @@ for number := 1, number <= 10 {
 
 Caso não passe nenhum parâmetro, ele se comporta como um **loop infinito** e só para quando receber um **break**.
 
-```csharp
+```rust
 for {
-    writeln('In loop...')
+    writeln("In loop...")
 }
-```
-
-Também podemos fazer em **uma linha**, para isso é obrigatório o uso de **parêntese** e omitir as ~~chaves~~.
-
-```go
-for (index := 1, index <= 10, index++) writeln(index)
-```
-
-```go
-for() writeln('In loop...')
-```
-
-Podemos ainda passar uma expressão usando `in`.
-
-```ruby
-for number in 1..5 {
-    writeln(number)
-}
-
-# Output
-> 1
-> 2
-> 3
-> 4
-> 5
 ```
 
