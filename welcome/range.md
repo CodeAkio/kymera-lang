@@ -17,7 +17,7 @@ writeln(numbers)
 
 Com `...` ele cria com **intervalo fechado**.
 
-```ruby
+```kotlin
 numbers := 2...5
 
 writeln(numbers)
