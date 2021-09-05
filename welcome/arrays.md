@@ -327,6 +327,41 @@ writeln(colors.find(r"[w]"))
 > ['Yellow', 'White']
 ```
 
+### first
+
+```csharp
+String[] colors = ['Red', 'Yellow', 'Blue', 'Orange', 'White']
+
+writeln(colors.first())
+
+# Output
+> 'Red'
+```
+
+### last
+
+```csharp
+String[] colors = ['Red', 'Yellow', 'Blue', 'Orange', 'White']
+
+writeln(colors.last())
+
+# Output
+> 'White'
+```
+
+### sample
+
+Pega aleatoriamente um item da lista.
+
+```csharp
+String[] colors = ['Red', 'Yellow', 'Blue', 'Orange', 'White']
+
+writeln(colors.sample())
+
+# Output
+> 'Yellow'
+```
+
 ### max
 
 ```csharp
@@ -349,17 +384,6 @@ writeln(numbers.min())
 > 2
 ```
 
-### avg
-
-```csharp
-int[] numbers = [6, 2, 8, 3, 6]
-
-writeln(numbers.avg())
-
-# Output
-> 5
-```
-
 ### sum
 
 ```csharp
@@ -369,5 +393,16 @@ writeln(numbers.sum())
 
 # Output
 > 25
+```
+
+### avg
+
+```csharp
+int[] numbers = [6, 2, 8, 3, 6]
+
+writeln(numbers.avg())
+
+# Output
+> 5
 ```
 

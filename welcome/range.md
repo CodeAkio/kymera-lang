@@ -59,7 +59,7 @@ range.each(n => writeln(n))
 Podemos usar o `step` para definir de quanto em quanto ele **pula**:
 
 ```ruby
-numbers := (1..10).step(2)
+numbers := 1..10 step 2
 
 writeln(numbers)
 
