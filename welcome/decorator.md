@@ -11,13 +11,7 @@ fun @greeting() {
 ```kotlin
 @greeting()
 fun snake() {
-    writeln('Snake')
+    // Do something
 }
-
-snake()
-
-# Output
-> 'Hello'
-> 'Snake'
 ```
 
