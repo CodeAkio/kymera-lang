@@ -13,5 +13,10 @@ fun @greeting() {
 fun snake() {
     // Do something
 }
+
+snake()
+
+# Output
+> 'Hello'
 ```
 
