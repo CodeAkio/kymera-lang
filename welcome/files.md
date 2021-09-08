@@ -36,6 +36,22 @@ import file.*
 my_file := open('some_file.txt', mode: :a)
 ```
 
+### close
+
+Após abrir o arquivo, precisamos fecha-lo para que ele não fique bloqueado.
+
+```python
+import file.*
+
+try {
+    my_file := open('some_file.txt')
+} except FileNotFoundError, error {
+    writeln(error)
+} finally {
+    my_file.close()
+}
+```
+
 ### read
 
 ### readlines
