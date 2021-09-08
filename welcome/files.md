@@ -9,7 +9,7 @@ O `open` abre o arquivo, por padrão considera que é um arquivo **txt** e no mo
 ```python
 import file.*
 
-my_file := read('some_file.txt')
+my_file := open('some_file.txt')
 ```
 
 A propriedade `mode`, podemos passar `:r` para somente leitura e `:w` para leitura e escrita.
@@ -17,7 +17,7 @@ A propriedade `mode`, podemos passar `:r` para somente leitura e `:w` para leitu
 ```python
 import file.*
 
-my_file := read('some_file.txt', mode: :w)
+my_file := open('some_file.txt', mode: :w)
 ```
 
 A propriedade `type`, podemos passar `:txt`para arquivos do tipo texto, ou `:bin` para arquivos do tipo binário.
@@ -25,8 +25,20 @@ A propriedade `type`, podemos passar `:txt`para arquivos do tipo texto, ou `:bin
 ```python
 import file.*
 
-my_file := read('some_file.txt', type: :txt)
+my_file := open('some_file.txt', type: :txt)
 ```
 
+A propriedade `mode`, podemos passar `:a` para escrever as mudanças apenas no fim do arquivo, ou `:e` para sobrescrever o arquivo inteiro, por padrão ele trabalha com `:e`.
 
+```python
+import file.*
+
+my_file := open('some_file.txt', mode: :a)
+```
+
+### read
+
+### readlines
+
+[https://www.rubyguides.com/2015/05/working-with-files-ruby/](https://www.rubyguides.com/2015/05/working-with-files-ruby/)
 
