@@ -99,21 +99,62 @@ else {
 > 'Excellent'
 ```
 
-## Ternary if
+## One line if
 
-```javascript
-<variable or constant> = <expression> ? <command 1> : <command 2>
+Não existe if ternário, mas a ideia dele é a mesma usando o `then` e `else`, que é mais compreensível e significativo do que o `?:`.
+
+```ruby
+<variable or constant> = if <expression> then <command 1> else <command 2>
 ```
 
-```csharp
+```ruby
 age := 22
 
-string message = age >= 18 ? 'Is an adult' : 'Is not an adult'
+if string message = age >= 18 then 'Is an adult' else 'Is not an adult'
 
 writeln(message)
 
 # Output
 > 'Is an adult'
+```
+
+Uma forma mais elegante e mais indicada é quebrando linha:
+
+```ruby
+age := 22
+
+if string message = age >= 18
+    then 'Is an adult'
+    else 'Is not an adult'
+
+writeln(message)
+
+# Output
+> 'Is an adult'
+```
+
+Podemos usar apenas o `then` que quando a expressão é verdadeira, ele retorna o valor, caso contrário, devolve `null`.
+
+```ruby
+age := 22
+
+if string message = age >= 18 then 'Is an adult'
+
+writeln(message)
+
+# Output
+> 'Is an adult'
+```
+
+```ruby
+age := 17
+
+if string message = age >= 18 then 'Is an adult'
+
+writeln(message)
+
+# Output
+> null
 ```
 
 ## Switch
