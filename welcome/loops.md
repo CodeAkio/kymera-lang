@@ -88,14 +88,14 @@ for {
 }
 ```
 
-Também podemos fazer em **uma linha**, para isso é obrigatório o uso de **parêntese** e omitir as ~~chaves~~.
+Também podemos fazer em **uma linha**, para isso utilize o **do**.
 
-```go
-for (index := 1, index <= 10, index++) writeln(index)
+```julia
+for index := 1, index <= 10, index++ do writeln(index)
 ```
 
-```go
-for() writeln('In loop...')
+```julia
+for() do writeln('In loop...')
 ```
 
 Podemos ainda passar uma expressão usando `in`.
