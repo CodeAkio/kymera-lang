@@ -1,9 +1,5 @@
 # Strings
 
-{% hint style="info" %}
-Ele é uma variação de **List&lt;char&gt;**, então possui todos os recursos de um List.
-{% endhint %}
-
 ## Declaração
 
 Uma string pode ser declarada entre `"` \(aspas duplas\), `'` \(aspas simples\) ou ainda ````` \(crase\).
@@ -97,48 +93,6 @@ Podemos repetir uma string x vezes:
 > '-----'
 ```
 
-## Posição
-
-Podemos acessar cada letra como um _List_.
-
-```ruby
-some_text = 'Hello Kym!'
-writeln(some_text[1])
-
-# Output
-> 'e'
-```
-
-Ao passar a posição negativa, ele conta da esquerda para direita:
-
-```ruby
-some_text = 'Hello Kym!'
-writeln(some_text[-1])
-
-# Output
-> 'm'
-```
-
-Podemos iterar como um List:
-
-```ruby
-some_text = 'Hello Kym!'
-
-some_text.each(c => writeln(c))
-
-# Output
-> 'H'
-> 'e'
-> 'l'
-> 'l'
-> 'o'
-> ' '
-> 'K'
-> 'y'
-> 'm'
-> '!'
-```
-
 ## Métodos
 
 A string vem com uma grande começão de métodos para nos auxiliar.
@@ -147,50 +101,6 @@ A string vem com uma grande começão de métodos para nos auxiliar.
 Todos os métodos também podem ser usados no formato **String.metodo\('valor'\)**.  
 Isso dá uma grande flexibilidade quando for utilizar o _pipe operator_.
 {% endhint %}
-
-### length
-
-Diz quantos caracteres possui a string.
-
-```ruby
-writeln('Hello Kym!'.length)
-
-# Output
-> 10
-```
-
-### count
-
-Conta quantas vezes uma string se repete dentre de outra string.
-
-```ruby
-writeln('Hello Kym!'.count('l'))
-
-# Output
-> 2
-```
-
-### in
-
-Verifica se uma string está contida em outra.
-
-```ruby
-writeln('Kym' in 'Hello Kym!')
-
-# Output
-> true
-```
-
-### contains
-
-Similar ao in.
-
-```ruby
-writeln('Hello Kym!'.contains('Kym'))
-
-# Output
-> true
-```
 
 ### split
 
