@@ -26,6 +26,7 @@
   * [Strings](welcome/strings.md)
   * [Range](welcome/range.md)
   * [List](welcome/arrays.md)
+  * [Stack](welcome/stack.md)
   * [Set](welcome/set.md)
   * [Dict](welcome/dictionary.md)
   * [Generator](welcome/generator.md)
