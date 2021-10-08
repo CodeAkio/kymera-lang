@@ -31,6 +31,7 @@
   * [Queue](welcome/queue.md)
   * [Set](welcome/set.md)
   * [Dict](welcome/dictionary.md)
+  * [Graph](welcome/graph.md)
   * [Generator](welcome/generator.md)
   * [Decorator](welcome/decorator.md)
   * [Enums](welcome/enums.md)
