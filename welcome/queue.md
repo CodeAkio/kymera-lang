@@ -1,22 +1,22 @@
-# Stack
+# Queue
 
 ## Introdução
 
-O `Stack` permite armazenar vários valores de diferentes tipos em uma estrutura **LIFO**.
+O `Queue` permite armazenar vários valores de diferentes tipos em uma estrutura **FIFO**.
 
 ## Declaração e Atribuição
 
-Deverá definir o tipo de variável explicitamente como `Stack`.
+Deverá definir o tipo de variável explicitamente como `Queue`.
 
 ```csharp
-Stack fruit = ['Apple', 'Orange', 'Banana']
+Queue fruit = ['Apple', 'Orange', 'Banana']
 ```
 
-Também é possível restringir o tipo de dados que a pilha pode receber usando generics, dessa forma deverá usar sempre a forma explícita de declaração.  
+Também é possível restringir o tipo de dados que a fila pode receber usando generics, dessa forma deverá usar sempre a forma explícita de declaração.  
 Caso tente atribuir um valor com um tipo de dado diferente, será retornado uma exceção do tipo TypeError.
 
 ```csharp
-Stack<int> numbers = [1, 2, 3, 4, 5]
+Queue<int> numbers = [1, 2, 3, 4, 5]
 
 writeln(numbers)
 
@@ -27,7 +27,7 @@ writeln(numbers)
 Também podemos utilizar uma matriz.
 
 ```csharp
-Stack<int> matrix = [
+Queue<int> matrix = [
     [1, 2, 3],
     [4, 5, 6],
     [7, 8, 9]
@@ -42,7 +42,7 @@ writeln(matrix[1][2])
 ## Operações
 
 ```csharp
-Stack<int> numbers = [1, 2, 3, 4, 5]
+Queue<int> numbers = [1, 2, 3, 4, 5]
 
 numbers = numbers + [6, 7, 8, 9, 10]
 writeln(numbers)
@@ -52,7 +52,7 @@ writeln(numbers)
 ```
 
 ```csharp
-Stack<int> numbers = [1, 2, 3, 4, 5]
+Queue<int> numbers = [1, 2, 3, 4, 5]
 
 numbers = numbers - [2, 4]
 writeln(numbers)
@@ -62,7 +62,7 @@ writeln(numbers)
 ```
 
 ```csharp
-Stack<int> numbers = [1, 2, 3, 4, 5]
+Queue<int> numbers = [1, 2, 3, 4, 5]
 
 numbers = numbers * 2
 writeln(numbers)
@@ -73,13 +73,13 @@ writeln(numbers)
 
 ## Methods
 
-Uma pilha possui vários métodos úteis que podem ser utilizados.
+Uma fila possui vários métodos úteis que podem ser utilizados.
 
-### push
+### enqueue
 
 ```csharp
-Stack<int> numbers = [1, 2, 3, 4, 5]
-numbers.push(6)
+Queue<int> numbers = [1, 2, 3, 4, 5]
+numbers.enqueue(6)
 
 writeln(numbers)
 
@@ -87,22 +87,22 @@ writeln(numbers)
 > [1, 2, 3, 4, 5, 6]
 ```
 
-### pop
+### dequeue
 
 ```csharp
-Stack<int> numbers = [1, 2, 3, 4, 5]
-numbers.pop()
+Queue<int> numbers = [1, 2, 3, 4, 5]
+numbers.dequeue()
 
 writeln(numbers)
 
 # Output
-> [1, 2, 6, 3, 4]
+> [2, 6, 3, 4, 5]
 ```
 
 ### reverse
 
 ```csharp
-Stack<int> numbers = [1, 2, 3, 4, 5]
+Queue<int> numbers = [1, 2, 3, 4, 5]
 
 writeln(numbers.reverse)
 
@@ -113,7 +113,7 @@ writeln(numbers.reverse)
 ### sort
 
 ```csharp
-Stack<int> numbers = [4, 1, 5, 3, 2]
+Queue<int> numbers = [4, 1, 5, 3, 2]
 
 writeln(numbers.sort)
 
@@ -124,7 +124,7 @@ writeln(numbers.sort)
 ### length
 
 ```csharp
-Stack<int> numbers = [1, 2, 3, 4, 5]
+Queue<int> numbers = [1, 2, 3, 4, 5]
 
 writeln(numbers.length)
 
@@ -135,7 +135,7 @@ writeln(numbers.length)
 ### each
 
 ```csharp
-Stack<int> numbers = [1, 2, 3, 4, 5]
+Queue<int> numbers = [1, 2, 3, 4, 5]
 
 numbers.each(number => writeln(number))
 
@@ -150,7 +150,7 @@ numbers.each(number => writeln(number))
 ### map
 
 ```csharp
-Stack<int> numbers = [1, 2, 3, 4, 5]
+Queue<int> numbers = [1, 2, 3, 4, 5]
 
 newNumbers := numbers.map(number => number * 2)
 
@@ -163,7 +163,7 @@ writeln(newNumbers)
 ### sum
 
 ```csharp
-Stack<int> numbers = [6, 2, 8, 3, 6]
+Queue<int> numbers = [6, 2, 8, 3, 6]
 
 writeln(numbers.sum())
 
@@ -174,7 +174,7 @@ writeln(numbers.sum())
 ### avg
 
 ```csharp
-Stack<int> numbers = [6, 2, 8, 3, 6]
+Queue<int> numbers = [6, 2, 8, 3, 6]
 
 writeln(numbers.avg())
 

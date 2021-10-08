@@ -47,21 +47,6 @@ writeln(numbers)
 > [1, 2, 3, 4, 5]
 ```
 
-Também podemos utilizar uma matriz.
-
-```csharp
-int[] matrix = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
-
-writeln(matrix[1][2])
-
-# Output
-> 6
-```
-
 ## Referência de Valores
 
 ```csharp
