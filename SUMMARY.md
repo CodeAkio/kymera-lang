@@ -29,7 +29,7 @@
   * [LikedList](welcome/likedlist.md)
   * [Stack](welcome/stack.md)
   * [Queue](welcome/queue.md)
-  * [Set](welcome/set.md)
+  * [Tuple](welcome/set.md)
   * [Dict](welcome/dictionary.md)
   * [Graph](welcome/graph.md)
   * [Generator](welcome/generator.md)
@@ -43,4 +43,3 @@
   * [Files](welcome/files.md)
   * [Network](welcome/network.md)
 * [Tools](untitled.md)
-

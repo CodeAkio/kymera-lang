@@ -2,13 +2,13 @@
 description: É uma lista que não aceita itens repetidos.
 ---
 
-# Set
+# Tuple
 
 ## Introdução
 
 O `Set` permite armazenar vários valores únicos de diferentes tipos que podem ser acessados através de um índice número que começa com o número 0.
 
-Diferente de um List, o Set **não permite valores repetidos**.
+Diferente de um List, o Set **não permite valores repetidos** e são **valores diferentes entre si**.
 
 ## Declaração e Atribuição
 
@@ -17,7 +17,7 @@ A declaração de uma variável ou constante Set pode ser feita de forma duas fo
 * **Explícita:** Deverá definir o tipo de variável explicitamente como Set.
 
 ```csharp
-Set fruit = ('Apple', 'Orange', 'Banana')
+Set fruit = t{'Apple', 'Orange', 'Banana'}
 ```
 
 * **Implícita:** Basta atribuir diretamente os valores a variável e o interpretador vai declara-lo implicitamente como `Set<dynamic>`, sendo que os valores ficaram dentro dos parênteses e separados por vírgula.
@@ -26,7 +26,7 @@ Set fruit = ('Apple', 'Orange', 'Banana')
 fruit := ('Apple', 'Orange', 'Banana')
 ```
 
-Também é possível restringir o tipo de dados que o set pode receber usando generics, dessa forma deverá usar sempre a forma explícita de declaração.  
+Também é possível restringir o tipo de dados que o set pode receber usando generics, dessa forma deverá usar sempre a forma explícita de declaração.\
 Caso tente atribuir um valor com um tipo de dado diferente, será retornado uma exceção do tipo TypeError.
 
 ```csharp
@@ -40,7 +40,7 @@ writeln(numbers)
 
 ## Uso Básico
 
-Para acessar os valores, basta após o nome da variável usar **\[\]** passando o **índice**.
+Para acessar os valores, basta após o nome da variável usar **\[]** passando o **índice**.
 
 Nesse caso estamos exibindo o valor armazenado em uma posição:
 
@@ -248,6 +248,4 @@ writeln(colors.find(r"[ed]"))
 # Output
 > 'Red'
 ```
-
-
 
