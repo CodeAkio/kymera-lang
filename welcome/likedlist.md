@@ -6,13 +6,19 @@ O `LinkedList` permite armazenar vários valores de diferentes tipos e poderá a
 
 ## Declaração e Atribuição
 
+Pode definir o tipo de variável implicitamente com `l[]`.
+
+```
+fruit = l['Apple', 'Orange', 'Banana']
+```
+
 Deverá definir o tipo de variável explicitamente como `LinkedList`.
 
 ```csharp
 LinkedList fruit = ['Apple', 'Orange', 'Banana']
 ```
 
-Também é possível restringir o tipo de dados que a lista pode receber usando generics, dessa forma deverá usar sempre a forma explícita de declaração.  
+Também é possível restringir o tipo de dados que a lista pode receber usando generics, dessa forma deverá usar sempre a forma explícita de declaração.\
 Caso tente atribuir um valor com um tipo de dado diferente, será retornado uma exceção do tipo TypeError.
 
 ```csharp
@@ -358,4 +364,3 @@ writeln(numbers.avg())
 # Output
 > 5
 ```
-
