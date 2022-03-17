@@ -8,13 +8,13 @@ description: Syntax and semantics of Kymera Lang
 
 ### Variables
 
-The variables work with optional typing similar to TypeScript and Go, but with the possibility to use the types available through C\# language.
+The variables work with optional typing similar to TypeScript and Go, but with the possibility to use the types available through C# language.
 
 #### Declaration and Assignment
 
- **Syntax:**
+&#x20;**Syntax:**
 
-```text
+```
 # With type definition
 var <variable name> [type] = <value>
 
@@ -29,13 +29,13 @@ var <variable name> [type] = <value>
 
 ```go
 var number int = 10
-write(number)
+writeln number
 
 animal := 'Dog'
-write(animal)
+writeln animal
 
 animal = 'Cat'
-write(animal)
+writeln animal
 
 # Output
 > 10
@@ -43,7 +43,7 @@ write(animal)
 > 'Cat'
 ```
 
-####  Types of scope
+#### &#x20;Types of scope
 
 Kymera works with three traditional scopes: Global, Block and Function.
 
@@ -51,20 +51,20 @@ Kymera works with three traditional scopes: Global, Block and Function.
 
 You can use 'del' to remove the variable, constants and objects from memory when you want, this is a cool and flexible Python resource that some other languages haven't. It increase your control, but remember that you have garbage collector to help you.
 
- **Syntax:**
+&#x20;**Syntax:**
 
 ```python
 del <variable | constant | object>
 ```
 
- **Sample:**
+&#x20;**Sample:**
 
 ```python
 number := 10
-writeln(number)
+writeln number
 
 del number
-writeln(number)
+writeln number
 
 # Output
 > 10
@@ -73,25 +73,24 @@ writeln(number)
 
 #### null
 
- To set a variable value as null in some languages, you can do it using the keyword 'nil' \(ruby\) or 'none' \(python\), but it's ugly and not objective, because when you think to set a null value you think in 'null' keyword. So Kymera use the key 'null' like C\# to it.
+&#x20;To set a variable value as null in some languages, you can do it using the keyword 'nil' (ruby) or 'none' (python), but it's ugly and not objective, because when you think to set a null value you think in 'null' keyword. So Kymera use the key 'null' like C# to it.
 
- **Syntax:**
+&#x20;**Syntax:**
 
-```text
+```
 <variable | constant | object> = null
 ```
 
- **Sample:**
+&#x20;**Sample:**
 
 ```go
 number := 42
-writeln(number)
+writeln number
 
 number = null
-writeln(number)
+writeln number
 
 # Output
 > 42
 > null
 ```
-

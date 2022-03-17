@@ -1,5 +1,5 @@
 ---
-description: 'Junta o Dart, Kotlin e C#'
+description: Junta o Dart, Kotlin e C#
 ---
 
 # Classes & Objects
@@ -17,7 +17,7 @@ class Pessoa {
     }
     
     fun ola() -> void {
-        writeln('Olá ${this.nome}')
+        writeln 'Olá ${this.nome}'
     }
 }
 ```
@@ -60,6 +60,4 @@ class Cachorro: Animal {
     constructor() {}
 }
 ```
-
-
 

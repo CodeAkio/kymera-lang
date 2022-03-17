@@ -18,9 +18,9 @@ class Post(
     string author,
     string title,
     string body,
-) end
+)
 
-main()
+fun main() {
     post := Post(
         0,
         'Chewbacca',
@@ -35,7 +35,7 @@ main()
 
     post.body = 'Sed pharetra turpis vehicula orci sodales, interdum blandit libero scelerisque.'
     writeln 'The body after: ${post.body}'
-end
+}
 
 # The output
 > The title is: Programming language.

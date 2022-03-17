@@ -1,13 +1,17 @@
 # Strings
 
+{% hint style="info" %}
+Ele é uma variação de **List\<char>**, então possui todos os recursos de um List.
+{% endhint %}
+
 ## Declaração
 
-Uma string pode ser declarada entre `"` \(aspas duplas\), `'` \(aspas simples\) ou ainda ````` \(crase\).
+Uma string pode ser declarada entre `"` (aspas duplas), `'` (aspas simples) ou ainda `` ` `` (crase).
 
 Tente segui a convenção de utilizar as **aspas simples** para a maioria dos casos:
 
 ```python
-writeln('Hello Kym!')
+writeln 'Hello Kym!'
 
 # Output
 > Hello Kym!
@@ -16,7 +20,7 @@ writeln('Hello Kym!')
 Quando existe aspas simples no meio do texto, então utilize as **aspas duplas**.
 
 ```python
-writeln("What's your name?")
+writeln "What's your name?"
 
 # Output
 > What's your name?
@@ -44,7 +48,7 @@ Para interpolar strings, basta passar o valor dentro de `${}`.
 ```typescript
 name := 'Kym'
 
-writeln('Hello ${name}')
+writeln 'Hello ${name}'
 
 # Output
 > Hello Kym
@@ -93,21 +97,107 @@ Podemos repetir uma string x vezes:
 > '-----'
 ```
 
+## Posição
+
+Podemos acessar cada letra como um _List_.
+
+```ruby
+some_text = 'Hello Kym!'
+writeln(some_text[1])
+
+# Output
+> 'e'
+```
+
+Ao passar a posição negativa, ele conta da esquerda para direita:
+
+```ruby
+some_text = 'Hello Kym!'
+writeln(some_text[-1])
+
+# Output
+> 'm'
+```
+
+Podemos iterar como um List:
+
+```ruby
+some_text = 'Hello Kym!'
+
+some_text.each(c -> writeln c)
+
+# Output
+> 'H'
+> 'e'
+> 'l'
+> 'l'
+> 'o'
+> ' '
+> 'K'
+> 'y'
+> 'm'
+> '!'
+```
+
 ## Métodos
 
 A string vem com uma grande começão de métodos para nos auxiliar.
 
 {% hint style="info" %}
-Todos os métodos também podem ser usados no formato **String.metodo\('valor'\)**.  
+Todos os métodos também podem ser usados no formato **String.metodo('valor')**.\
 Isso dá uma grande flexibilidade quando for utilizar o _pipe operator_.
 {% endhint %}
 
+### length
+
+Diz quantos caracteres possui a string.
+
+```ruby
+writeln 'Hello Kym!'.length
+
+# Output
+> 10
+```
+
+### count
+
+Conta quantas vezes uma string se repete dentre de outra string.
+
+```ruby
+writeln 'Hello Kym!'.count('l')
+
+# Output
+> 2
+```
+
+### in
+
+Verifica se uma string está contida em outra.
+
+```ruby
+writeln 'Kym' in 'Hello Kym!'
+
+# Output
+> true
+```
+
+### contains
+
+Similar ao in.
+
+```ruby
+writeln 'Hello Kym!'.contains('Kym')
+
+# Output
+> true
+```
+
 ### split
 
-Separar a string baseado em um separador do tipo string, retornando um _List&lt;string&gt;_.
+Separar a string baseado em um separador do tipo string, retornando um _List\<string>_.
 
 ```python
-writeln('Hello Kym!'.split(' '))
+writeln 'Hello Kym!'.split(' ')
 
 # Output
 > ['Hello', 'Kym!']
@@ -116,7 +206,7 @@ writeln('Hello Kym!'.split(' '))
 Se não passar nenhum separador, ele retorna cada um dos caracteres.
 
 ```python
-writeln('Hello Kym!'.split())
+writeln 'Hello Kym!'.split()
 
 # Output
 > ['H', 'e', 'l', 'l', 'o', ' ', 'K', 'y', 'm', '!']
@@ -127,7 +217,7 @@ writeln('Hello Kym!'.split())
 Ele une um array de strings, adicionando um separador entra cada elemento.
 
 ```python
-writeln(['Hello', 'Kym!'].join(' '))
+writeln ['Hello', 'Kym!'].join(' ')
 
 # Output
 > 'Hello Kym!'
@@ -219,7 +309,7 @@ writeln('a'.toBool())
 
 ### toList
 
-Converte para um _List&lt;dynamic&gt;_.
+Converte para um _List\<dynamic>_.
 
 ```python
 writeln('[1,2,3]'.toList() is List)
@@ -230,7 +320,7 @@ writeln('[1,2,3]'.toList() is List)
 
 ### toSet
 
-Converte para um _Set&lt;dynamic&gt;_.
+Converte para um _Set\<dynamic>_.
 
 ```python
 writeln('(1,2,3)'.toSet() is Set)
@@ -241,7 +331,7 @@ writeln('(1,2,3)'.toSet() is Set)
 
 ### toDict
 
-Converte para um _Dict&lt;dynamic&gt;_.
+Converte para um _Dict\<dynamic>_.
 
 ```python
 writeln('{ name: "Kym", age: "20" }'.toDict() is Dict)
@@ -316,6 +406,4 @@ writeln('Hello Kym!'.toScreamingSnake())
 {% embed url="https://ruby-doc.org/core-3.0.2/String.html" %}
 
 {% embed url="https://docs.python.org/pt-br/3/library/string.html" %}
-
-
 

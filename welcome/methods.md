@@ -1,13 +1,13 @@
 # Functions
 
-Uma função é definida com um identificador seguido de parenteses abrindo e fechando **\(\)** e utiliza a notação de pascal em sua declaração.
+Uma função é definida com um identificador seguido de parenteses abrindo e fechando **()** e utiliza a notação de pascal em sua declaração.
 
 A definição do tipo de retorno é opcional, caso não informe nada, ele utilizará como padrão o tipo **void**.
 
 **Syntax:**
 
 ```kotlin
-fun <identificador>([tipo] <parâmetro>) : [tipo retorno] {
+fun <identificador>([tipo] <parâmetro>) [(tipo retorno)] {
     <código>
 }
 ```
@@ -15,14 +15,14 @@ fun <identificador>([tipo] <parâmetro>) : [tipo retorno] {
 **Exemplo:**
 
 ```kotlin
-fun somarDoisNumeros(folat num1, float num2) : float {
+fun somarDoisNumeros(folat num1, float num2) (float) {
     resultado := num1 + num2
     return resultado
 }
 
 valor_soma := somarDoisNumeros(10.0, 2.0)
 
-writeln(valor_soma)
+writeln valor_soma
 
 # Output
 > 12.0
@@ -31,13 +31,13 @@ writeln(valor_soma)
 Também é possível ter múltiplos retornos:
 
 ```kotlin
-fun swap(int num1, int num2) : (int, int) {
+fun swap(int num1, int num2) (int, int) {
     return num2, num1
 }
 ```
 
 ```kotlin
-fun swap(int num1, int num2) : (int, int) | null {
+fun swap(int num1, int num2) (int, int) | null {
     pass
 }
 ```
@@ -45,12 +45,12 @@ fun swap(int num1, int num2) : (int, int) | null {
 Podemos trabalhar com sobre carga que funciona em cima de pattern matching.
 
 ```kotlin
-fun log(%[:error, string message]) {
-    writeln('Something went wrong: ${message}')
+fun log(%[ :error, string message ]) {
+    writeln 'Something went wrong: ${message}'
 }
 
-fun log(%[:ok, string message]) {
-    writeln('It works: ${message}')
+fun log(%[ :ok, string message ]) {
+    writeln 'It works: ${message}'
 }
 ```
 
@@ -59,28 +59,27 @@ As funções podem ter clausula de guarda, que são decorators que definem uma c
 ```kotlin
 @when(idade >= 18)
 fun verificaIdade(int idade) {
-    writeln('Maior de idade')
+    writeln 'Maior de idade'
 }
 
 @when(idade < 18)
 fun verificaIdade(int idade) {
-    writeln('Menor de idade')
+    writeln 'Menor de idade'
 }
 ```
 
 Podemos trabalhar com funções anônimas:
 
 ```typescript
-(float num1, float num2) : float => {
+fn(float num1, float num2) (float) -> {
     return num1 + num2
 }
 ```
 
 ```typescript
-(float num1, float num2) : float => num1 + num2
+fn(float num1, float num2) (float) -> num1 + num2
 ```
 
 ```typescript
-string name : string => 'Hello ${name}'
+fn(string name) (string) -> 'Hello ${name}'
 ```
-

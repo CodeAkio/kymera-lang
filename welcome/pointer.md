@@ -20,8 +20,8 @@ int* p = nil
 
 p = &numero
 
-writeln(p)
-writeln(&numero)
+writeln p
+writeln &numero
 
 # Output
 => 0x420016058
@@ -36,11 +36,10 @@ int* p = nil
 
 p = &numero
 
-writeln(*p)
-writeln(numero)
+writeln *p
+writeln numero
 
 # Output
 => 1
 => 1
 ```
-

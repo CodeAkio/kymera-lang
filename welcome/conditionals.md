@@ -14,13 +14,13 @@ if <expression> {
 
 ```go
 if 10 > 1 {
-  writeln('10 é maior')
+  writeln '10 é maior'
 }
 ```
 
 ```ruby
 if 2 in 1..10 {
-  writeln('It is in range 1 to 10')
+  writeln 'It is in range 1 to 10'
 }
 ```
 
@@ -32,7 +32,7 @@ const user = User(name: 'Kym', age: 20, payment: :ok)
 if isAdult(user.age),
    isDefaulter(user.payment),
 {
-  writeln('Can access!')
+  writeln 'Can access!' 
 }
 ```
 
@@ -57,9 +57,9 @@ if <expression> {
 
 ```go
 if 10 > 1 {
-  writeln('10 é maior')
+  writeln '10 é maior'
 } else {
-  writeln('10 não é maior')
+  writeln '10 não é maior'
 }
 ```
 
@@ -86,13 +86,13 @@ else {
 nota := 8.0
 
 if nota >= 9.0 {
-    writeln('Excellent')
+    writeln 'Excellent'
 } elsif nota >= 7.0 and nota < 9.0 {
-    writeln('Good')
+    writeln 'Good'
 } elsif nota >= 4.0 and nota < 7.0 {
-    writeln('Bad')
+    writeln 'Bad'
 else {
-    writeln('Terrible')
+    writeln 'Terrible'
 }
 
 # Output
@@ -112,7 +112,7 @@ age := 22
 
 if string message = age >= 18 then 'Is an adult' else 'Is not an adult'
 
-writeln(message)
+writeln message
 
 # Output
 > 'Is an adult'
@@ -127,7 +127,7 @@ if string message = age >= 18
     then 'Is an adult'
     else 'Is not an adult'
 
-writeln(message)
+writeln message
 
 # Output
 > 'Is an adult'
@@ -140,7 +140,7 @@ age := 22
 
 if string message = age >= 18 then 'Is an adult'
 
-writeln(message)
+writeln message
 
 # Output
 > 'Is an adult'
@@ -151,7 +151,7 @@ age := 17
 
 if string message = age >= 18 then 'Is an adult'
 
-writeln(message)
+writeln message
 
 # Output
 > null
@@ -214,5 +214,4 @@ switch {
 }
 ```
 
-[https://kotlinlang.org/docs/control-flow.html\#when-expression](https://kotlinlang.org/docs/control-flow.html#when-expression)
-
+[https://kotlinlang.org/docs/control-flow.html#when-expression](https://kotlinlang.org/docs/control-flow.html#when-expression)

@@ -9,7 +9,7 @@ O `open` abre o arquivo, por padrão considera que é um arquivo **txt** e no mo
 ```python
 import file.*
 
-my_file := open('some_file.txt')
+my_file := open 'some_file.txt'
 ```
 
 A propriedade `mode`, podemos passar `:r` para somente leitura e `:w` para leitura e escrita.
@@ -44,9 +44,9 @@ Após abrir o arquivo, precisamos fecha-lo para que ele não fique bloqueado.
 import file.*
 
 try {
-    my_file := open('some_file.txt')
+    my_file := open 'some_file.txt'
 } except FileNotFoundError, error {
-    writeln(error)
+    writeln error
 } finally {
     my_file.close()
 }
@@ -57,4 +57,3 @@ try {
 ### readlines
 
 [https://www.rubyguides.com/2015/05/working-with-files-ruby/](https://www.rubyguides.com/2015/05/working-with-files-ruby/)
-

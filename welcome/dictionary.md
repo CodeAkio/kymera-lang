@@ -36,7 +36,7 @@ user := {
 }
 ```
 
-Também é possível restringir o tipo de dados que o Dict pode receber usando generics, dessa forma deverá usar sempre a forma explícita de declaração.  
+Também é possível restringir o tipo de dados que o Dict pode receber usando generics, dessa forma deverá usar sempre a forma explícita de declaração.\
 Caso tente atribuir um valor com um tipo de dado diferente, será retornado uma exceção do tipo TypeError.
 
 ```csharp
@@ -45,7 +45,7 @@ Dict<string, string> numbers = {
     'age': '22'
 }
 
-writeln(numbers)
+writeln numbers
 
 # Output
 > {
@@ -68,7 +68,7 @@ user := {
 
 user.add(:email, 'pedro@email.com')
 
-writeln(user)
+writeln user
 
 # Output
 > {
@@ -88,7 +88,7 @@ user := {
 
 user.add(:name, 'Marcos')
 
-writeln(user)
+writeln user
 
 # Output
 > {
@@ -107,7 +107,7 @@ user := {
 
 user.update(:name, 'Marcos')
 
-writeln(user)
+writeln user
 
 # Output
 > {
@@ -126,7 +126,7 @@ user := {
 
 user.remove(:age)
 
-writeln(user)
+writeln user
 
 # Output
 > {
@@ -142,7 +142,7 @@ user := {
     age: 22
 }
 
-writeln(user.values)
+writeln user.values
 
 # Output
 > [:name, :age]
@@ -156,7 +156,7 @@ user := {
     age: 22
 }
 
-writeln(user.values)
+writeln user.values
 
 # Output
 > ['Pedro', 22]
@@ -170,7 +170,7 @@ user := {
     age: 22
 }
 
-writeln(user.has(:age, 22))
+writeln user.has(:age, 22)
 
 # Output
 > true
@@ -182,7 +182,7 @@ user := {
     age: 22
 }
 
-writeln(user.has?(:age, 23))
+writeln user.has?(:age, 23)
 
 # Output
 > false
@@ -196,7 +196,7 @@ user := {
     age: 22
 }
 
-writeln(user.hasKey?(:age))
+writeln user.hasKey?(:age)
 
 # Output
 > true
@@ -210,13 +210,11 @@ user := {
     age: 22
 }
 
-writeln(user.hasValue('Pedro'))
+writeln user.hasValue('Pedro')
 
 # Output
-> (:name)
+> t[:name]
 ```
 
 [https://ruby-doc.org/core-3.0.2/Hash.html](https://ruby-doc.org/core-3.0.2/Hash.html)
-
-
 

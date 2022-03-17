@@ -7,19 +7,19 @@ description: Kymera possui sua própria CLI que ajuda a realizar diversas tarefa
 ## Criando Projeto
 
 ```bash
-$ kym create <project_name>
+$ kym new <project_name>
 ```
 
 Com `--type` ou `-t` poderá especificar o tipo de projeto:
 
-* **cli** - Para linha de comando \(padrão\);
+* **cli** - Para linha de comando (padrão);
 * **desktop** - Para aplicações desktop;
 * **web** - Para aplicações web com o padrão MVC;
 * **api** - Para aplicações web API;
 * **micro** - Para aplicações web API voltadas para micro serviços.
 
 ```bash
-$ kym create <project_name> -t  <cli | desktop | web | api | micro>
+$ kym new <project_name> -t  <cli | desktop | web | api | micro>
 ```
 
 Cada tipo de projeto faz várias perguntas sobre o seu projeto e já tenta pré-configurar o ambiente, como:
@@ -27,16 +27,16 @@ Cada tipo de projeto faz várias perguntas sobre o seu projeto e já tenta pré-
 * Versão do projeto;
 * Github do projeto;
 * Descrição do projeto;
-* Banco de dados \(PostgreSQL, Maria DB, MySQL, MS SQL Server, Redis, MongoDB\);
+* Banco de dados (PostgreSQL, Maria DB, MySQL, MS SQL Server, Redis, MongoDB);
 * Cache;
-* Autenticação \(JWT, PIN, e-mail + senha, usuário + senha, Autenticação social, OAUTH 2, 2FA\);
-* Envio de e-mail \(SMTP, Send Grid, Mailgun, Amazon SES, Mailchimp\);
-  * Template de e-mail \(Bootstrap E-mail, MJML, Foundation for Emails\);
-* Hospedagem \(AWS, Google App Engine, Azure, Heroku, Digital Ocean\);
+* Autenticação (JWT, PIN, e-mail + senha, usuário + senha, Autenticação social, OAUTH 2, 2FA);
+* Envio de e-mail (SMTP, Send Grid, Mailgun, Amazon SES, Mailchimp);
+  * Template de e-mail (Bootstrap E-mail, MJML, Foundation for Emails);
+* Hospedagem (AWS, Google App Engine, Azure, Heroku, Digital Ocean);
 * Docker;
 * LESS, SASS ou SCSS;
 * Sistema de CI/CD;
-* Framework CSS \(Bootstrap, Bulma, Material Design\);
+* Framework CSS (Bootstrap, Bulma, Material Design);
 
 ## Gerenciando Dependências
 
@@ -242,7 +242,7 @@ $ kym check --format [arquivo.kym]
 
 Faz checagem de vulnerabilidades relacionadas a pacotes ou versão do projeto:
 
-```text
+```
 $ kym check --sec [arquivo.kym]
 ```
 
@@ -251,6 +251,4 @@ Faz checagem de atualizações disponíveis relacionadas a pacotes ou versão do
 ```bash
 $ kym check --update [arquivo.kym]
 ```
-
-
 

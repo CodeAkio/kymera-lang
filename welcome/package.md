@@ -17,7 +17,7 @@ Existem algumas regras de nomenclatura para pacotes:
 package hello
 
 fun Greeting() {
-    writeln("Hello")
+    writeln 'Hello'
 }
 ```
 
@@ -39,7 +39,7 @@ Por padrão, somente **funções**, **classes**, **interfaces**, **enums**, **co
 package hello
 
 fun Greeting() {
-    writeln("Hello")
+    writeln 'Hello'
 }
 ```
 
@@ -65,7 +65,7 @@ interface IAnimal {
     // Something
 }
 
-class Dog : IAnimal {
+class Dog < IAnimal {
     // Something
 }
 ```
@@ -85,7 +85,7 @@ private interface IAnimal {
     // Something
 }
 
-class Dog : IAnimal {
+class Dog < IAnimal {
     // Something
 }
 ```
@@ -97,7 +97,7 @@ Quando se trata de pacotes padrão ou de terceiros, basta usar a keyword **impor
 ```kotlin
 import math.PI
 
-writeln(PI)
+writeln PI
 
 # Output
 > 3.141592653589793
@@ -108,8 +108,8 @@ Se quiser, poderá importar **todos os recursos** do pacote, bastando importar a
 ```kotlin
 import math
 
-writeln(math.PI)
-writeln(math.E)
+writeln math.PI
+writeln math.E
 
 # Output
 > 3.141592653589793
@@ -125,8 +125,8 @@ Podemos importar também **recursos específicos** de um pacote, usando as **cha
 ```kotlin
 import math.{ PI, E }
 
-writeln(PI)
-writeln(E)
+writeln PI
+writeln E
 
 # Output
 > 3.141592653589793
@@ -138,7 +138,7 @@ Podemos definir um apelido para a importação usando a keyword **as**.
 ```kotlin
 import math.E as EULER
 
-writeln(EULER)
+writeln EULER
 
 # Output
 > 2.718281828459045
@@ -151,4 +151,3 @@ import .animal.Dog
 
 dog := Dog(name: 'Scooby Doo', age: 2)
 ```
-

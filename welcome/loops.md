@@ -14,7 +14,7 @@ Utilize os métodos **each** e **map** quando possível, deixe o for apenas para
 
 ```csharp
 for index := 1, index <= 10, index++ {
-    writeln(index)
+    writeln index
 }
 
 # Output
@@ -40,7 +40,7 @@ Isso faz com que ele se comporte como o while tradicional.
 number := 1
 
 for number <= 10 {
-    writeln(number)
+    writeln number
     number++
 }
 
@@ -63,7 +63,7 @@ Ele terá o comportamento de um while, mas com a possibilidade de inicializar o 
 
 ```csharp
 for number := 1, number <= 10 {
-    writeln(number)
+    writeln number
     number++
 }
 
@@ -84,25 +84,25 @@ Caso não passe nenhum parâmetro, ele se comporta como um **loop infinito** e s
 
 ```csharp
 for {
-    writeln('In loop...')
+    writeln 'In loop...'
 }
 ```
 
-Também podemos fazer em **uma linha**, para isso é obrigatório o uso de **parêntese** e omitir as ~~chaves~~.
+Também podemos fazer em **uma linha**, para isso utilize o **do**.
 
-```go
-for (index := 1, index <= 10, index++) writeln(index)
+```julia
+for (index := 1, index <= 10, index++) -> writeln index
 ```
 
-```go
-for() writeln('In loop...')
+```julia
+for -> writeln 'In loop...'
 ```
 
 Podemos ainda passar uma expressão usando `in`.
 
 ```ruby
 for number in 1..5 {
-    writeln(number)
+    writeln number
 }
 
 # Output
@@ -112,4 +112,3 @@ for number in 1..5 {
 > 4
 > 5
 ```
-

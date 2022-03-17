@@ -30,13 +30,13 @@ var <variable_name> = <value>
 
 ```go
  number = 10
-writeln(number)
+writeln number
 
 animal := 'Dog'
-writeln(animal)
+writeln animal
 
 animal = 'Cat'
-writeln(animal)
+writeln animal
 
 # Output
 > 10

@@ -4,7 +4,7 @@ description: Comandos de entrada pelo console
 
 # Input Console
 
-A classe Console possui vários métodos úteis para ler os dados informados pelo usuário.  
+A classe Console possui vários métodos úteis para ler os dados informados pelo usuário.\
 Estes métodos podem ser chamados sem precisar explicitar a classe Console, através de seus sugar syntax.
 
 ## read
@@ -16,14 +16,14 @@ O método Read pode receber opcionalmente uma string como argumento. Esta string
 **Syntax:**
 
 ```go
-read([text to print])
+read [text to print]
 ```
 
 **Exemplo:**
 
 ```go
-nome := read('Informe seu nome: ')
-writeln('Seu nome é ${nome}.')
+nome := read 'Informe seu nome: '
+writeln 'Seu nome é ${nome}.'
 
 # Output
 # Foi digitado 'Júlio' no terminal
@@ -35,10 +35,10 @@ writeln('Seu nome é ${nome}.')
 
 Existem vários parâmetros utilizados pelo método read e readkey:
 
-#### &lt;type&gt;
+#### \<type>
 
-É possível definir qual o tipo de dado é aceito como entrada passando o tipo no generic.  
-Definido um tipo além de restringir o tipo de dado a ser aceito como entrada, o método read em vez de retornar uma string, ele retornará o valor recebido com o tipo de dado definido, ou seja, se definir o tipo como inteiro, ele só aceita números inteiros e retorna inteiros.  
+É possível definir qual o tipo de dado é aceito como entrada passando o tipo no generic.\
+Definido um tipo além de restringir o tipo de dado a ser aceito como entrada, o método read em vez de retornar uma string, ele retornará o valor recebido com o tipo de dado definido, ou seja, se definir o tipo como inteiro, ele só aceita números inteiros e retorna inteiros.\
 Caso informe um tipo de dado diferente do suportado, será retornado uma exceção do tipo TypeError.
 
 ```go
@@ -46,9 +46,9 @@ name := read(string, "What's your name?") // Jorge
 age := read(int, 'How old are you?') // 23
 gender := read(char, 'Are you man(M) or woman(W)?') // M
 
-writeln(name)
-writeln(age)
-writeln(gender)
+writeln name
+writeln age
+writeln gender
 
 # Output
 > 'Jorge'
@@ -56,7 +56,7 @@ writeln(gender)
 > 'M'
 ```
 
-#### &lt;color&gt;
+#### \<color>
 
 É possível definir qual a cor da letra que será exibida na tela, para isso, basta passar o parâmetro nomeado 'color' e a cor.
 
@@ -71,4 +71,3 @@ Em breve
 ## ReadSlider
 
 Em breve
-
