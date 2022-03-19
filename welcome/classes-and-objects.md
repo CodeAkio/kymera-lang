@@ -56,8 +56,7 @@ class Pessoa {
 ```
 
 ```kotlin
-class Cachorro: Animal {
+class Cachorro < Animal {
     constructor() {}
 }
 ```
-

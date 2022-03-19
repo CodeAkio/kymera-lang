@@ -36,6 +36,7 @@
   * [Decorator](welcome/decorator.md)
   * [Enums](welcome/enums.md)
   * [Structs](welcome/structs.md)
+  * [Access Modifiers](welcome/access-modifiers.md)
   * [Classes & Objects](welcome/classes-and-objects.md)
   * [Interface](welcome/interface.md)
   * [Generics](welcome/generics.md)
