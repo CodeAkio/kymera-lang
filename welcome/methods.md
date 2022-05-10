@@ -86,7 +86,7 @@ fun verificaIdade(int idade) {
 Podemos trabalhar com funções anônimas:
 
 ```typescript
-fn(float: num1, float: num2) -> float {
+fn(float num1, float num2) -> float {
     num1 + num2
 }
 ```
