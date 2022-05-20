@@ -29,7 +29,7 @@ var <variable_name> = <value>
 **Sample:**
 
 ```go
- number = 10
+number: int = 10
 writeln number
 
 animal := 'Dog'
@@ -52,12 +52,12 @@ Constants need to be declared with the keyword **const** and have **uppercase** 
 
 ```csharp
 const <CONSTANT_NAME> := <value>
-const [type] <CONSTANT_NAME> = <value>
+const <CONSTANT_NAME>: [type] = <value>
 ```
 
 **Sample:**
 
 ```csharp
 const PI := 3.141592653589793
-const string NAME = 'Maria'
+const NAME: string = 'Maria'
 ```

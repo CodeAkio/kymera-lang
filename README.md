@@ -14,10 +14,10 @@ Kym lang is a new programming language based on some parts of Python, Ruby, Elix
 package main
 
 class Post(
-    int id,
-    string author,
-    string title,
-    string body,
+    id: int,
+    author: string,
+    title: string,,
+    body: string,,
 )
 
 fun main() {
