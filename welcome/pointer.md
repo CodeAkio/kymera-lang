@@ -9,14 +9,14 @@ Para definir uma variável que armazenará um ponteiro, basta que no tipo tenha 
 Assim ele cria uma **variável do tipo ponteiro** para um determinado tipo:
 
 ```csharp
-p: *int = null
+int* p = nil
 ```
 
 Quando queremos pegar o endereço de memória de uma variável qualquer, usamos o **'&'** ante do nome da variável:
 
 ```csharp
 numero := 1
-p: *int = null
+int* p = nil
 
 p = &numero
 
@@ -32,7 +32,7 @@ Para que a variável de ponteiro consiga se referenciar ao valor, usamos um **'\
 
 ```csharp
 numero := 1
-*int p = null
+int* p = nil
 
 p = &numero
 
