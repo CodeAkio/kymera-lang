@@ -144,7 +144,7 @@ writeln EULER
 > 2.718281828459045
 ```
 
-Para importar **pacotes locais**, usamos um **ponto** antes de passar o nome do pacote:
+Para forçar a importação de **pacotes locais** ao invés de um standard ou de terceiros, usamos um **ponto** antes de passar o nome do pacote:
 
 ```kotlin
 import .animal.Dog
