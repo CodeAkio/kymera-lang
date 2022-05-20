@@ -14,7 +14,7 @@ The variables work with optional typing similar to TypeScript and Go, but with t
 
 ```go
 # With type definition
-<type> <variable_name> = <value>
+<variable_name>: [type] = <value>
 
 # With type inference
 var <variable_name> = <value>
@@ -29,7 +29,7 @@ var <variable_name> = <value>
 **Sample:**
 
 ```go
-int number = 10
+ number = 10
 writeln number
 
 animal := 'Dog'
@@ -52,7 +52,7 @@ Constants need to be declared with the keyword **const** and have **uppercase** 
 
 ```csharp
 const <CONSTANT_NAME> := <value>
-const <type> <CONSTANT_NAME> = <value>
+const [type] <CONSTANT_NAME> = <value>
 ```
 
 **Sample:**
