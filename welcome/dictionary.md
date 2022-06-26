@@ -30,7 +30,7 @@ Dict user = {
 * **Implícita:** Basta atribuir diretamente as chaves e valores a variável e o interpretador vai declara-lo implicitamente como `Dict<atom, dynamic>`, sendo que as chaves e valores ficaram dentro de chaves e separados por vírgula.
 
 ```go
-var user = {
+user := {
     name: 'Pedro',
     age: 22
 }
@@ -61,7 +61,7 @@ Um Dict possui vários métodos úteis que podem ser utilizados.
 ### add
 
 ```csharp
-var user = {
+user := {
     name: 'Pedro',
     age: 22
 }
@@ -81,7 +81,7 @@ writeln user
 Ao tentar adicionar uma chave duplicada, ele chama o **update**:
 
 ```csharp
-var user = {
+user := {
     name: 'Pedro',
     age: 22
 }
@@ -100,7 +100,7 @@ writeln user
 ### update
 
 ```python
-var user = {
+user := {
     name: 'Pedro',
     age: 22
 }
@@ -119,7 +119,7 @@ writeln user
 ### remove
 
 ```csharp
-var user = {
+user := {
     name: 'Pedro',
     age: 22
 }
@@ -137,7 +137,7 @@ writeln user
 ### keys
 
 ```ruby
-var user = {
+user := {
     name: 'Pedro',
     age: 22
 }
@@ -151,7 +151,7 @@ writeln user.values
 ### values
 
 ```ruby
-var user = {
+user := {
     name: 'Pedro',
     age: 22
 }
@@ -165,7 +165,7 @@ writeln user.values
 ### any
 
 ```ruby
-var user = {
+user := {
     name: 'Pedro',
     age: 22
 }
@@ -177,7 +177,7 @@ writeln user.has(:age, 22)
 ```
 
 ```csharp
-var user = {
+user := {
     name: 'Pedro',
     age: 22
 }
@@ -191,7 +191,7 @@ writeln user.has?(:age, 23)
 ### hasKey
 
 ```csharp
-var user = {
+user := {
     name: 'Pedro',
     age: 22
 }
@@ -205,7 +205,7 @@ writeln user.hasKey?(:age)
 ### hasValue
 
 ```ruby
-var user = {
+user := {
     name: 'Pedro',
     age: 22
 }

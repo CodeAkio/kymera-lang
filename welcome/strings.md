@@ -124,7 +124,7 @@ Podemos iterar como um List:
 ```ruby
 some_text = 'Hello Kym!'
 
-some_text.each(c -> writeln c)
+some_text.each(c => writeln c)
 
 # Output
 > 'H'

@@ -8,7 +8,7 @@ Esse retorno é automaticamente convertido de acordo com o tipo de retorno espec
 var numbers = 1..10
 
 fun odd_numbers(int[] numbers) List {
-    numbers.each((number) -> {
+    numbers.each(fn(number) {
         if number % 2 != 0 {
             yield number
         }

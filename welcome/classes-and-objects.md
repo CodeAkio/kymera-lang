@@ -36,7 +36,7 @@ class Pessoa(private string nome, private int idade) {
 
 ```kotlin
 class Pessoa(private string nome, private int idade) {
-    get nome -> string {
+    get nome() -> string {
         return this.nome.toUpper()
     }
     

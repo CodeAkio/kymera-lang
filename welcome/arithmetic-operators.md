@@ -153,14 +153,14 @@ t[1, 2, 3] - t[2]
 ## Potência
 
 ```python
-2 ^ 4
+2 ** 4
 
 # Output
 > 16
 ```
 
 ```python
-2 ^ 8.0
+2 ** 8.0
 
 # Output
 > 256.0

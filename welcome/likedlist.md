@@ -236,7 +236,7 @@ writeln numbers.length
 ```csharp
 LinkedList<int> numbers = [1, 2, 3, 4, 5]
 
-numbers.each(number -> writeln number)
+numbers.each(number => writeln number)
 
 # Output
 > 1
