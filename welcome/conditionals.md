@@ -83,7 +83,7 @@ else {
 ```
 
 ```perl
-nota := 8.0
+var nota = 8.0
 
 if nota >= 9.0 {
     writeln 'Excellent'
@@ -108,7 +108,7 @@ Não existe if ternário, mas a ideia dele é a mesma usando o `then` e `else`, 
 ```
 
 ```ruby
-age := 22
+var age = 22
 
 if string message = age >= 18 then 'Is an adult' else 'Is not an adult'
 
@@ -121,7 +121,7 @@ writeln message
 Uma forma mais elegante e mais indicada é quebrando linha:
 
 ```ruby
-age := 22
+var age = 22
 
 if string message = age >= 18
     then 'Is an adult'
@@ -136,7 +136,7 @@ writeln message
 Podemos usar apenas o `then` que quando a expressão é verdadeira, ele retorna o valor, caso contrário, devolve `null`.
 
 ```ruby
-age := 22
+var age = 22
 
 if string message = age >= 18 then 'Is an adult'
 
@@ -147,7 +147,7 @@ writeln message
 ```
 
 ```ruby
-age := 17
+var age = 17
 
 if string message = age >= 18 then 'Is an adult'
 
@@ -171,7 +171,7 @@ switch [<expression>] {
 ```
 
 ```go
-gender := 1
+var gender = 1
 
 switch gender {
     0 -> writeln('Male')
@@ -181,7 +181,7 @@ switch gender {
 ```
 
 ```go
-rate := 4
+var rate = 4
 
 switch {
     rate => 4 -> writeln('Good')
@@ -192,7 +192,7 @@ switch {
 ```
 
 ```go
-x, y := 4, 5
+var x, y = 4, 5
 
 switch {
     isOdd(x) -> writeln('x is odd')

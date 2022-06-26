@@ -1,13 +1,13 @@
 # Functions
 
-Uma função é definida com um identificador seguido de parenteses abrindo e fechando **()** e utiliza a notação de pascal em sua declaração.
+Uma função é definida com um identificador seguido de parênteses abrindo e fechando **()** e utiliza a notação de pascal em sua declaração.
 
 A definição do tipo de retorno é opcional, caso não informe nada, ele utilizará como padrão o tipo **void**.
 
 **Syntax:**
 
 ```kotlin
-fun <identificador>([tipo] <parâmetro>) [(tipo retorno)] {
+fun <identificador>(<tipo> <parâmetro>) -> [tipo retorno] {
     <código>
 }
 ```
@@ -15,12 +15,27 @@ fun <identificador>([tipo] <parâmetro>) [(tipo retorno)] {
 **Exemplo:**
 
 ```kotlin
-fun somarDoisNumeros(folat num1, float num2) (float) {
-    resultado := num1 + num2
-    return resultado
+fun somarDoisNumeros(folat num1, float num2) -> float {
+    var soma = num1 + num2
+    return soma
 }
 
-valor_soma := somarDoisNumeros(10.0, 2.0)
+var valor_soma = somarDoisNumeros(10.0, 2.0)
+
+writeln valor_soma
+
+# Output
+> 12.0
+```
+
+O retorno é opcional, basta definir o tipo de retorno e ele automaticamente retornará a última linha:
+
+```kotlin
+fun somarDoisNumeros(folat num1, float num2) -> float {
+    num1 + num2
+}
+
+var valor_soma = somarDoisNumeros(10.0, 2.0)
 
 writeln valor_soma
 
@@ -31,13 +46,13 @@ writeln valor_soma
 Também é possível ter múltiplos retornos:
 
 ```kotlin
-fun swap(int num1, int num2) (int, int) {
+fun swap(int num1, int num2) -> (int, int) {
     return num2, num1
 }
 ```
 
 ```kotlin
-fun swap(int num1, int num2) (int, int) | null {
+fun swap(int num1, int num2) -> (int, int) | null {
     pass
 }
 ```
@@ -71,15 +86,17 @@ fun verificaIdade(int idade) {
 Podemos trabalhar com funções anônimas:
 
 ```typescript
-fn(float num1, float num2) (float) -> {
-    return num1 + num2
+fn(float num1, float num2) -> float {
+    num1 + num2
 }
 ```
 
-```typescript
-fn(float num1, float num2) (float) -> num1 + num2
-```
+No caso de funções anônimas com retorno in line, podemos usar o arrow function e o tipo de retorno se torna implícito:
 
 ```typescript
-fn(string name) (string) -> 'Hello ${name}'
+fn(float num1, float num2) => num1 + num2
+```
+
+```kotlin
+fn(string name) => 'Hello ${name}'
 ```

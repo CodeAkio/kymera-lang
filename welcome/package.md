@@ -81,7 +81,7 @@ Caso não queira que algum deles não seja exportado, deverá declara-lo como **
 ```kotlin
 package animal
 
-private interface IAnimal {
+priv interface IAnimal {
     // Something
 }
 
@@ -122,8 +122,8 @@ Essa forma de importação não é indicada quando não vai usar todos os recurs
 
 Podemos importar também **recursos específicos** de um pacote, usando as **chaves**.
 
-```kotlin
-import math.{ PI, E }
+```python
+from math import PI, E
 
 writeln PI
 writeln E
@@ -144,10 +144,10 @@ writeln EULER
 > 2.718281828459045
 ```
 
-Para importar **pacotes locais**, usamos um **ponto** antes de passar o nome do pacote:
+Para forçar a importação de **pacotes locais** ao invés de um standard ou de terceiros, usamos um **ponto** antes de passar o nome do pacote:
 
 ```kotlin
 import .animal.Dog
 
-dog := Dog(name: 'Scooby Doo', age: 2)
+var dog = Dog(name: 'Scooby Doo', age: 2)
 ```

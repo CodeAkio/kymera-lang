@@ -13,6 +13,19 @@
 => true
 ```
 
+## Igual (tipo diferente)
+
+```go
+$ 10 ~= '10'
+=> true
+
+$ 10 ~= 10.0
+=> true
+
+$ 10 ~= 10
+=> true
+```
+
 ## Diferente
 
 ```python
@@ -57,4 +70,3 @@ $ 10.0 < 10
 $ 'b' < 'a'
 # true
 ```
-

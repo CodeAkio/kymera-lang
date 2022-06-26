@@ -21,7 +21,7 @@ class Post(
 )
 
 fun main() {
-    post := Post(
+    var post = Post(
         0,
         'Chewbacca',
         'Programming language',

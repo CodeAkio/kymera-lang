@@ -46,7 +46,7 @@ Make it fast.
 Para interpolar strings, basta passar o valor dentro de `${}`.
 
 ```typescript
-name := 'Kym'
+var name = 'Kym'
 
 writeln 'Hello ${name}'
 
@@ -63,7 +63,7 @@ Assim como Python e Ruby, podemos utilizar operações aritméticas com strings.
 Podemos utilizar o + para unir duas strings:
 
 ```python
-name := 'Kym'
+var name = 'Kym'
 
 writeln('Hello ' + name)
 
@@ -74,7 +74,7 @@ writeln('Hello ' + name)
 Também pode ser feito com uma string e outro tipo de valor:
 
 ```python
-age := 20
+var age = 20
 
 writeln('He is ' + age + ' years old')
 
@@ -228,7 +228,7 @@ writeln ['Hello', 'Kym!'].join(' ')
 Ele substitui trechos que batem com a string o regex.
 
 ```python
-result := 'Hello Kym!'.replace('o', '0')
+var result = 'Hello Kym!'.replace('o', '0')
 
 writeln(result)
 
@@ -237,7 +237,7 @@ writeln(result)
 ```
 
 ```python
-result := 'Hello Kym!'.replace(/[aeiou]/, '0')
+var result = 'Hello Kym!'.replace(/[aeiou]/, '0')
 
 writeln(result)
 
@@ -248,7 +248,7 @@ writeln(result)
 ### startsWith
 
 ```python
-result := 'Hello Friend!'.startsWith('He')
+var result = 'Hello Friend!'.startsWith('He')
 
 writeln(result)
 
@@ -259,7 +259,7 @@ writeln(result)
 ### endsWith
 
 ```python
-result := 'Hello Friend!'.endsWith('!')
+var result = 'Hello Friend!'.endsWith('!')
 
 writeln(result)
 

@@ -20,7 +20,7 @@ write <mensagem>
 **Exemplo:**
 
 ```go
-nome := 'Marcos'
+var nome = 'Marcos'
 write 'Meu nome é '
 write nome
 
@@ -41,7 +41,7 @@ writeln <mensagem>
 **Exemplo:**
 
 ```go
-nome := 'Marcos'
+var nome = 'Marcos'
 writeln 'Meu nome é '
 writeln nome
 

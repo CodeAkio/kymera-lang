@@ -15,7 +15,7 @@ int* p = null
 Quando queremos pegar o endereço de memória de uma variável qualquer, usamos o **'&'** ante do nome da variável:
 
 ```csharp
-numero := 1
+var numero = 1
 int* p = null
 
 p = &numero
@@ -31,7 +31,7 @@ writeln &numero
 Para que a variável de ponteiro consiga se referenciar ao valor, usamos um **'\*'** na **variável**:
 
 ```csharp
-numero := 1
+var numero = 1
 int* p = null
 
 p = &numero

@@ -13,7 +13,7 @@ Utilize os métodos **each** e **map** quando possível, deixe o for apenas para
 {% endhint %}
 
 ```csharp
-for index := 1, index <= 10, index++ {
+for var index = 1, index <= 10, index++ {
     writeln index
 }
 
@@ -37,7 +37,7 @@ Quando passamos apenas **um parâmetro**, ele recebe apenas a **condição de pa
 Isso faz com que ele se comporte como o while tradicional.
 
 ```csharp
-number := 1
+var number = 1
 
 for number <= 10 {
     writeln number
@@ -62,7 +62,7 @@ Podemos passar **dois parâmetros** apenas, neles caso ele receberá a **inicial
 Ele terá o comportamento de um while, mas com a possibilidade de inicializar o valor dentro da própria estrutura
 
 ```csharp
-for number := 1, number <= 10 {
+for var number = 1, number <= 10 {
     writeln number
     number++
 }
@@ -91,17 +91,17 @@ for {
 Também podemos fazer em **uma linha**, para isso utilize o **do**.
 
 ```julia
-for (index := 1, index <= 10, index++) -> writeln index
+for (var index = 1, index <= 10, index++) => writeln index
 ```
 
 ```julia
-for -> writeln 'In loop...'
+for => writeln 'In loop...'
 ```
 
 Podemos ainda passar uma expressão usando `in`.
 
 ```ruby
-for number in 1..5 {
+for var number in 1..5 {
     writeln number
 }
 

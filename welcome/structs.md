@@ -8,11 +8,10 @@ struct Person {
 ```
 
 ```python
-$ person = Person('Kym', 22)
+$ var person = Person('Kym', 22)
 $ person.name
 #=> 'Kym'
 
 $ person.age
 #=> 22
 ```
-

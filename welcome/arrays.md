@@ -21,7 +21,7 @@ List fruit = ['Apple', 'Orange', 'Banana']
 * **Implícita:** Basta atribuir diretamente os valores a variável e o interpretador vai declara-lo implicitamente como `List<dynamic>`, sendo que os valores ficaram dentro dos colchetes e separados por vírgula.
 
 ```go
-fruit := ['Apple', 'Orange', 'Banana']
+var fruit = ['Apple', 'Orange', 'Banana']
 ```
 
 Também é possível restringir o tipo de dados que a lista pode receber usando generics, dessa forma deverá usar sempre a forma explícita de declaração.\
@@ -127,7 +127,7 @@ writeln numbers[2:]
 ## Operações
 
 ```python
-numbers := [1, 2, 3, 4, 5]
+var numbers = [1, 2, 3, 4, 5]
 
 numbers = numbers + [6, 7, 8, 9, 10]
 writeln numbers
@@ -137,7 +137,7 @@ writeln numbers
 ```
 
 ```csharp
-numbers := [1, 2, 3, 4, 5]
+var numbers = [1, 2, 3, 4, 5]
 
 numbers = numbers - [2, 4]
 writeln numbers
@@ -147,7 +147,7 @@ writeln numbers
 ```
 
 ```csharp
-numbers := [1, 2, 3, 4, 5]
+var numbers = [1, 2, 3, 4, 5]
 
 numbers = numbers * 2
 writeln numbers
@@ -157,7 +157,7 @@ writeln numbers
 ```
 
 ```csharp
-numbers := [1, 2, 3, 4, 5]
+var numbers = [1, 2, 3, 4, 5]
 
 writeln(5 in numbers)
 
@@ -294,7 +294,7 @@ numbers.each(number -> writeln number)
 ```csharp
 int[] numbers = [1, 2, 3, 4, 5]
 
-newNumbers := numbers.map(number -> number * 2)
+var newNumbers = numbers.map(number -> number * 2)
 
 writeln(newNumbers)
 
