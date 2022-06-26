@@ -5,10 +5,10 @@ Uma função pode retornar um `interable` com base no valores que ele "retorna" 
 Esse retorno é automaticamente convertido de acordo com o tipo de retorno especificado na função com, por exemplo, `List` e `Set`.
 
 ```kotlin
-var numbers = 1..10
+numbers := 1..10
 
 fun odd_numbers(int[] numbers) List {
-    numbers.each(fn(number) {
+    numbers.each((number) -> {
         if number % 2 != 0 {
             yield number
         }
