@@ -13,7 +13,7 @@ if <expression> {
 ```
 
 ```go
-if 10 > 1 {
+if 10 gt 1 {
   writeln '10 é maior'
 }
 ```
@@ -56,7 +56,7 @@ if <expression> {
 ```
 
 ```go
-if 10 > 1 {
+if 10 gt 1 {
   writeln '10 é maior'
 } else {
   writeln '10 não é maior'
@@ -83,13 +83,13 @@ else {
 ```
 
 ```perl
-nota := 8.0
+var nota = 8.0
 
-if nota >= 9.0 {
+if nota gte 9.0 {
     writeln 'Excellent'
-} elsif nota >= 7.0 and nota < 9.0 {
+} elsif nota gte 7.0 and nota gt 9.0 {
     writeln 'Good'
-} elsif nota >= 4.0 and nota < 7.0 {
+} elsif nota gte 4.0 and nota gt 7.0 {
     writeln 'Bad'
 else {
     writeln 'Terrible'
@@ -108,9 +108,9 @@ Não existe if ternário, mas a ideia dele é a mesma usando o `then` e `else`, 
 ```
 
 ```ruby
-age := 22
+var age = 22
 
-if string message = age >= 18 then 'Is an adult' else 'Is not an adult'
+if string message = age gte 18 then 'Is an adult' else 'Is not an adult'
 
 writeln message
 
@@ -121,9 +121,9 @@ writeln message
 Uma forma mais elegante e mais indicada é quebrando linha:
 
 ```ruby
-age := 22
+var age = 22
 
-if string message = age >= 18
+if string message = age gte 18
     then 'Is an adult'
     else 'Is not an adult'
 
@@ -136,9 +136,9 @@ writeln message
 Podemos usar apenas o `then` que quando a expressão é verdadeira, ele retorna o valor, caso contrário, devolve `null`.
 
 ```ruby
-age := 22
+var age = 22
 
-if string message = age >= 18 then 'Is an adult'
+if string message = age gte 18 then 'Is an adult'
 
 writeln message
 
@@ -147,9 +147,9 @@ writeln message
 ```
 
 ```ruby
-age := 17
+var age = 17
 
-if string message = age >= 18 then 'Is an adult'
+if string message = age gte 18 then 'Is an adult'
 
 writeln message
 
@@ -171,7 +171,7 @@ switch [<expression>] {
 ```
 
 ```go
-gender := 1
+var gender = 1
 
 switch gender {
     0 -> writeln('Male')
@@ -181,7 +181,7 @@ switch gender {
 ```
 
 ```go
-rate := 4
+var rate = 4
 
 switch {
     rate => 4 -> writeln('Good')
@@ -192,7 +192,7 @@ switch {
 ```
 
 ```go
-x, y := 4, 5
+var x, y = 4, 5
 
 switch {
     isOdd(x) -> writeln('x is odd')
