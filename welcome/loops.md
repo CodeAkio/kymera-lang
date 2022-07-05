@@ -13,9 +13,9 @@ Utilize os métodos **each** e **map** quando possível, deixe o for apenas para
 {% endhint %}
 
 ```csharp
-for (var index = 1, index <= 10, index++) {
+for (var index = 1, index <= 10, index++) do
     writeln index
-}
+end
 
 # Output
 > 1
@@ -39,10 +39,10 @@ Isso faz com que ele se comporte como o while tradicional.
 ```csharp
 var number = 1
 
-for number <= 10 {
+for number <= 10 do
     writeln number
     number++
-}
+end
 
 # Output
 > 1
@@ -62,10 +62,10 @@ Podemos passar **dois parâmetros** apenas, neles caso ele receberá a **inicial
 Ele terá o comportamento de um while, mas com a possibilidade de inicializar o valor dentro da própria estrutura
 
 ```csharp
-for (var number = 1, number <= 10) {
+for (var number = 1, number <= 10) do
     writeln number
     number++
-}
+end
 
 # Output
 > 1
@@ -83,25 +83,25 @@ for (var number = 1, number <= 10) {
 Caso não passe nenhum parâmetro, ele se comporta como um **loop infinito** e só para quando receber um **break**.
 
 ```csharp
-for {
+for do
     writeln 'In loop...'
-}
+end
 ```
 
 Também podemos fazer em **uma linha**, para isso utilize o **do**.
 
 ```julia
-for (var index = 1, index <= 10, index++) => writeln index
+for (var index = 1, index <= 10, index++) do writeln index
 ```
 
 ```julia
-for => writeln 'In loop...'
+for do writeln 'In loop...'
 ```
 
 Podemos ainda passar uma expressão usando `in`, neste caso não precisa usar o ~~var~~.
 
 ```ruby
-for number in 1..5 => writeln number
+for number in 1..5 do writeln number
 
 # Output
 > 1

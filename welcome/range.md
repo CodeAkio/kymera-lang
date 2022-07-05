@@ -7,7 +7,7 @@ description: Gera um List dentro de uma faixa de valores.
 Usando `...` ele cria com **intervalo aberto**.
 
 ```kotlin
-numbers := 2...5
+var numbers = 2...5
 
 writeln numbers
 
@@ -18,7 +18,7 @@ writeln numbers
 Com `..` ele cria com **intervalo fechado**.
 
 ```kotlin
-numbers := 2..5
+var numbers = 2..5
 
 writeln numbers
 
@@ -29,7 +29,7 @@ writeln numbers
 Ele também pode ser usado com chars.
 
 ```ruby
-letters := 'a'..'g'
+var letters = 'a'..'g'
 
 writeln numbers
 
@@ -40,9 +40,9 @@ writeln numbers
 Pode ser utilizado com o each.
 
 ```ruby
-range := 2..10
+var range = 2..10
 
-range.each(n -> writeln n)
+range.each(n do writeln n)
 
 # Output
 > 2
@@ -59,7 +59,7 @@ range.each(n -> writeln n)
 Podemos usar o `step` para definir de quanto em quanto ele **pula**:
 
 ```ruby
-numbers := 1..10 step 2
+var numbers = 1..10 step 2
 
 writeln numbers
 

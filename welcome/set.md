@@ -23,7 +23,7 @@ Tuple fruit = [:ok, 'Kym']
 * **Implícita:** Basta atribuir diretamente os valores a variável dentro de `t[]` e o interpretador vai declara-lo implicitamente como `Tuple<dynamic>`, sendo que os valores ficaram dentro dos parênteses e separados por vírgula.
 
 ```go
-fruit := t['Apple', 'Orange', 'Banana']
+var fruit = t['Apple', 'Orange', 'Banana']
 ```
 
 Também é possível restringir o tipo de dados que o tuple pode receber usando generics, dessa forma deverá usar sempre a forma explícita de declaração.\
@@ -206,7 +206,7 @@ writeln numbers.length
 ```csharp
 Tuple<int> numbers = [1, 2, 3, 4, 5]
 
-numbers.each(number -> writeln number)
+numbers.each(number do writeln number)
 
 # Output
 > 1
@@ -221,7 +221,7 @@ numbers.each(number -> writeln number)
 ```csharp
 Tuple<int> numbers = [1, 2, 3, 4, 5]
 
-newNumbers := numbers.map(number -> number * 2)
+var newNumbers = numbers.map(number do number * 2)
 
 writeln newNumbers
 

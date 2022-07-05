@@ -6,34 +6,34 @@ description: The parenthesis is optional to pass expression.
 
 ## if
 
-```go
-if <expression> {
+```ruby
+if <expression> then
     <commands>
-}
-```
-
-```go
-if 10 gt 1 {
-  writeln '10 é maior'
-}
+end
 ```
 
 ```ruby
-if 2 in 1..10 {
-  writeln 'It is in range 1 to 10'
-}
+if 10 gt 1 then
+    writeln '10 é maior'
+end
+```
+
+```ruby
+if 2 in 1..10 then
+    writeln 'It is in range 1 to 10'
+end
 ```
 
 Para evitar uma expressão gigante ou um grande encadeamento de ifs e ands, Baseado no with do Elixir, o if permite passar múltiplas expressões separadas por virgula:
 
-```go
-const user = User(name: 'Kym', age: 20, payment: :ok)
+```ruby
+var user = User(name: 'Kym', age: 20, payment: :ok)
 
-if isAdult(user.age),
-   isDefaulter(user.payment),
-{
-  writeln 'Can access!' 
-}
+if (isAdult(user.age),
+   isDefaulter(user.payment))
+then
+    writeln 'Can access!' 
+end
 ```
 
 {% hint style="info" %}
@@ -46,21 +46,21 @@ Ao usar este if, é indicado abstrair as expressões utilizando funções que re
 
 ## else
 
-```go
+```ruby
 
-if <expression> {
+if <expression> then
     <commands>
-} else {
+else
     <commands>
-}
+end
 ```
 
-```go
-if 10 gt 1 {
+```ruby
+if 10 gt 1 then
   writeln '10 é maior'
-} else {
+else
   writeln '10 não é maior'
-}
+end
 ```
 
 ## elsif
@@ -69,34 +69,34 @@ if 10 gt 1 {
 Devido ao **efeito sonoro** e **encurtamento da sintaxe** do _else if_ em uma palavra, adotamos o padrão do _Ruby_ de usar o `elsif`.
 {% endhint %}
 
-```perl
+```ruby
 
-if <expression> {
+if <expression> then
     <commands>
-} elsif <expression> {
+elsif <expression> then
     <commands>
-} elsif <expression> {
+elsif <expression> then
     <commands>
-else {
+else
     <commands>
-}
+end
 ```
 
-```perl
+```ruby
 var nota = 8.0
 
-if nota gte 9.0 {
+if nota gte 9.0 then
     writeln 'Excellent'
-} elsif nota gte 7.0 and nota gt 9.0 {
+elsif nota gte 7.0 and nota gt 9.0 then
     writeln 'Good'
-} elsif nota gte 4.0 and nota gt 7.0 {
+elsif nota gte 4.0 and nota gt 7.0 then
     writeln 'Bad'
-else {
+else
     writeln 'Terrible'
-}
+end
 
 # Output
-> 'Excellent'
+$ 'Excellent'
 ```
 
 ## One line if

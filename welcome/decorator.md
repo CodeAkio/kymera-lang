@@ -10,9 +10,9 @@ fun @greeting() {
 
 ```kotlin
 @greeting()
-fun snake() {
+fun snake() do
     writeln 'Snake'
-}
+end
 
 snake()
 

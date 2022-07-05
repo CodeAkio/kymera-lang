@@ -30,9 +30,9 @@ sum_numbers:
 package operations
 
 @doc('operations.sum_numbers')
-fun sumNumbers(float num1, float num2) {
-    return num1 + num2
-}
+fun sumNumbers(float num1, float num2) -> float do
+    num1 + num2
+end
 ```
 
 Também pode ser feito de forma implícita através da convenção do nome de pacotes e funções:
@@ -41,16 +41,14 @@ Também pode ser feito de forma implícita através da convenção do nome de pa
 package operations
 
 @doc()
-fun sumNumbers(float num1, float num2) {
-    return num1 + num2
-}
+fun sumNumbers(float num1, float num2) -> float do
+    num1 + num2
+end
 ```
 
 
 
 {% embed url="https://kotlinlang.org/docs/kotlin-doc.html" %}
 
-{% embed url="https://docs.ansible.com/ansible/latest/reference\_appendices/YAMLSyntax.html" %}
-
-
+{% embed url="https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html" %}
 

@@ -6,57 +6,57 @@ description: Junta o Dart, Kotlin e C#
 
 ## Sintaxe
 
-```kotlin
-class Pessoa {
+```ruby
+class Pessoa do
     string nome
     int idade
 
-    constructor(string nome, int idade) {
+    constructor(string nome, int idade) do
         this.nome = nome
         this.idade = idade
-    }
+    end
     
-    fun ola() -> void {
+    fun ola() -> void so
         writeln 'Olá ${this.nome}'
-    }
-}
+    end
+end
 ```
 
-```kotlin
-class Pessoa {
-    constructor(public string nome, public int idade) {}
-}
+```ruby
+class Pessoa do
+    constructor(public string nome, public int idade) end
+end
 ```
 
-```kotlin
-class Pessoa(private string nome, private int idade) {
+```ruby
+class Pessoa(private string nome, private int idade) do
     ...
-}
+end
 ```
 
-```kotlin
-class Pessoa(private string nome, private int idade) {
-    get nome -> string {
+```ruby
+class Pessoa(private string nome, private int idade) do
+    get nome() -> string so
         return this.nome.toUpper()
-    }
+    end
     
-    set nome(nome) {
-        if nome.len() < 100 {
+    set nome(nome) do
+        if nome.len() < 100 then
             this.nome = nome
-        }
-    }
-}
+        end
+    end
+end
 ```
 
-```kotlin
-class Pessoa {
-    constructor(private string nome, private int idade, private string cpf) {}
-    constructor.juridica(private string nome, private string cnpj) {}
-}
+```ruby
+class Pessoa do
+    constructor(private string nome, private int idade, private string cpf) end
+    constructor.juridica(private string nome, private string cnpj) end
+end
 ```
 
-```kotlin
-class Cachorro < Animal {
-    constructor() {}
-}
+```ruby
+class Cachorro < Animal do
+    constructor() end
+end
 ```

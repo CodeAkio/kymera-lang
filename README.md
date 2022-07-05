@@ -10,7 +10,7 @@ Kym lang is a new programming language based on some parts of Python, Ruby, Elix
 
 ### Sample code
 
-```go
+```ruby
 package main
 
 class Post(
@@ -18,10 +18,10 @@ class Post(
     string author,
     string title,
     string body,
-)
+) end
 
-fun main() {
-    post := Post(
+fun main() do
+    var post = Post(
         0,
         'Chewbacca',
         'Programming language',
@@ -35,7 +35,7 @@ fun main() {
 
     post.body = 'Sed pharetra turpis vehicula orci sodales, interdum blandit libero scelerisque.'
     writeln 'The body after: ${post.body}'
-}
+end
 
 # The output
 > The title is: Programming language.

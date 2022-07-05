@@ -9,13 +9,13 @@ O `except` é executado em caso de erro.
 O `finally` (opcional) é executado em tanto no se der certo ou se der erro, muito comum de ser usado para fechar conexão com banco ou fechar um arquivo.
 
 ```python
-try {
+try
     writeln(2 / 0)
-} except ZeroDivisionError {
-    writeln 'You cannot divide any number by zero'
-} finally {
+except
+    ZeroDivisionError -> writeln 'You cannot divide any number by zero'
+finally
     writeln 'Bye!'
-}
+end
 ```
 
 O except precisa de uma atenção especial aqui, pois tem várias formas de uso.
@@ -23,55 +23,56 @@ O except precisa de uma atenção especial aqui, pois tem várias formas de uso.
 Podemos ter vários dele para tratar erros diferentes:
 
 ```python
-try {
+try
     # Do something
-} except ZeroDivisionError {
-    writeln 'You cannot divide any number by zero'
-} except ValueError {
+except
+    ZeroDivisionError -> writeln 'You cannot divide any number by zero'
+except ValueError
     writeln 'It expect a number as input'
-}
+end
 ```
 
-Quando não passamos o tipo de erro para ele, ele trata qualquer tipo de erro:
+Quando usamos o \_ no lugar do tipo de erro para ele, ele trata qualquer tipo de erro:
 
 ```python
-try {
+try
     # Do something
-} except {
-    writeln "There's something wrong"
-}
+except
+    _ -> writeln "There's something wrong"
+end
 ```
 
 Podemos passar como segundo parâmetro o nome do objeto que vai receber o código e mensagem do erro.
 
 ```python
-try {
+try
     # Do something
-} except ValueError, error {
-    writeln error.code
-    writeln error.message
-}
+except
+    ValueError, error -> 
+        writeln error.code
+        writeln error.message
+end
 ```
 
 Ou ainda poderá usar pattern matching:
 
 ```python
-try {
+try
     # Do something
-} except ValueError, %Error{code, message} {
-    writeln code
-    writeln message
-}
+except
+    ValueError, %Error{code, message} ->
+        writeln code
+        writeln message
+end
 ```
 
 Também podemos passar um Set de erros que serão capturados pela mesma except:
 
 ```python
-try {
+try
     # Do something
-} except (ZeroDivisionError, ValueError), errors {
-    writeln 'Invalid input'
-} except {
-    writeln "There's something wrong"
-}
+except
+    (ZeroDivisionError, ValueError), errors -> writeln 'Invalid input'
+    _ -> writeln "There's something wrong"
+end
 ```
