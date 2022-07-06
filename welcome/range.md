@@ -42,7 +42,7 @@ Pode ser utilizado com o each.
 ```ruby
 var range = 2..10
 
-range.each(n do writeln n)
+range.each(n, do: writeln n)
 
 # Output
 > 2

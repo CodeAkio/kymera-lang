@@ -13,7 +13,7 @@ end
 ```
 
 ```ruby
-if 10 gt 1 then
+if 10 > 1 then
     writeln '10 é maior'
 end
 ```
@@ -56,7 +56,7 @@ end
 ```
 
 ```ruby
-if 10 gt 1 then
+if 10 > 1 then
   writeln '10 é maior'
 else
   writeln '10 não é maior'
@@ -85,11 +85,11 @@ end
 ```ruby
 var nota = 8.0
 
-if nota gte 9.0 then
+if nota >= 9.0 then
     writeln 'Excellent'
-elsif nota gte 7.0 and nota gt 9.0 then
+elsif nota >= 7.0 and nota < 9.0 then
     writeln 'Good'
-elsif nota gte 4.0 and nota gt 7.0 then
+elsif nota >= 4.0 and nota < 7.0 then
     writeln 'Bad'
 else
     writeln 'Terrible'
@@ -110,7 +110,7 @@ Não existe if ternário, mas a ideia dele é a mesma usando o `then` e `else`, 
 ```ruby
 var age = 22
 
-if string message = age gte 18 then 'Is an adult' else 'Is not an adult'
+if string message = age >= 18 then 'Is an adult' else 'Is not an adult'
 
 writeln message
 
@@ -123,7 +123,7 @@ Uma forma mais elegante e mais indicada é quebrando linha:
 ```ruby
 var age = 22
 
-if string message = age gte 18
+if string message = age >= 18
     then 'Is an adult'
     else 'Is not an adult'
 
@@ -138,7 +138,7 @@ Podemos usar apenas o `then` que quando a expressão é verdadeira, ele retorna 
 ```ruby
 var age = 22
 
-if string message = age gte 18 then 'Is an adult'
+if string message = age >= 18 then 'Is an adult'
 
 writeln message
 
@@ -149,7 +149,7 @@ writeln message
 ```ruby
 var age = 17
 
-if string message = age gte 18 then 'Is an adult'
+if string message = age >= 18 then 'Is an adult'
 
 writeln message
 

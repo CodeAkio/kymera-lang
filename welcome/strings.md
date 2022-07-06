@@ -102,7 +102,7 @@ Podemos repetir uma string x vezes:
 Podemos acessar cada letra como um _List_.
 
 ```ruby
-some_text = 'Hello Kym!'
+var some_text = 'Hello Kym!'
 writeln(some_text[1])
 
 # Output
@@ -112,7 +112,7 @@ writeln(some_text[1])
 Ao passar a posição negativa, ele conta da esquerda para direita:
 
 ```ruby
-some_text = 'Hello Kym!'
+var some_text = 'Hello Kym!'
 writeln(some_text[-1])
 
 # Output
@@ -122,7 +122,7 @@ writeln(some_text[-1])
 Podemos iterar como um List:
 
 ```ruby
-some_text = 'Hello Kym!'
+var some_text = 'Hello Kym!'
 
 some_text.each(c do writeln c)
 

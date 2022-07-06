@@ -80,28 +80,16 @@ end
 > 10
 ```
 
-Caso não passe nenhum parâmetro, ele se comporta como um **loop infinito** e só para quando receber um **break**.
-
-```csharp
-for do
-    writeln 'In loop...'
-end
-```
-
-Também podemos fazer em **uma linha**, para isso utilize o **do**.
+Também podemos fazer em **uma linha**, para isso utilize arrow function.
 
 ```julia
-for (var index = 1, index <= 10, index++) do writeln index
-```
-
-```julia
-for do writeln 'In loop...'
+for (var index = 1, index <= 10, index++), do: writeln index
 ```
 
 Podemos ainda passar uma expressão usando `in`, neste caso não precisa usar o ~~var~~.
 
-```ruby
-for number in 1..5 do writeln number
+```elixir
+for number in 1..5, do: writeln number
 
 # Output
 > 1
@@ -109,4 +97,20 @@ for number in 1..5 do writeln number
 > 3
 > 4
 > 5
+```
+
+## Loop
+
+Para trabalhar com um **loop infinito** basta usar o `loop` e só para quando receber um `break`.
+
+```elixir
+loop
+    writeln 'In loop...'
+end
+```
+
+Também pode fazer **in line**.
+
+```elixir
+loop, do: writeln 'In loop...'
 ```

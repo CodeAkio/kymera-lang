@@ -7,7 +7,7 @@ A definição do tipo de retorno é opcional, caso não informe nada, ele utiliz
 **Syntax:**
 
 ```kotlin
-fun <identificador>(<tipo> <parâmetro>) -> [tipo retorno] do
+fun <identificador>(<parâmetro>: <tipo>) -> [tipo retorno] do
     <código>
 end
 ```
@@ -15,7 +15,7 @@ end
 **Exemplo:**
 
 ```kotlin
-fun somarDoisNumeros(folat num1, float num2) -> float do
+fun somarDoisNumeros(num1, float num2) -> float do
     var soma = num1 + num2
     return soma
 end
@@ -43,7 +43,7 @@ writeln valor_soma
 > 12.0
 ```
 
-Também é possível ter múltiplos retornos:
+Também é possível ter **múltiplos retornos**:
 
 ```kotlin
 fun swap(int num1, int num2) -> (int, int) do
@@ -57,7 +57,7 @@ fun swap(int num1, int num2) -> (int, int) | null do
 end
 ```
 
-Podemos trabalhar com sobre carga que funciona em cima de pattern matching.
+Podemos trabalhar com sobre carga que funciona em cima de **pattern matching**.
 
 ```kotlin
 fun log(%[ :error, string message ]) do
@@ -91,12 +91,12 @@ fn(float num1, float num2) -> float do
 end
 ```
 
-No caso de funções anônimas com retorno in line, podemos usar apenas o do com o valor a ser retornado na mesma linha e o tipo de retorno se torna implícito:
+No caso de funções anônimas com retorno **in line**, podemos usar apenas o do com o valor a ser retornado na mesma linha e o tipo de retorno se torna implícito:
 
 ```typescript
-fn(float num1, float num2) do num1 + num2
+fn(float num1, float num2), do: num1 + num2
 ```
 
 ```kotlin
-fn(string name) do 'Hello ${name}'
+fn(string name), do: 'Hello ${name}'
 ```

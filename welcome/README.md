@@ -16,10 +16,10 @@ The variables work with optional typing similar to TypeScript and Go, but with t
 
 ```
 # With type definition
-var <variable name> [type] = <value>
+var <variable name>: [type] = <value>
 
 # Without type definition
-<variable name> := <value>
+var <variable name> = <value>
 
 # Assignment value after declaration
 <variable name> = <value>
@@ -27,11 +27,11 @@ var <variable name> [type] = <value>
 
 **Sample:**
 
-```go
-var number int = 10
+```kotlin
+var number: int = 10
 writeln number
 
-animal := 'Dog'
+var animal = 'Dog'
 writeln animal
 
 animal = 'Cat'
@@ -60,7 +60,7 @@ del <variable | constant | object>
 &#x20;**Sample:**
 
 ```python
-number := 10
+var number = 10
 writeln number
 
 del number
@@ -84,7 +84,7 @@ writeln number
 &#x20;**Sample:**
 
 ```go
-number := 42
+var number = 42
 writeln number
 
 number = null
