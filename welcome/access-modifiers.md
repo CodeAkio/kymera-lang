@@ -1,15 +1,18 @@
 # Access Modifiers
 
-Os acessos são controlados a nível de pacote que nem no Go e Rust, por padrão todas as classes, funções, enums, interfaces, constantes são públicos e para determinar o que é privado, basta colocar o underline na frente do nome do identificado como é feito no Python e Dart.
+Os acessos são controlados a nível de pacote que nem no Go e Rust, por padrão classes, funções, enums, interfaces são públicos e o restante é privado.
+
+Para modificar o comportamento padrão deverá usar as keywords:
+
+* `pub` - Público, visível fora do módulo;
+* `priv` - Privado, visível apenas dentro do módulo.
 
 ```kotlin
-// Privado
-fun _checkValid() do
+priv fun _checkValid() do
     ...
 end
 ```
 
 ```rust
-// Público
-const BASE_URL = 'http://localhost:3000'
+pub const BASE_URL = 'http://localhost:3000'
 ```

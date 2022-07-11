@@ -7,7 +7,7 @@ Esse retorno é automaticamente convertido de acordo com o tipo de retorno espec
 ```kotlin
 var numbers = 1 to 10
 
-fun odd_numbers(int[] numbers) :: List do
+fun odd_numbers(int[] numbers) -> List do
     numbers.each(fn(number) do
         if number % 2 != 0 do
             yield number

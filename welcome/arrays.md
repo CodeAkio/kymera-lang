@@ -30,7 +30,7 @@ Caso tente atribuir um valor com um tipo de dado diferente, será retornado uma 
 ```csharp
 List<int> numbers = [1, 2, 3, 4, 5]
 
-writeln(numbers)
+writeln numbers
 
 # Output
 > [1, 2, 3, 4, 5]
@@ -41,7 +41,7 @@ Existe a forma enxuta que é passando o **tipo dos valores** seguido de `[]`.
 ```csharp
 int[] numbers = [1, 2, 3, 4, 5]
 
-writeln(numbers)
+writeln numbers
 
 # Output
 > [1, 2, 3, 4, 5]
@@ -56,7 +56,7 @@ int[] matrix = [
     [7, 8, 9]
 ]
 
-writeln(matrix[1][2])
+writeln matrix[1][2]
 
 # Output
 > 6
@@ -67,7 +67,7 @@ writeln(matrix[1][2])
 ```csharp
 int[] numbers = [1, 2, 3, 4, 5]
 
-writeln(numbers[1])
+writeln numbers[1]
 
 # Output
 > 2
@@ -78,7 +78,7 @@ int[] numbers = [1, 2, 3, 4, 5]
 
 numbers[2] = 7
 
-writeln(numbers)
+writeln numbers
 
 # Output
 > [1, 2, 7, 4, 5]
@@ -91,7 +91,7 @@ Cria uma novo List baseado em partes de outro List.
 ```csharp
 int[] numbers = [1, 2, 3, 4, 5]
 
-writeln(numbers[2:3])
+writeln numbers[2:3]
 
 # Output
 > [3, 4]
@@ -100,7 +100,7 @@ writeln(numbers[2:3])
 ```csharp
 int[] numbers = [1, 2, 3, 4, 5]
 
-writeln(numbers[:])
+writeln numbers[:]
 
 # Output
 > [1, 2, 3, 4, 5]
@@ -109,7 +109,7 @@ writeln(numbers[:])
 ```csharp
 int[] numbers = [1, 2, 3, 4, 5]
 
-writeln(numbers[:2])
+writeln numbers[:2]
 
 # Output
 > [1, 2, 3]
@@ -118,7 +118,7 @@ writeln(numbers[:2])
 ```csharp
 int[] numbers = [1, 2, 3, 4, 5]
 
-writeln(numbers[2:])
+writeln numbers[2:]
 
 # Output
 > [3, 4, 5]
@@ -130,7 +130,7 @@ writeln(numbers[2:])
 var numbers = [1, 2, 3, 4, 5]
 
 numbers = numbers + [6, 7, 8, 9, 10]
-writeln(numbers)
+writeln numbers
 
 # Output
 > [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -140,7 +140,7 @@ writeln(numbers)
 var numbers = [1, 2, 3, 4, 5]
 
 numbers = numbers - [2, 4]
-writeln(numbers)
+writeln numbers
 
 # Output
 > [1, 3, 5]
@@ -150,7 +150,7 @@ writeln(numbers)
 var numbers = [1, 2, 3, 4, 5]
 
 numbers = numbers * 2
-writeln(numbers)
+writeln numbers
 
 # Output
 > [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
@@ -175,7 +175,7 @@ Uma lista possui vários métodos úteis que podem ser utilizados.
 int[] numbers = [1, 2, 3, 4, 5]
 numbers.add(6)
 
-writeln(numbers)
+writeln numbers
 
 # Output
 > [1, 2, 3, 4, 5, 6]
@@ -187,7 +187,7 @@ writeln(numbers)
 int[] numbers = [1, 2, 3, 4, 5]
 numbers.insert(6, 2)
 
-writeln(numbers)
+writeln numbers
 
 # Output
 > [1, 2, 6, 3, 4, 5]
@@ -199,7 +199,7 @@ writeln(numbers)
 int[] numbers = [1, 2, 3, 4, 5]
 numbers.remove(2)
 
-writeln(numbers)
+writeln numbers
 
 # Output
 > [1, 6, 3, 4, 5]
@@ -211,7 +211,7 @@ writeln(numbers)
 int[] numbers = [1, 2, 3, 4, 5]
 numbers.pop()
 
-writeln(numbers)
+writeln numbers
 
 # Output
 > [1, 2, 6, 3, 4]
@@ -222,7 +222,7 @@ writeln(numbers)
 ```csharp
 int[] numbers = [1, 2, 3, 4, 5]
 
-writeln(numbers.reverse)
+writeln numbers.reverse
 
 # Output
 > [5, 4, 3, 2, 1]
@@ -233,8 +233,8 @@ writeln(numbers.reverse)
 ```csharp
 int[] numbers = [1, 2, 3, 4, 5]
 
-writeln(numbers.contains(1))
-writeln(numbers.contains(6))
+writeln numbers.contains(1)
+writeln numbers.contains(6)
 
 # Output
 > true
@@ -246,7 +246,7 @@ writeln(numbers.contains(6))
 ```csharp
 int[] numbers = [1, 2, 3, 4, 5]
 
-writeln(numbers.indexOf(1))
+writeln numbers.indexOf(1)
 
 # Output
 > 0
@@ -257,7 +257,7 @@ writeln(numbers.indexOf(1))
 ```csharp
 int[] numbers = [4, 1, 5, 3, 2]
 
-writeln(numbers.sort)
+writeln numbers.sort
 
 # Output
 > [1, 2, 3, 4, 5]
@@ -268,7 +268,7 @@ writeln(numbers.sort)
 ```csharp
 int[] numbers = [1, 2, 3, 4, 5]
 
-writeln(numbers.length)
+writeln numbers.length
 
 # Output
 > 5
@@ -279,7 +279,7 @@ writeln(numbers.length)
 ```csharp
 int[] numbers = [1, 2, 3, 4, 5]
 
-numbers.each(number => writeln(number))
+numbers.each(number do writeln number)
 
 # Output
 > 1
@@ -294,7 +294,7 @@ numbers.each(number => writeln(number))
 ```csharp
 int[] numbers = [1, 2, 3, 4, 5]
 
-var newNumbers = numbers.map(number => number * 2)
+var newNumbers = numbers.map(number do number * 2)
 
 writeln(newNumbers)
 
@@ -307,7 +307,7 @@ writeln(newNumbers)
 ```csharp
 int[] numbers = [1, 2, 3, 4, 5]
 
-writeln(numbers.find(3))
+writeln numbers.find(3)
 
 # Output
 > 3
@@ -316,7 +316,7 @@ writeln(numbers.find(3))
 ```dart
 String[] colors = ['Red', 'Yellow', 'Blue', 'Orange', 'White']
 
-writeln(colors.find(r"[ed]"))
+writeln colors.find(r"[ed]")
 
 # Output
 > 'Red'
@@ -327,7 +327,7 @@ writeln(colors.find(r"[ed]"))
 ```csharp
 int[] numbers = [6, 2, 8, 3, 6]
 
-writeln(numbers.find(6))
+writeln numbers.find(6)
 
 # Output
 > [6, 6]
@@ -336,7 +336,7 @@ writeln(numbers.find(6))
 ```csharp
 String[] colors = ['Red', 'Yellow', 'Blue', 'Orange', 'White']
 
-writeln(colors.find(r"[w]"))
+writeln colors.find(r"[w]")
 
 # Output
 > ['Yellow', 'White']
@@ -347,7 +347,7 @@ writeln(colors.find(r"[w]"))
 ```csharp
 String[] colors = ['Red', 'Yellow', 'Blue', 'Orange', 'White']
 
-writeln(colors.first())
+writeln colors.first()
 
 # Output
 > 'Red'
@@ -358,7 +358,7 @@ writeln(colors.first())
 ```csharp
 String[] colors = ['Red', 'Yellow', 'Blue', 'Orange', 'White']
 
-writeln(colors.last())
+writeln colors.last()
 
 # Output
 > 'White'
@@ -371,7 +371,7 @@ Pega aleatoriamente um item da lista.
 ```csharp
 String[] colors = ['Red', 'Yellow', 'Blue', 'Orange', 'White']
 
-writeln(colors.sample())
+writeln colors.sample()
 
 # Output
 > 'Yellow'
@@ -382,7 +382,7 @@ writeln(colors.sample())
 ```csharp
 int[] numbers = [6, 2, 8, 3, 6]
 
-writeln(numbers.max())
+writeln numbers.max()
 
 # Output
 > 8
@@ -393,7 +393,7 @@ writeln(numbers.max())
 ```csharp
 int[] numbers = [6, 2, 8, 3, 6]
 
-writeln(numbers.min())
+writeln numbers.min()
 
 # Output
 > 2
@@ -404,7 +404,7 @@ writeln(numbers.min())
 ```csharp
 int[] numbers = [6, 2, 8, 3, 6]
 
-writeln(numbers.sum())
+writeln numbers.sum()
 
 # Output
 > 25
@@ -415,7 +415,7 @@ writeln(numbers.sum())
 ```csharp
 int[] numbers = [6, 2, 8, 3, 6]
 
-writeln(numbers.avg())
+writeln numbers.avg()
 
 # Output
 > 5

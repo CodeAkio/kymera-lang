@@ -14,13 +14,13 @@ end
 
 ```ruby
 if 10 > 1 then
-    writeln('10 é maior')
+    writeln '10 é maior'
 end
 ```
 
 ```ruby
-if 2 in (1 to 10) then
-    writeln('It is in range 1 to 10')
+if 2 in 1..10 then
+    writeln 'It is in range 1 to 10'
 end
 ```
 
@@ -32,7 +32,7 @@ var user = User(name: 'Kym', age: 20, payment: :ok)
 if (isAdult(user.age),
    isDefaulter(user.payment))
 then
-    writeln('Can access!')
+    writeln 'Can access!' 
 end
 ```
 
@@ -57,9 +57,9 @@ end
 
 ```ruby
 if 10 > 1 then
-  writeln('10 é maior')
+  writeln '10 é maior'
 else
-  writeln('10 não é maior')
+  writeln '10 não é maior'
 end
 ```
 
@@ -86,13 +86,13 @@ end
 var nota = 8.0
 
 if nota >= 9.0 then
-    writeln('Excellent')
+    writeln 'Excellent'
 elsif nota >= 7.0 and nota < 9.0 then
-    writeln('Good')
+    writeln 'Good'
 elsif nota >= 4.0 and nota < 7.0 then
-    writeln('Bad')
+    writeln 'Bad'
 else
-    writeln('Terrible')
+    writeln 'Terrible'
 end
 
 # Output
@@ -110,9 +110,9 @@ Não existe if ternário, mas a ideia dele é a mesma usando o `then` e `else`, 
 ```ruby
 var age = 22
 
-var message = if age >= 18 then 'Is an adult' else 'Is not an adult'
+if string message = age >= 18 then 'Is an adult' else 'Is not an adult'
 
-writeln(message)
+writeln message
 
 # Output
 > 'Is an adult'
@@ -123,11 +123,11 @@ Uma forma mais elegante e mais indicada é quebrando linha:
 ```ruby
 var age = 22
 
-var message = if age >= 18
+if string message = age >= 18
     then 'Is an adult'
     else 'Is not an adult'
 
-writeln(message)
+writeln message
 
 # Output
 > 'Is an adult'
@@ -138,9 +138,9 @@ Podemos usar apenas o `then` que quando a expressão é verdadeira, ele retorna 
 ```ruby
 var age = 22
 
-var message = if age >= 18 then 'Is an adult'
+if string message = age >= 18 then 'Is an adult'
 
-writeln(message)
+writeln message
 
 # Output
 > 'Is an adult'
@@ -149,9 +149,9 @@ writeln(message)
 ```ruby
 var age = 17
 
-var message = if age >= 18 then 'Is an adult'
+if string message = age >= 18 then 'Is an adult'
 
-writeln(message)
+writeln message
 
 # Output
 > null
@@ -209,8 +209,8 @@ switch {
 
 ```go
 switch {
-    in 1 to 7 -> writeln('Bad')
-    in 7 until 10 -> writeln('Good')
+    in 1..7 -> writeln('Bad')
+    in 7...10 -> writeln('Good')
 }
 ```
 
