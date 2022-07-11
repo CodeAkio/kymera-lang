@@ -24,19 +24,19 @@ end
 
 ```ruby
 class Pessoa do
-    constructor(public string nome, public int idade) end
+    constructor(pub string nome, pub int idade) end
 end
 ```
 
 ```ruby
-class Pessoa(private string nome, private int idade) do
+class Pessoa(priv string nome, priv int idade) do
     ...
 end
 ```
 
 ```ruby
-class Pessoa(private string nome, private int idade) do
-    get nome() -> string so
+class Pessoa(priv string nome, priv int idade) do
+    get nome() :: string do
         return this.nome.toUpper()
     end
     
@@ -50,8 +50,8 @@ end
 
 ```ruby
 class Pessoa do
-    constructor(private string nome, private int idade, private string cpf) end
-    constructor.juridica(private string nome, private string cnpj) end
+    constructor(priv string nome, priv int idade, priv string cpf) end
+    constructor.juridica(priv string nome, priv string cnpj) end
 end
 ```
 

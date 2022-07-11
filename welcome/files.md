@@ -46,7 +46,7 @@ import file.*
 try
     var my_file = open('some_file.txt')
 except
-    FileNotFoundError, error -> writeln(error)
+    FileNotFoundError, error -> writeln error
 finally
     my_file.close()
 end

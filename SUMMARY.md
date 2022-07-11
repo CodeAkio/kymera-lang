@@ -42,5 +42,6 @@
   * [Generics](welcome/generics.md)
   * [Exceptions](welcome/exceptions.md)
   * [Files](welcome/files.md)
+  * [Test](welcome/test.md)
   * [Network](welcome/network.md)
 * [Tools](untitled.md)
