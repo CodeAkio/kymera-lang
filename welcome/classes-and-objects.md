@@ -16,8 +16,8 @@ class Pessoa do
         this.idade = idade
     end
     
-    fun ola() -> void do
-        writeln 'Olá ${this.nome}'
+    fun ola() :: void do
+        writeln('Olá ${this.nome}')
     end
 end
 ```
