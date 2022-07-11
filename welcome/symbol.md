@@ -11,8 +11,8 @@ O atom é um recurso vindo do Elixir e Ruby. Ele faz a declaração de uma vari�
 **Sample:**
 
 ```kotlin
-writeln :foo
-writeln :foo == 'foo'
+writeln(:foo)
+writeln(:foo == 'foo')
 
 # Output
 > :foo

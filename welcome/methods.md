@@ -7,7 +7,7 @@ A definição do tipo de retorno é opcional, caso não informe nada, ele utiliz
 **Syntax:**
 
 ```kotlin
-fun <identificador>(<parâmetro>: <tipo>) -> [tipo retorno] do
+fun <identificador>(<tipo> <parâmetro>) -> [tipo retorno] do
     <código>
 end
 ```
@@ -15,14 +15,14 @@ end
 **Exemplo:**
 
 ```kotlin
-fun somarDoisNumeros(num1, float num2) -> float do
+fun somarDoisNumeros(float num1, float num2) -> float do
     var soma = num1 + num2
     return soma
 end
 
 var valor_soma = somarDoisNumeros(10.0, 2.0)
 
-writeln valor_soma
+writeln(valor_soma)
 
 # Output
 > 12.0
@@ -37,7 +37,7 @@ end
 
 var valor_soma = somarDoisNumeros(10.0, 2.0)
 
-writeln valor_soma
+writeln(valor_soma)
 
 # Output
 > 12.0
@@ -53,7 +53,7 @@ end
 
 ```kotlin
 fun swap(int num1, int num2) -> (int, int) | null do
-    pass
+    // Some code
 end
 ```
 
@@ -61,11 +61,11 @@ Podemos trabalhar com sobre carga que funciona em cima de **pattern matching**.
 
 ```kotlin
 fun log(%[ :error, string message ]) do
-    writeln 'Something went wrong: ${message}'
+    writeln('Something went wrong: ${message}')
 end
 
 fun log(%[ :ok, string message ]) do
-    writeln 'It works: ${message}'
+    writeln('It works: ${message}')
 end
 ```
 
@@ -74,12 +74,12 @@ As funções podem ter clausula de guarda, que são decorators que definem uma c
 ```kotlin
 @when(idade >= 18)
 fun verificaIdade(int idade) do
-    writeln 'Maior de idade'
+    writeln('Maior de idade')
 end
 
 @when(idade < 18)
 fun verificaIdade(int idade) do
-    writeln 'Menor de idade'
+    writeln('Menor de idade')
 end
 ```
 
