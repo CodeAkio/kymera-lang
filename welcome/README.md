@@ -16,7 +16,7 @@ The variables work with optional typing similar to TypeScript and Go, but with t
 
 ```
 # With type definition
-var <variable name>: [type] = <value>
+<type> <variable name>  = <value>
 
 # Without type definition
 var <variable name> = <value>
@@ -28,14 +28,14 @@ var <variable name> = <value>
 **Sample:**
 
 ```kotlin
-var number: int = 10
-writeln number
+int number = 10
+writeln(number)
 
 var animal = 'Dog'
-writeln animal
+writeln(animal)
 
 animal = 'Cat'
-writeln animal
+writeln(animal)
 
 # Output
 > 10
@@ -61,10 +61,10 @@ del <variable | constant | object>
 
 ```python
 var number = 10
-writeln number
+writeln(number)
 
 del number
-writeln number
+writeln(number)
 
 # Output
 > 10
@@ -85,10 +85,10 @@ writeln number
 
 ```go
 var number = 42
-writeln number
+writeln(number)
 
 number = null
-writeln number
+writeln(number)
 
 # Output
 > 42
