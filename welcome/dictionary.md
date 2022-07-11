@@ -30,7 +30,7 @@ Dict user = {
 * **Implícita:** Basta atribuir diretamente as chaves e valores a variável e o interpretador vai declara-lo implicitamente como `Dict<atom, dynamic>`, sendo que as chaves e valores ficaram dentro de chaves e separados por vírgula.
 
 ```go
-user := {
+var user = {
     name: 'Pedro',
     age: 22
 }
@@ -45,7 +45,7 @@ Dict<string, string> numbers = {
     'age': '22'
 }
 
-writeln numbers
+writeln(numbers)
 
 # Output
 > {
@@ -61,14 +61,14 @@ Um Dict possui vários métodos úteis que podem ser utilizados.
 ### add
 
 ```csharp
-user := {
+var user = {
     name: 'Pedro',
     age: 22
 }
 
 user.add(:email, 'pedro@email.com')
 
-writeln user
+writeln(user)
 
 # Output
 > {
@@ -81,14 +81,14 @@ writeln user
 Ao tentar adicionar uma chave duplicada, ele chama o **update**:
 
 ```csharp
-user := {
+var user = {
     name: 'Pedro',
     age: 22
 }
 
 user.add(:name, 'Marcos')
 
-writeln user
+writeln(user)
 
 # Output
 > {
@@ -100,14 +100,14 @@ writeln user
 ### update
 
 ```python
-user := {
+var user = {
     name: 'Pedro',
     age: 22
 }
 
 user.update(:name, 'Marcos')
 
-writeln user
+writeln(user)
 
 # Output
 > {
@@ -119,14 +119,14 @@ writeln user
 ### remove
 
 ```csharp
-user := {
+var user = {
     name: 'Pedro',
     age: 22
 }
 
 user.remove(:age)
 
-writeln user
+writeln(user)
 
 # Output
 > {
@@ -137,12 +137,12 @@ writeln user
 ### keys
 
 ```ruby
-user := {
+var user = {
     name: 'Pedro',
     age: 22
 }
 
-writeln user.values
+writeln(user.values)
 
 # Output
 > [:name, :age]
@@ -151,12 +151,12 @@ writeln user.values
 ### values
 
 ```ruby
-user := {
+var user = {
     name: 'Pedro',
     age: 22
 }
 
-writeln user.values
+writeln(user.values)
 
 # Output
 > ['Pedro', 22]
@@ -165,24 +165,24 @@ writeln user.values
 ### any
 
 ```ruby
-user := {
+var user = {
     name: 'Pedro',
     age: 22
 }
 
-writeln user.has(:age, 22)
+writeln(user.has(:age, 22))
 
 # Output
 > true
 ```
 
 ```csharp
-user := {
+var user = {
     name: 'Pedro',
     age: 22
 }
 
-writeln user.has?(:age, 23)
+writeln(user.has(:age, 23))
 
 # Output
 > false
@@ -191,12 +191,12 @@ writeln user.has?(:age, 23)
 ### hasKey
 
 ```csharp
-user := {
+var user = {
     name: 'Pedro',
     age: 22
 }
 
-writeln user.hasKey?(:age)
+writeln(user.hasKey(:age))
 
 # Output
 > true
@@ -205,12 +205,12 @@ writeln user.hasKey?(:age)
 ### hasValue
 
 ```ruby
-user := {
+var user = {
     name: 'Pedro',
     age: 22
 }
 
-writeln user.hasValue('Pedro')
+writeln(user.hasValue('Pedro'))
 
 # Output
 > t[:name]

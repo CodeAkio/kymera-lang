@@ -11,7 +11,7 @@ Uma string pode ser declarada entre `"` (aspas duplas), `'` (aspas simples) ou a
 Tente segui a convenção de utilizar as **aspas simples** para a maioria dos casos:
 
 ```python
-writeln('Hello Kym!')
+writeln 'Hello Kym!'
 
 # Output
 > Hello Kym!
@@ -20,7 +20,7 @@ writeln('Hello Kym!')
 Quando existe aspas simples no meio do texto, então utilize as **aspas duplas**.
 
 ```python
-writeln("What's your name?")
+writeln "What's your name?"
 
 # Output
 > What's your name?
@@ -48,7 +48,7 @@ Para interpolar strings, basta passar o valor dentro de `${}`.
 ```typescript
 var name = 'Kym'
 
-writeln('Hello ${name}')
+writeln 'Hello ${name}'
 
 # Output
 > Hello Kym
@@ -124,7 +124,7 @@ Podemos iterar como um List:
 ```ruby
 var some_text = 'Hello Kym!'
 
-some_text.each(c, do: writeln(c))
+some_text.each(c do writeln c)
 
 # Output
 > 'H'
@@ -153,7 +153,7 @@ Isso dá uma grande flexibilidade quando for utilizar o _pipe operator_.
 Diz quantos caracteres possui a string.
 
 ```ruby
-writeln('Hello Kym!'.length)
+writeln 'Hello Kym!'.length
 
 # Output
 > 10
@@ -164,7 +164,7 @@ writeln('Hello Kym!'.length)
 Conta quantas vezes uma string se repete dentre de outra string.
 
 ```ruby
-writeln('Hello Kym!'.count('l'))
+writeln 'Hello Kym!'.count('l')
 
 # Output
 > 2
@@ -186,7 +186,7 @@ writeln 'Kym' in 'Hello Kym!'
 Similar ao in.
 
 ```ruby
-writeln('Hello Kym!'.contains('Kym'))
+writeln 'Hello Kym!'.contains('Kym')
 
 # Output
 > true
@@ -197,7 +197,7 @@ writeln('Hello Kym!'.contains('Kym'))
 Separar a string baseado em um separador do tipo string, retornando um _List\<string>_.
 
 ```python
-writeln('Hello Kym!'.split(' '))
+writeln 'Hello Kym!'.split(' ')
 
 # Output
 > ['Hello', 'Kym!']
@@ -206,7 +206,7 @@ writeln('Hello Kym!'.split(' '))
 Se não passar nenhum separador, ele retorna cada um dos caracteres.
 
 ```python
-writeln('Hello Kym!'.split())
+writeln 'Hello Kym!'.split()
 
 # Output
 > ['H', 'e', 'l', 'l', 'o', ' ', 'K', 'y', 'm', '!']
@@ -217,7 +217,7 @@ writeln('Hello Kym!'.split())
 Ele une um array de strings, adicionando um separador entra cada elemento.
 
 ```python
-writeln(['Hello', 'Kym!'].join(' '))
+writeln ['Hello', 'Kym!'].join(' ')
 
 # Output
 > 'Hello Kym!'

@@ -8,7 +8,7 @@ Para modificar o comportamento padrão deverá usar as keywords:
 * `priv` - Privado, visível apenas dentro do módulo.
 
 ```kotlin
-priv fun checkValid() do
+priv fun _checkValid() do
     ...
 end
 ```

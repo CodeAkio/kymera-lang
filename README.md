@@ -28,13 +28,13 @@ fun main() do
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
     )
 
-    writeln('The title is: ${post.title}.')
-    writeln('The author is: ${post.author}.')
+    writeln 'The title is: ${post.title}.'
+    writeln 'The author is: ${post.author}.'
 
-    writeln('The body before: ${post.body}')
+    writeln 'The body before: ${post.body}'
 
     post.body = 'Sed pharetra turpis vehicula orci sodales, interdum blandit libero scelerisque.'
-    writeln('The body after: ${post.body}')
+    writeln 'The body after: ${post.body}'
 end
 
 # The output

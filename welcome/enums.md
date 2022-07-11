@@ -11,7 +11,7 @@ Enum Status {
     Away,
 }
 
-writeln Status.Online
+writeln(Status.Online)
 
 # Output
 > 0
@@ -28,7 +28,7 @@ Enum<symbol> Status {
     Away = :away,
 }
 
-writeln Status.Online
+writeln(Status.Online)
 
 # Output
 > :online

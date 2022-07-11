@@ -9,7 +9,7 @@ O `open` abre o arquivo, por padrão considera que é um arquivo **txt** e no mo
 ```python
 import file.*
 
-var my_file = open 'some_file.txt'
+var my_file = open('some_file.txt')
 ```
 
 A propriedade `mode`, podemos passar `:r` para somente leitura e `:w` para leitura e escrita.
@@ -44,7 +44,7 @@ Após abrir o arquivo, precisamos fecha-lo para que ele não fique bloqueado.
 import file.*
 
 try
-    var my_file = open 'some_file.txt'
+    var my_file = open('some_file.txt')
 except
     FileNotFoundError, error -> writeln error
 finally

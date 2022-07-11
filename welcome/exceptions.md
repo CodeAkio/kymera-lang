@@ -12,9 +12,9 @@ O `finally` (opcional) é executado em tanto no se der certo ou se der erro, mui
 try
     writeln(2 / 0)
 except
-    ZeroDivisionError -> writeln 'You cannot divide any number by zero'
+    ZeroDivisionError -> writeln('You cannot divide any number by zero')
 finally
-    writeln 'Bye!'
+    writeln('Bye!')
 end
 ```
 
@@ -26,19 +26,19 @@ Podemos ter vários dele para tratar erros diferentes:
 try
     # Do something
 except
-    ZeroDivisionError -> writeln 'You cannot divide any number by zero'
+    ZeroDivisionError -> writeln('You cannot divide any number by zero')
 except ValueError
-    writeln 'It expect a number as input'
+    writeln('It expect a number as input')
 end
 ```
 
-Quando usamos o \_ no lugar do tipo de erro para ele, ele trata qualquer tipo de erro:
+Quando usamos o `else` no lugar do tipo de erro para ele, ele trata qualquer tipo de erro:
 
 ```python
 try
     # Do something
 except
-    _ -> writeln "There's something wrong"
+    else -> writeln("There's something wrong")
 end
 ```
 
@@ -49,8 +49,8 @@ try
     # Do something
 except
     ValueError, error -> 
-        writeln error.code
-        writeln error.message
+        writeln(error.code)
+        writeln(error.message)
 end
 ```
 
@@ -61,8 +61,8 @@ try
     # Do something
 except
     ValueError, %Error{code, message} ->
-        writeln code
-        writeln message
+        writeln(code)
+        writeln(message)
 end
 ```
 
@@ -72,7 +72,7 @@ Também podemos passar um Set de erros que serão capturados pela mesma except:
 try
     # Do something
 except
-    (ZeroDivisionError, ValueError), errors -> writeln 'Invalid input'
-    _ -> writeln "There's something wrong"
+    (ZeroDivisionError, ValueError), errors -> writeln('Invalid input')
+    else -> writeln("There's something wrong")
 end
 ```
