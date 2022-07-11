@@ -24,7 +24,7 @@ Caso tente atribuir um valor com um tipo de dado diferente, será retornado uma 
 ```csharp
 LinkedList<int> numbers = [1, 2, 3, 4, 5]
 
-writeln numbers
+writeln(numbers)
 
 # Output
 > [1, 2, 3, 4, 5]
@@ -39,7 +39,7 @@ LinkedList<int> matrix = [
     [7, 8, 9]
 ]
 
-writeln matrix[1][2]
+writeln(matrix[1][2])
 
 # Output
 > 6
@@ -51,7 +51,7 @@ writeln matrix[1][2]
 LinkedList<int> numbers = [1, 2, 3, 4, 5]
 
 numbers = numbers + [6, 7, 8, 9, 10]
-writeln numbers
+writeln(numbers)
 
 # Output
 > [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -61,7 +61,7 @@ writeln numbers
 LinkedList<int> numbers = [1, 2, 3, 4, 5]
 
 numbers = numbers - [2, 4]
-writeln numbers
+writeln(numbers)
 
 # Output
 > [1, 3, 5]
@@ -71,7 +71,7 @@ writeln numbers
 LinkedList<int> numbers = [1, 2, 3, 4, 5]
 
 numbers = numbers * 2
-writeln numbers
+writeln(numbers)
 
 # Output
 > [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
@@ -96,7 +96,7 @@ Uma lista possui vários métodos úteis que podem ser utilizados.
 LinkedList<int> numbers = [1, 2, 3, 4, 5]
 numbers.addFirst(6)
 
-writeln numbers
+writeln(numbers)
 
 # Output
 > [6, 1, 2, 3, 4, 5]
@@ -108,7 +108,7 @@ writeln numbers
 LinkedList<int> numbers = [1, 2, 3, 4, 5]
 numbers.addLast(6)
 
-writeln numbers
+writeln(numbers)
 
 # Output
 > [1, 2, 3, 4, 5, 6]
@@ -120,7 +120,7 @@ writeln numbers
 LinkedList<int> numbers = [1, 2, 3, 4, 5]
 numbers.addBefore(4, 7)
 
-writeln numbers
+writeln(numbers)
 
 # Output
 > [1, 2, 3, 7, 4, 5]
@@ -132,7 +132,7 @@ writeln numbers
 LinkedList<int> numbers = [1, 2, 3, 4, 5]
 numbers.addAfter(4, 7)
 
-writeln numbers
+writeln(numbers)
 
 # Output
 > [1, 2, 3, 4, 7, 5]
@@ -236,7 +236,7 @@ writeln numbers.length
 ```csharp
 LinkedList<int> numbers = [1, 2, 3, 4, 5]
 
-numbers.each(number do writeln number)
+numbers.each(number => writeln(number))
 
 # Output
 > 1
@@ -251,7 +251,7 @@ numbers.each(number do writeln number)
 ```csharp
 LinkedList<int> numbers = [1, 2, 3, 4, 5]
 
-var newNumbers = numbers.map(number do number * 2)
+var newNumbers = numbers.map(number => number * 2)
 
 writeln newNumbers
 
