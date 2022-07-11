@@ -16,27 +16,27 @@ class Pessoa do
         this.idade = idade
     end
     
-    fun ola() :: void do
-        writeln('Olá ${this.nome}')
+    fun ola() -> void do
+        writeln 'Olá ${this.nome}'
     end
 end
 ```
 
 ```ruby
 class Pessoa do
-    constructor(pub string nome, pub int idade) end
+    constructor(public string nome, public int idade) end
 end
 ```
 
 ```ruby
-class Pessoa(priv string nome, priv int idade) do
+class Pessoa(private string nome, private int idade) do
     ...
 end
 ```
 
 ```ruby
-class Pessoa(priv string nome, priv int idade) do
-    get nome() :: string do
+class Pessoa(private string nome, private int idade) do
+    get nome() -> string so
         return this.nome.toUpper()
     end
     
@@ -50,8 +50,8 @@ end
 
 ```ruby
 class Pessoa do
-    constructor(priv string nome, priv int idade, priv string cpf) end
-    constructor.juridica(priv string nome, priv string cnpj) end
+    constructor(private string nome, private int idade, private string cpf) end
+    constructor.juridica(private string nome, private string cnpj) end
 end
 ```
 
