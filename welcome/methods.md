@@ -4,12 +4,10 @@ Uma função é definida com um identificador seguido de parênteses abrindo e f
 
 A definição do tipo de retorno é opcional, caso não informe nada, ele utilizará como padrão o tipo **void**.
 
-Os blocos são definidos com `do` e `end`, sendo o `do` opcional e somente indicado o seu uso em casos especiais.
-
 **Syntax:**
 
 ```kotlin
-fun <identificador>(<tipo> <parâmetro>) :: [tipo retorno] [do]
+fun <identificador>(<tipo> <parâmetro>) :: [tipo retorno] do
     <código>
 end
 ```
@@ -17,7 +15,7 @@ end
 **Exemplo:**
 
 ```kotlin
-fun somarDoisNumeros(float num1, float num2) :: float
+fun somarDoisNumeros(float num1, float num2) :: float do
     var soma = num1 + num2
     return soma
 end
@@ -33,7 +31,7 @@ $ 12.0
 O retorno é opcional, basta definir o tipo de retorno e ele automaticamente retornará a última linha:
 
 ```kotlin
-fun somarDoisNumeros(folat num1, float num2) :: float
+fun somarDoisNumeros(folat num1, float num2) :: float do
     num1 + num2
 end
 
@@ -48,13 +46,13 @@ $ 12.0
 Também é possível ter **múltiplos retornos**:
 
 ```kotlin
-fun swap(int num1, int num2) :: (int, int)
+fun swap(int num1, int num2) :: (int, int) do
     return num2, num1
 end
 ```
 
 ```kotlin
-fun swap(int num1, int num2) :: (int, int) | null
+fun swap(int num1, int num2) :: (int, int) | null do
     // Some code
 end
 ```
@@ -62,11 +60,11 @@ end
 Podemos trabalhar com sobre carga que funciona em cima de **pattern matching**.
 
 ```kotlin
-fun log(%[ :error, string message ])
+fun log(%[ :error, string message ]) do
     writeln('Something went wrong: ${message}')
 end
 
-fun log(%[ :ok, string message ])
+fun log(%[ :ok, string message ]) do
     writeln('It works: ${message}')
 end
 ```
@@ -75,12 +73,12 @@ As funções podem ter clausula de guarda, que são decorators que definem uma c
 
 ```kotlin
 @when(idade >= 18)
-fun verificaIdade(int idade)
+fun verificaIdade(int idade) do
     writeln('Maior de idade')
 end
 
 @when(idade < 18)
-fun verificaIdade(int idade)
+fun verificaIdade(int idade) do
     writeln('Menor de idade')
 end
 ```
@@ -88,7 +86,7 @@ end
 Podemos trabalhar com funções anônimas, criando funções sem identificadores:
 
 ```typescript
-(float num1, float num2) :: float
+(float num1, float num2) :: float do
     num1 + num2
 end
 ```
