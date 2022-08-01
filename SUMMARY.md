@@ -43,5 +43,6 @@
   * [Exceptions](welcome/exceptions.md)
   * [Files](welcome/files.md)
   * [Test](welcome/test.md)
+  * [Date Time](welcome/date-time.md)
   * [Network](welcome/network.md)
 * [Tools](untitled.md)

@@ -13,8 +13,8 @@ Utilize os métodos **each** e **map** quando possível, deixe o for apenas para
 {% endhint %}
 
 ```csharp
-for (var index = 1, index <= 10, index++) do
-    writeln index
+for (var index = 1, index <= 10, index++)
+    writeln(index)
 end
 
 # Output
@@ -39,8 +39,8 @@ Isso faz com que ele se comporte como o while tradicional.
 ```csharp
 var number = 1
 
-for number <= 10 do
-    writeln number
+for number <= 10
+    writeln(number)
     number++
 end
 
@@ -62,8 +62,8 @@ Podemos passar **dois parâmetros** apenas, neles caso ele receberá a **inicial
 Ele terá o comportamento de um while, mas com a possibilidade de inicializar o valor dentro da própria estrutura
 
 ```csharp
-for (var number = 1, number <= 10) do
-    writeln number
+for (var number = 1, number <= 10)
+    writeln(number)
     number++
 end
 
@@ -83,13 +83,13 @@ end
 Também podemos fazer em **uma linha**, para isso utilize arrow function.
 
 ```julia
-for (var index = 1, index <= 10, index++), do: writeln index
+for (var index = 1, index <= 10, index++), do: writeln(index)
 ```
 
 Podemos ainda passar uma expressão usando `in`, neste caso não precisa usar o ~~var~~.
 
 ```elixir
-for number in 1..5, do: writeln number
+for number in (1 to 5), do: writeln(number)
 
 # Output
 > 1
@@ -105,12 +105,12 @@ Para trabalhar com um **loop infinito** basta usar o `loop` e só para quando re
 
 ```elixir
 loop
-    writeln 'In loop...'
+    writeln('In loop...')
 end
 ```
 
 Também pode fazer **in line**.
 
 ```elixir
-loop, do: writeln 'In loop...'
+loop, do: writeln('In loop...')
 ```

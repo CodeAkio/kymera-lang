@@ -6,25 +6,29 @@ description: The parenthesis is optional to pass expression.
 
 ## if
 
+O `then` é opcional para a abertura de bloco, é indicado utiliza-lo apenas em casos especiais.
+
 ```ruby
-if <expression> then
+if <expression> [then]
     <commands>
 end
 ```
 
 ```ruby
-if 10 > 1 then
-    writeln '10 é maior'
+if 10 > 1
+    writeln('10 é maior')
 end
 ```
 
 ```ruby
-if 2 in 1..10 then
-    writeln 'It is in range 1 to 10'
+if 2 in (1 to 10)
+    writeln('It is in range 1 to 10')
 end
 ```
 
-Para evitar uma expressão gigante ou um grande encadeamento de ifs e ands, Baseado no with do Elixir, o if permite passar múltiplas expressões separadas por virgula:
+Para evitar uma expressão gigante ou um grande encadeamento de ifs e ands, Baseado no with do Elixir, o if permite passar múltiplas expressões separadas por virgula.
+
+Nesses caso se deve usar o `then`:
 
 ```ruby
 var user = User(name: 'Kym', age: 20, payment: :ok)
@@ -32,7 +36,7 @@ var user = User(name: 'Kym', age: 20, payment: :ok)
 if (isAdult(user.age),
    isDefaulter(user.payment))
 then
-    writeln 'Can access!' 
+    writeln('Can access!')
 end
 ```
 
@@ -48,7 +52,7 @@ Ao usar este if, é indicado abstrair as expressões utilizando funções que re
 
 ```ruby
 
-if <expression> then
+if <expression> [then]
     <commands>
 else
     <commands>
@@ -56,10 +60,10 @@ end
 ```
 
 ```ruby
-if 10 > 1 then
-  writeln '10 é maior'
+if 10 > 1
+  writeln('10 é maior')
 else
-  writeln '10 não é maior'
+  writeln('10 não é maior')
 end
 ```
 
@@ -71,11 +75,11 @@ Devido ao **efeito sonoro** e **encurtamento da sintaxe** do _else if_ em uma pa
 
 ```ruby
 
-if <expression> then
+if <expression>
     <commands>
-elsif <expression> then
+elsif <expression>
     <commands>
-elsif <expression> then
+elsif <expression>
     <commands>
 else
     <commands>
@@ -85,14 +89,14 @@ end
 ```ruby
 var nota = 8.0
 
-if nota >= 9.0 then
-    writeln 'Excellent'
-elsif nota >= 7.0 and nota < 9.0 then
-    writeln 'Good'
-elsif nota >= 4.0 and nota < 7.0 then
-    writeln 'Bad'
+if nota >= 9.0
+    writeln('Excellent')
+elsif nota >= 7.0 and nota < 9.0
+    writeln('Good')
+elsif nota >= 4.0 and nota < 7.0
+    writeln('Bad')
 else
-    writeln 'Terrible'
+    writeln('Terrible')
 end
 
 # Output
@@ -110,9 +114,9 @@ Não existe if ternário, mas a ideia dele é a mesma usando o `then` e `else`, 
 ```ruby
 var age = 22
 
-if string message = age >= 18 then 'Is an adult' else 'Is not an adult'
+var message = if age >= 18 then 'Is an adult' else 'Is not an adult'
 
-writeln message
+writeln(message)
 
 # Output
 > 'Is an adult'
@@ -123,11 +127,11 @@ Uma forma mais elegante e mais indicada é quebrando linha:
 ```ruby
 var age = 22
 
-if string message = age >= 18
+var message = if age >= 18
     then 'Is an adult'
     else 'Is not an adult'
 
-writeln message
+writeln(message)
 
 # Output
 > 'Is an adult'
@@ -138,9 +142,9 @@ Podemos usar apenas o `then` que quando a expressão é verdadeira, ele retorna 
 ```ruby
 var age = 22
 
-if string message = age >= 18 then 'Is an adult'
+var message = if age >= 18 then 'Is an adult'
 
-writeln message
+writeln(message)
 
 # Output
 > 'Is an adult'
@@ -149,9 +153,9 @@ writeln message
 ```ruby
 var age = 17
 
-if string message = age >= 18 then 'Is an adult'
+var message = if age >= 18 then 'Is an adult'
 
-writeln message
+writeln(message)
 
 # Output
 > null
@@ -209,8 +213,8 @@ switch {
 
 ```go
 switch {
-    in 1..7 -> writeln('Bad')
-    in 7...10 -> writeln('Good')
+    in 1 to 7 -> writeln('Bad')
+    in 7 until 10 -> writeln('Good')
 }
 ```
 
