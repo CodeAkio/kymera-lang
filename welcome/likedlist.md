@@ -8,14 +8,14 @@ O `LinkedList` permite armazenar vários valores de diferentes tipos e poderá a
 
 Pode definir o tipo de variável implicitamente com `l[]`.
 
-```python
-fruit = l["Apple", "Orange", "Banana"]
+```
+fruit = l['Apple', 'Orange', 'Banana']
 ```
 
 Deverá definir o tipo de variável explicitamente como `LinkedList`.
 
 ```csharp
-LinkedList fruit = ["Apple", "Orange", "Banana"]
+LinkedList fruit = ['Apple', 'Orange', 'Banana']
 ```
 
 Também é possível restringir o tipo de dados que a lista pode receber usando generics, dessa forma deverá usar sempre a forma explícita de declaração.\
@@ -24,7 +24,7 @@ Caso tente atribuir um valor com um tipo de dado diferente, será retornado uma 
 ```csharp
 LinkedList<int> numbers = [1, 2, 3, 4, 5]
 
-writeln(numbers)
+writeln numbers
 
 # Output
 > [1, 2, 3, 4, 5]
@@ -39,7 +39,7 @@ LinkedList<int> matrix = [
     [7, 8, 9]
 ]
 
-writeln(matrix[1][2])
+writeln matrix[1][2]
 
 # Output
 > 6
@@ -51,7 +51,7 @@ writeln(matrix[1][2])
 LinkedList<int> numbers = [1, 2, 3, 4, 5]
 
 numbers = numbers + [6, 7, 8, 9, 10]
-writeln(numbers)
+writeln numbers
 
 # Output
 > [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -61,7 +61,7 @@ writeln(numbers)
 LinkedList<int> numbers = [1, 2, 3, 4, 5]
 
 numbers = numbers - [2, 4]
-writeln(numbers)
+writeln numbers
 
 # Output
 > [1, 3, 5]
@@ -71,7 +71,7 @@ writeln(numbers)
 LinkedList<int> numbers = [1, 2, 3, 4, 5]
 
 numbers = numbers * 2
-writeln(numbers)
+writeln numbers
 
 # Output
 > [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
@@ -96,7 +96,7 @@ Uma lista possui vários métodos úteis que podem ser utilizados.
 LinkedList<int> numbers = [1, 2, 3, 4, 5]
 numbers.addFirst(6)
 
-writeln(numbers)
+writeln numbers
 
 # Output
 > [6, 1, 2, 3, 4, 5]
@@ -108,7 +108,7 @@ writeln(numbers)
 LinkedList<int> numbers = [1, 2, 3, 4, 5]
 numbers.addLast(6)
 
-writeln(numbers)
+writeln numbers
 
 # Output
 > [1, 2, 3, 4, 5, 6]
@@ -120,7 +120,7 @@ writeln(numbers)
 LinkedList<int> numbers = [1, 2, 3, 4, 5]
 numbers.addBefore(4, 7)
 
-writeln(numbers)
+writeln numbers
 
 # Output
 > [1, 2, 3, 7, 4, 5]
@@ -132,7 +132,7 @@ writeln(numbers)
 LinkedList<int> numbers = [1, 2, 3, 4, 5]
 numbers.addAfter(4, 7)
 
-writeln(numbers)
+writeln numbers
 
 # Output
 > [1, 2, 3, 4, 7, 5]
@@ -144,7 +144,7 @@ writeln(numbers)
 LinkedList<int> numbers = [1, 2, 3, 4, 5]
 numbers.remove(2)
 
-writeln(numbers)
+writeln numbers
 
 # Output
 > [1, 6, 3, 4, 5]
@@ -156,7 +156,7 @@ writeln(numbers)
 LinkedList<int> numbers = [1, 2, 3, 4, 5]
 numbers.removeFirst()
 
-writeln(numbers)
+writeln numbers
 
 # Output
 > [2, 6, 3, 4, 5]
@@ -168,7 +168,7 @@ writeln(numbers)
 LinkedList<int> numbers = [1, 2, 3, 4, 5]
 numbers.removeLast()
 
-writeln(numbers)
+writeln numbers
 
 # Output
 > [1, 2, 6, 3, 4]
@@ -179,7 +179,7 @@ writeln(numbers)
 ```csharp
 LinkedList<int> numbers = [1, 2, 3, 4, 5]
 
-writeln(numbers.reverse)
+writeln numbers.reverse
 
 # Output
 > [5, 4, 3, 2, 1]
@@ -190,8 +190,8 @@ writeln(numbers.reverse)
 ```csharp
 LinkedList<int> numbers = [1, 2, 3, 4, 5]
 
-writeln(numbers.contains(1))
-writeln(numbers.contains(6))
+writeln numbers.contains(1)
+writeln numbers.contains(6)
 
 # Output
 > true
@@ -203,7 +203,7 @@ writeln(numbers.contains(6))
 ```csharp
 LinkedList<int> numbers = [1, 2, 3, 4, 5]
 
-writeln(numbers.indexOf(1))
+writeln numbers.indexOf(1)
 
 # Output
 > 0
@@ -214,7 +214,7 @@ writeln(numbers.indexOf(1))
 ```csharp
 LinkedList<int> numbers = [4, 1, 5, 3, 2]
 
-writeln(numbers.sort())
+writeln numbers.sort
 
 # Output
 > [1, 2, 3, 4, 5]
@@ -225,7 +225,7 @@ writeln(numbers.sort())
 ```csharp
 LinkedList<int> numbers = [1, 2, 3, 4, 5]
 
-writeln(numbers.length)
+writeln numbers.length
 
 # Output
 > 5
@@ -236,7 +236,7 @@ writeln(numbers.length)
 ```csharp
 LinkedList<int> numbers = [1, 2, 3, 4, 5]
 
-numbers.each(number => writeln(number))
+numbers.each(number do writeln number)
 
 # Output
 > 1
@@ -251,9 +251,9 @@ numbers.each(number => writeln(number))
 ```csharp
 LinkedList<int> numbers = [1, 2, 3, 4, 5]
 
-var newNumbers = numbers.map(number => number * 2)
+var newNumbers = numbers.map(number do number * 2)
 
-writeln(newNumbers)
+writeln newNumbers
 
 # Output
 > [2, 4, 6, 8, 10]
@@ -264,19 +264,19 @@ writeln(newNumbers)
 ```csharp
 LinkedList<int> numbers = [1, 2, 3, 4, 5]
 
-writeln(numbers.find(3))
+writeln numbers.find(3)
 
 # Output
 > 3
 ```
 
 ```dart
-LinkedList<string> colors = ["Red", "Yellow", "Blue", "Orange", "White"]
+LinkedList<string> colors = ['Red', 'Yellow', 'Blue', 'Orange', 'White']
 
-writeln(colors.find(r"[ed]"))
+writeln colors.find(r"[ed]")
 
 # Output
-> "Red"
+> 'Red'
 ```
 
 ### findAll
@@ -284,41 +284,41 @@ writeln(colors.find(r"[ed]"))
 ```csharp
 LinkedList<int> numbers = [6, 2, 8, 3, 6]
 
-writeln(numbers.find(6))
+writeln numbers.find(6)
 
 # Output
 > [6, 6]
 ```
 
 ```csharp
-LinkedList<string> colors = ["Red", "Yellow", "Blue", "Orange", "White"]
+LinkedList<string> colors = ['Red', 'Yellow', 'Blue', 'Orange', 'White']
 
-writeln(colors.find(r"[w]"))
+writeln colors.find(r"[w]")
 
 # Output
-> ["Yellow", "White"]
+> ['Yellow', 'White']
 ```
 
 ### first
 
 ```csharp
-LinkedList<string> colors = ["Red", "Yellow", "Blue", "Orange", "White"]
+LinkedList<string> colors = ['Red', 'Yellow', 'Blue', 'Orange', 'White']
 
-writeln(colors.first())
+writeln colors.first()
 
 # Output
-> "Red"
+> 'Red'
 ```
 
 ### last
 
 ```csharp
-LinkedList<string> colors = ["Red", "Yellow", "Blue", "Orange", "White"]
+LinkedList<string> colors = ['Red', 'Yellow', 'Blue', 'Orange', 'White']
 
-writeln(colors.last())
+writeln colors.last()
 
 # Output
-> "White"
+> 'White'
 ```
 
 ### max
@@ -326,7 +326,7 @@ writeln(colors.last())
 ```csharp
 LinkedList<int> numbers = [6, 2, 8, 3, 6]
 
-writeln(numbers.max())
+writeln numbers.max()
 
 # Output
 > 8
@@ -337,7 +337,7 @@ writeln(numbers.max())
 ```csharp
 LinkedList<int> numbers = [6, 2, 8, 3, 6]
 
-writeln(numbers.min())
+writeln numbers.min()
 
 # Output
 > 2
@@ -348,7 +348,7 @@ writeln(numbers.min())
 ```csharp
 LinkedList<int> numbers = [6, 2, 8, 3, 6]
 
-writeln(numbers.sum())
+writeln numbers.sum()
 
 # Output
 > 25
@@ -359,7 +359,7 @@ writeln(numbers.sum())
 ```csharp
 LinkedList<int> numbers = [6, 2, 8, 3, 6]
 
-writeln(numbers.avg())
+writeln numbers.avg()
 
 # Output
 > 5
