@@ -1,3 +1,2 @@
 # Generics
 
-Coming soon

@@ -9,7 +9,7 @@ O `open` abre o arquivo, por padrão considera que é um arquivo **txt** e no mo
 ```python
 import file.*
 
-var my_file = open("some_file.txt")
+var my_file = open('some_file.txt')
 ```
 
 A propriedade `mode`, podemos passar `:r` para somente leitura e `:w` para leitura e escrita.
@@ -17,7 +17,7 @@ A propriedade `mode`, podemos passar `:r` para somente leitura e `:w` para leitu
 ```python
 import file.*
 
-var my_file = open("some_file.txt", mode: :w)
+var my_file = open('some_file.txt', mode: :w)
 ```
 
 A propriedade `type`, podemos passar `:txt`para arquivos do tipo texto, ou `:bin` para arquivos do tipo binário.
@@ -25,7 +25,7 @@ A propriedade `type`, podemos passar `:txt`para arquivos do tipo texto, ou `:bin
 ```python
 import file.*
 
-var my_file = open("some_file.txt", type: :txt)
+var my_file = open('some_file.txt', type: :txt)
 ```
 
 A propriedade `mode`, podemos passar `:a` para escrever as mudanças apenas no fim do arquivo, ou `:e` para sobrescrever o arquivo inteiro, por padrão ele trabalha com `:e`.
@@ -33,20 +33,20 @@ A propriedade `mode`, podemos passar `:a` para escrever as mudanças apenas no f
 ```python
 import file.*
 
-var my_file = open("some_file.txt", mode: :a)
+var my_file = open('some_file.txt', mode: :a)
 ```
 
 ### close
 
-Após abrir o arquivo, precisamos fechá-lo para que ele não fique bloqueado.
+Após abrir o arquivo, precisamos fecha-lo para que ele não fique bloqueado.
 
 ```python
 import file.*
 
 try
-    var my_file = open("some_file.txt")
+    var my_file = open('some_file.txt')
 except
-    FileNotFoundError, error -> writeln(error)
+    FileNotFoundError, error -> writeln error
 finally
     my_file.close()
 end

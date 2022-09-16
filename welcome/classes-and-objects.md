@@ -6,7 +6,7 @@ description: Junta o Dart, Kotlin e C#
 
 ## Sintaxe
 
-```kotlin
+```ruby
 class Pessoa
     string nome
     int idade
@@ -17,7 +17,7 @@ class Pessoa
     end
     
     fun ola() :: void
-        writeln("Olá ${this.nome}")
+        writeln('Olá ${this.nome}')
     end
 end
 ```

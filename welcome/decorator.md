@@ -3,20 +3,20 @@
 Utilize o `@` antes do nome da função para declarar um decorator:
 
 ```kotlin
-fun @greeting()
-    writeln("Hello")
+fun @greeting() do
+    writeln('Hello')
 end
 ```
 
 ```kotlin
 @greeting()
-fun snake()
-    writeln("Snake")
+fun snake() do
+    writeln('Snake')
 end
 
 snake()
 
 # Output
-> "Hello"
-> "Snake"
+> 'Hello'
+> 'Snake'
 ```
