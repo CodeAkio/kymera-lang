@@ -1,14 +1,14 @@
 ---
 description: >-
   É uma estrutura de chave valor, conhecido em outras linguagens como Hash ou
-  Dict.
+  Map.
 ---
 
-# Map
+# Dict
 
 ## Introdução
 
-O `Map` permite armazenar dados na estrutura de chave e valor.
+O `Dict` permite armazenar dados na estrutura de chave e valor.
 
 Ele não permite que haja chaves duplicadas.
 
@@ -16,65 +16,65 @@ Caso queira ter mais controle de chaves pré-definidas e os tipos dos valores, d
 
 ## Declaração e Atribuição
 
-A declaração de uma variável ou constante Map pode ser feita de forma duas formas:
+A declaração de uma variável ou constante Dict pode ser feita de forma duas formas:
 
-* **Explícita:** Deverá definir o tipo de variável explicitamente como `Map`.
+* **Explícita:** Deverá definir o tipo de variável explicitamente como `Dict`.
 
 ```csharp
-Map user = {
-    name: "Pedro",
+Dict user = {
+    name: 'Pedro',
     age: 22
 }
 ```
 
-* **Implícita:** Basta atribuir diretamente as chaves e valores a variável e o interpretador vai declara-lo implicitamente como `Map<atom, dynamic>`, sendo que as chaves e valores ficaram dentro de chaves e separados por vírgula.
+* **Implícita:** Basta atribuir diretamente as chaves e valores a variável e o interpretador vai declara-lo implicitamente como `Dict<atom, dynamic>`, sendo que as chaves e valores ficaram dentro de chaves e separados por vírgula.
 
 ```go
 var user = {
-    name: "Pedro",
+    name: 'Pedro',
     age: 22
 }
 ```
 
-Também é possível restringir o tipo de dados que o Map pode receber usando generics, dessa forma deverá usar sempre a forma explícita de declaração.\
+Também é possível restringir o tipo de dados que o Dict pode receber usando generics, dessa forma deverá usar sempre a forma explícita de declaração.\
 Caso tente atribuir um valor com um tipo de dado diferente, será retornado uma exceção do tipo TypeError.
 
 ```csharp
-Map<string, string> numbers = {
-    "name": "Pedro",
-    "age": "22"
+Dict<string, string> numbers = {
+    'name': 'Pedro',
+    'age': '22'
 }
 
 writeln(numbers)
 
 # Output
 > {
-    "name": "Pedro",
-    "age": "22"
+    'name': 'Pedro',
+    'age': '22'
 }
 ```
 
 ## Methods
 
-Um Map possui vários métodos úteis que podem ser utilizados.
+Um Dict possui vários métodos úteis que podem ser utilizados.
 
 ### add
 
 ```csharp
 var user = {
-    name: "Pedro",
+    name: 'Pedro',
     age: 22
 }
 
-user.add(:email, "pedro@email.com")
+user.add(:email, 'pedro@email.com')
 
 writeln(user)
 
 # Output
 > {
-    name: "Pedro",
+    name: 'Pedro',
     age: 22,
-    email: "pedro@email.com"
+    email: 'pedro@email.com'
 }
 ```
 
@@ -82,36 +82,36 @@ Ao tentar adicionar uma chave duplicada, ele chama o **update**:
 
 ```csharp
 var user = {
-    name: "Pedro",
+    name: 'Pedro',
     age: 22
 }
 
-user.add(:name, "Marcos")
+user.add(:name, 'Marcos')
 
 writeln(user)
 
 # Output
 > {
-    name: "Marcos",
+    name: 'Marcos',
     age: 22
 }
 ```
 
 ### update
 
-```kotlin
+```python
 var user = {
-    name: "Pedro",
+    name: 'Pedro',
     age: 22
 }
 
-user.update(:name, "Marcos")
+user.update(:name, 'Marcos')
 
 writeln(user)
 
 # Output
 > {
-    name: "Marcos",
+    name: 'Marcos',
     age: 22
 }
 ```
@@ -120,7 +120,7 @@ writeln(user)
 
 ```csharp
 var user = {
-    name: "Pedro",
+    name: 'Pedro',
     age: 22
 }
 
@@ -130,15 +130,15 @@ writeln(user)
 
 # Output
 > {
-    name: "Pedro"
+    name: 'Marcos'
 }
 ```
 
 ### keys
 
-```kotlin
+```ruby
 var user = {
-    name: "Pedro",
+    name: 'Pedro',
     age: 22
 }
 
@@ -150,23 +150,23 @@ writeln(user.values)
 
 ### values
 
-```kotlin
+```ruby
 var user = {
-    name: "Pedro",
+    name: 'Pedro',
     age: 22
 }
 
 writeln(user.values)
 
 # Output
-> ["Pedro", 22]
+> ['Pedro', 22]
 ```
 
 ### any
 
-```kotlin
+```ruby
 var user = {
-    name: "Pedro",
+    name: 'Pedro',
     age: 22
 }
 
@@ -178,7 +178,7 @@ writeln(user.has(:age, 22))
 
 ```csharp
 var user = {
-    name: "Pedro",
+    name: 'Pedro',
     age: 22
 }
 
@@ -192,7 +192,7 @@ writeln(user.has(:age, 23))
 
 ```csharp
 var user = {
-    name: "Pedro",
+    name: 'Pedro',
     age: 22
 }
 
@@ -204,13 +204,13 @@ writeln(user.hasKey(:age))
 
 ### hasValue
 
-```kotlin
+```ruby
 var user = {
-    name: "Pedro",
+    name: 'Pedro',
     age: 22
 }
 
-writeln(user.hasValue("Pedro"))
+writeln(user.hasValue('Pedro'))
 
 # Output
 > t[:name]

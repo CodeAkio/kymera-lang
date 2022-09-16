@@ -5,7 +5,7 @@ Por padrão os enums são do tipo int32 e recebem os valores de acordo com sua p
 **Exemplo:**
 
 ```java
-Enum Status {
+enum Status {
     Online,
     Offline,
     Away,
@@ -22,7 +22,7 @@ Também é possível definir um tipo e valores manualmente a cada um deles.
 **Exemplo:**
 
 ```csharp
-Enum<symbol> Status {
+enum<symbol> Status {
     Online = :online,
     Offline = :offline,
     Away = :away,
