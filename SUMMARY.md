@@ -30,7 +30,7 @@
   * [Stack](welcome/stack.md)
   * [Queue](welcome/queue.md)
   * [Tuple](welcome/set.md)
-  * [Dict](welcome/dictionary.md)
+  * [Map](welcome/dictionary.md)
   * [Graph](welcome/graph.md)
   * [Generator](welcome/generator.md)
   * [Decorator](welcome/decorator.md)
