@@ -14,10 +14,13 @@ The variables work with optional typing similar to TypeScript and Go, but with t
 
 ```go
 # With type definition
-<type> <variable_name> = <value>
+<variable_name>: [type] = <value>
 
 # With type inference
 var <variable_name> = <value>
+
+# With type inference (compact)
+<variable_name> := <value>
 
 # Assignment value after declaration
 <variable_name> = <value>
@@ -26,19 +29,19 @@ var <variable_name> = <value>
 **Sample:**
 
 ```go
-int number = 10
-writeln(number)
+ number = 10
+writeln number
 
-var animal = "Dog"
-writeln(animal)
+animal := 'Dog'
+writeln animal
 
-animal = "Cat"
-writeln(animal)
+animal = 'Cat'
+writeln animal
 
 # Output
 > 10
-> "Dog"
-> "Cat"
+> 'Dog'
+> 'Cat'
 ```
 
 ## Constants
@@ -48,13 +51,13 @@ Constants need to be declared with the keyword **const** and have **uppercase** 
 **Syntaxe:**
 
 ```csharp
-const <CONSTANT_NAME> = <value>
-const <type> <CONSTANT_NAME> = <value>
+const <CONSTANT_NAME> := <value>
+const [type] <CONSTANT_NAME> = <value>
 ```
 
 **Sample:**
 
 ```csharp
 const PI := 3.141592653589793
-const string NAME = "Maria"
+const string NAME = 'Maria'
 ```

@@ -16,14 +16,14 @@ O método Read pode receber opcionalmente uma string como argumento. Esta string
 **Syntax:**
 
 ```go
-read([text_to_print])
+read [text to print]
 ```
 
 **Exemplo:**
 
 ```go
-var nome = read("Informe seu nome: ")
-writeln("Seu nome é ${nome}.")
+nome := read 'Informe seu nome: '
+writeln 'Seu nome é ${nome}.'
 
 # Output
 # Foi digitado 'Júlio' no terminal
@@ -42,16 +42,16 @@ Definido um tipo além de restringir o tipo de dado a ser aceito como entrada, o
 Caso informe um tipo de dado diferente do suportado, será retornado uma exceção do tipo TypeError.
 
 ```go
-var name = read(string, "What's your name?") // Jorge
-var age = read(int, "How old are you?") // 23
-var gender = read(char, "Are you man(M) or woman(W)?") // M
+name := read(string, "What's your name?") // Jorge
+age := read(int, 'How old are you?') // 23
+gender := read(char, 'Are you man(M) or woman(W)?') // M
 
-writeln(name)
-writeln(age)
-writeln(gender)
+writeln name
+writeln age
+writeln gender
 
 # Output
-> "Jorge"
+> 'Jorge'
 > 23
 > 'M'
 ```

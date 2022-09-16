@@ -3,7 +3,7 @@
 ## Igual
 
 ```ruby
-> 10 == "10"
+> 10 == '10'
 => false
 
 > 10 == 10.0
@@ -16,7 +16,7 @@
 Ou a forma verbal:
 
 ```ruby
-> 10 eql "10"
+> 10 eql '10'
 => false
 
 > 10 eql 10.0
@@ -29,7 +29,7 @@ Ou a forma verbal:
 ## Igual (tipo diferente)
 
 ```go
-$ 10 ~= "10"
+$ 10 ~= '10'
 => true
 
 $ 10 ~= 10.0
@@ -42,7 +42,7 @@ $ 10 ~= 10
 ## Diferente
 
 ```python
-$ 10 != "10"
+$ 10 != '10'
 # true
 
 $ 10 != 10.0
@@ -55,7 +55,7 @@ $ 10 != 10
 Ou a forma verbal:
 
 ```ruby
-> 10 not eql "10"
+> 10 not eql '10'
 => false
 
 > 10 not eql 10.0
@@ -77,14 +77,14 @@ $ 100 > 10
 $ 10.0 > 10
 # false
 
-$ "b" > "a"
+$ 'b' > 'a'
 # true
 ```
 
 Ou a forma verbal:
 
 ```ruby
-> 10 gt "10"
+> 10 gt '10'
 => false
 
 > 10 gt 10.0
@@ -106,14 +106,14 @@ $ 100 < 10
 $ 10.0 < 10
 # false
 
-$ "b" < "a"
+$ 'b' < 'a'
 # true
 ```
 
 Ou a forma verbal?
 
 ```ruby
-> 10 lt "10"
+> 10 lt '10'
 => false
 
 > 10 lt 10.0

@@ -17,17 +17,17 @@
 ```
 
 ```python
-"$ " + "10.90"
+'$ ' + '10.90'
 
 # Output
-> "$ 10.90"
+> '$ 10.90'
 ```
 
 ```python
-"$ " + 10.90
+'$ ' + 10.90
 
 # Output
-> "$ 10.90"
+> '$ 10.90'
 ```
 
 ```python
@@ -45,10 +45,10 @@ t[1, 2, 3] + t[4]
 ```
 
 ```ruby
-{ name: "Pedro" } + { age: 22 }
+{ name: 'Pedro' } + { age: 22 }
 
 # Output
-> { name: "Pedro", age: 22 }
+> { name: 'Pedro', age: 22 }
 ```
 
 ## Subtração
@@ -82,10 +82,10 @@ t[1, 2, 3] - t[2]
 ```
 
 ```python
-{ name: "Pedro", age: 22 } - { age: 22 }
+{ name: 'Pedro', age: 22 } - { age: 22 }
 
 # Output
-> { name: "Pedro" }
+> { name: 'Pedro' }
 ```
 
 ## Multiplicação
@@ -105,10 +105,10 @@ t[1, 2, 3] - t[2]
 ```
 
 ```python
-"-" * 5
+'-' * 5
 
 # Output
-> "-----"
+> '-----'
 ```
 
 ```python

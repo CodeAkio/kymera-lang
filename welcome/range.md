@@ -4,12 +4,12 @@ description: Gera um List dentro de uma faixa de valores.
 
 # Range
 
-Usando `until` ele cria com **intervalo aberto**.
+Usando `...` ele cria com **intervalo aberto**.
 
 ```kotlin
-var numbers = 2 until 5
+var numbers = 2...5
 
-writeln(numbers)
+writeln numbers
 
 # Output
 > [2, 3, 4]
@@ -18,9 +18,9 @@ writeln(numbers)
 Com `..` ele cria com **intervalo fechado**.
 
 ```kotlin
-var numbers = 2 to 5
+var numbers = 2..5
 
-writeln(numbers)
+writeln numbers
 
 # Output
 > [2, 3, 4, 5]
@@ -29,9 +29,9 @@ writeln(numbers)
 Ele também pode ser usado com chars.
 
 ```ruby
-var letters = 'a' to 'g'
+var letters = 'a'..'g'
 
-writeln(numbers)
+writeln numbers
 
 # Output
 > ['a', 'b', 'c', 'd', 'e', 'f', 'g']
@@ -40,9 +40,9 @@ writeln(numbers)
 Pode ser utilizado com o each.
 
 ```ruby
-var range = 2 to 10
+var range = 2..10
 
-range.each(n => writeln(n))
+range.each(n, do: writeln n)
 
 # Output
 > 2
@@ -58,10 +58,10 @@ range.each(n => writeln(n))
 
 Podemos usar o `step` para definir de quanto em quanto ele **pula**:
 
-```kotlin
-var numbers = 1 to 10 step 2
+```ruby
+var numbers = 1..10 step 2
 
-writeln(numbers)
+writeln numbers
 
 # Output
 > [1, 3, 5, 7, 9]
