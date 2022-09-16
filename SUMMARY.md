@@ -9,7 +9,7 @@
 * [Syntax and Semantics](welcome/README.md)
   * [Variable and Constant](welcome/variable-and-constant.md)
   * [Basic types](welcome/basic-types.md)
-  * [Package](welcome/package.md)
+  * [Module](welcome/package.md)
   * [Output Console](welcome/untitled.md)
   * [Input Console](welcome/input-console.md)
   * [Comments](welcome/comments.md)

@@ -4,24 +4,24 @@ description: Ele permite utilizar recursos de baixo nível como ponteiros que ne
 
 # Pointer
 
-Para definir uma variável que armazenará um ponteiro, basta que no tipo tenha um **'\*'** como sufixo.
+Para definir uma variável que armazenará um ponteiro, basta usar a kword **'ref'**.
 
 Assim ele cria uma **variável do tipo ponteiro** para um determinado tipo:
 
 ```csharp
-p: *int = null
+ref int p = null
 ```
 
 Quando queremos pegar o endereço de memória de uma variável qualquer, usamos o **'&'** ante do nome da variável:
 
 ```csharp
 var numero = 1
-p: *int = null
+ref int p = null
 
 p = &numero
 
-writeln p
-writeln &numero
+writeln(p)
+writeln(&numero)
 
 # Output
 => 0x420016058
@@ -32,12 +32,12 @@ Para que a variável de ponteiro consiga se referenciar ao valor, usamos um **'\
 
 ```csharp
 var numero = 1
-p: int* = null
+ref int p = null
 
 p = &numero
 
-writeln *p
-writeln numero
+writeln(*p)
+writeln(numero)
 
 # Output
 => 1
