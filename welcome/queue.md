@@ -8,14 +8,14 @@ O `Queue` permite armazenar vários valores de diferentes tipos em uma estrutura
 
 Pode definir o tipo de variável implicitamente com `q[]`.
 
-```python
-fruit = q["Apple", "Orange", "Banana"]
+```
+fruit = q['Apple', 'Orange', 'Banana']
 ```
 
 Deverá definir o tipo de variável explicitamente como `Queue`.
 
 ```csharp
-Queue fruit = ["Apple", "Orange", "Banana"]
+Queue fruit = ['Apple', 'Orange', 'Banana']
 ```
 
 Também é possível restringir o tipo de dados que a fila pode receber usando generics, dessa forma deverá usar sempre a forma explícita de declaração.\
@@ -24,7 +24,7 @@ Caso tente atribuir um valor com um tipo de dado diferente, será retornado uma 
 ```csharp
 Queue<int> numbers = [1, 2, 3, 4, 5]
 
-writeln(numbers)
+writeln numbers
 
 # Output
 > [1, 2, 3, 4, 5]
@@ -39,7 +39,7 @@ Queue<int> matrix = [
     [7, 8, 9]
 ]
 
-writeln(matrix[1][2])
+writeln matrix[1][2]
 
 # Output
 > 6
@@ -51,7 +51,7 @@ writeln(matrix[1][2])
 Queue<int> numbers = [1, 2, 3, 4, 5]
 
 numbers = numbers + [6, 7, 8, 9, 10]
-writeln(numbers)
+writeln numbers
 
 # Output
 > [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -61,7 +61,7 @@ writeln(numbers)
 Queue<int> numbers = [1, 2, 3, 4, 5]
 
 numbers = numbers - [2, 4]
-writeln(numbers)
+writeln numbers
 
 # Output
 > [1, 3, 5]
@@ -71,7 +71,7 @@ writeln(numbers)
 Queue<int> numbers = [1, 2, 3, 4, 5]
 
 numbers = numbers * 2
-writeln(numbers)
+writeln numbers
 
 # Output
 > [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
@@ -87,7 +87,7 @@ Uma fila possui vários métodos úteis que podem ser utilizados.
 Queue<int> numbers = [1, 2, 3, 4, 5]
 numbers.enqueue(6)
 
-writeln(numbers)
+writeln numbers
 
 # Output
 > [1, 2, 3, 4, 5, 6]
@@ -99,7 +99,7 @@ writeln(numbers)
 Queue<int> numbers = [1, 2, 3, 4, 5]
 numbers.dequeue()
 
-writeln(numbers)
+writeln numbers
 
 # Output
 > [2, 6, 3, 4, 5]
@@ -110,7 +110,7 @@ writeln(numbers)
 ```csharp
 Queue<int> numbers = [1, 2, 3, 4, 5]
 
-writeln(numbers.reverse())
+writeln numbers.reverse
 
 # Output
 > [5, 4, 3, 2, 1]
@@ -121,7 +121,7 @@ writeln(numbers.reverse())
 ```csharp
 Queue<int> numbers = [4, 1, 5, 3, 2]
 
-writeln(numbers.sort())
+writeln numbers.sort
 
 # Output
 > [1, 2, 3, 4, 5]
@@ -132,7 +132,7 @@ writeln(numbers.sort())
 ```csharp
 Queue<int> numbers = [1, 2, 3, 4, 5]
 
-writeln(numbers.length)
+writeln numbers.length
 
 # Output
 > 5
@@ -143,7 +143,7 @@ writeln(numbers.length)
 ```csharp
 Queue<int> numbers = [1, 2, 3, 4, 5]
 
-numbers.each(number => writeln(number))
+numbers.each(number do writeln number)
 
 # Output
 > 1
@@ -158,9 +158,9 @@ numbers.each(number => writeln(number))
 ```csharp
 Queue<int> numbers = [1, 2, 3, 4, 5]
 
-var newNumbers = numbers.map(number => number * 2)
+var newNumbers = numbers.map(number do number * 2)
 
-writeln(newNumbers)
+writeln newNumbers
 
 # Output
 > [2, 4, 6, 8, 10]
@@ -171,7 +171,7 @@ writeln(newNumbers)
 ```csharp
 Queue<int> numbers = [6, 2, 8, 3, 6]
 
-writeln(numbers.sum())
+writeln numbers.sum()
 
 # Output
 > 25
@@ -182,7 +182,7 @@ writeln(numbers.sum())
 ```csharp
 Queue<int> numbers = [6, 2, 8, 3, 6]
 
-writeln(numbers.avg())
+writeln numbers.avg()
 
 # Output
 > 5
