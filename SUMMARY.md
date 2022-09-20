@@ -12,7 +12,7 @@
   * [Strings](welcome/strings.md)
   * [Char](welcome/char.md)
   * [Type](welcome/type.md)
-  * [Module](welcome/package.md)
+  * [Package](welcome/package.md)
   * [Output Console](welcome/untitled.md)
   * [Input Console](welcome/input-console.md)
   * [Comments](welcome/comments.md)

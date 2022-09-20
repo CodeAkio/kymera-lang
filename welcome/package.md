@@ -4,7 +4,7 @@ O código é organizado em pacotes, que representam os arquivos de um diretório
 
 ## Declaração
 
-Podemos definir o nome do pacote através da keyword **package** seguido do **nome do pacote**.
+Podemos definir o nome do módulo através da keyword **package** seguido do **nome do módulo**.
 
 Existem algumas regras de nomenclatura para pacotes:
 
@@ -16,17 +16,17 @@ Existem algumas regras de nomenclatura para pacotes:
 ```kotlin
 package hello
 
-fun Greeting() do
-    writeln 'Hello'
+fun greeting
+    writeln("Hello")
 end
 ```
 
-Existe uma pacote especial que é o **main**, ele é obrigatório, pois é por ele que a aplicação inicia a execução e obrigatoriamente ele terá um método **main**.
+Existe um módulo especial que é o **main**, ele é obrigatório, pois é por ele que a aplicação inicia a execução e obrigatoriamente ele terá um método **main**.
 
 ```kotlin
 package main
 
-fun main() do
+fun main
     // Something
 end
 ```
@@ -38,8 +38,8 @@ Por padrão, somente **funções**, **classes**, **interfaces**, **enums**, **co
 ```kotlin
 package hello
 
-fun Greeting() do
-    writeln 'Hello'
+fun greeting
+    writeln("Hello")
 end
 ```
 
@@ -61,11 +61,11 @@ enum Colors {
 ```kotlin
 package animal
 
-interface IAnimal do
+interface IAnimal
     // Something
 end
 
-class Dog < IAnimal do
+class Dog is IAnimal
     // Something
 end
 ```
@@ -73,19 +73,19 @@ end
 ```kotlin
 package secrets
 
-const SECRET_KEY = env.master_key
+const string SECRET_KEY = env.master_key
 ```
 
-Caso não queira que algum deles não seja exportado, deverá declara-lo como **private** ou **protected**.
+Caso não queira que algum deles não seja exportado, deverá declara-lo com **priv** que o definirá como **privado**.
 
 ```kotlin
 package animal
 
-priv interface IAnimal do
+interface priv IAnimal
     // Something
 end
 
-class Dog < IAnimal do
+class Dog is IAnimal
     // Something
 end
 ```
@@ -97,7 +97,7 @@ Quando se trata de pacotes padrão ou de terceiros, basta usar a keyword **impor
 ```kotlin
 import math.PI
 
-writeln PI
+writeln(PI)
 
 # Output
 > 3.141592653589793
@@ -108,8 +108,8 @@ Se quiser, poderá importar **todos os recursos** do pacote, bastando importar a
 ```kotlin
 import math
 
-writeln math.PI
-writeln math.E
+writeln(math.PI)
+writeln(math.E)
 
 # Output
 > 3.141592653589793
@@ -122,11 +122,11 @@ Essa forma de importação não é indicada quando não vai usar todos os recurs
 
 Podemos importar também **recursos específicos** de um pacote, usando as **chaves**.
 
-```python
-from math import PI, E
+```kotlin
+import math.{PI, E}
 
-writeln PI
-writeln E
+writeln(PI)
+writeln(E)
 
 # Output
 > 3.141592653589793
@@ -138,16 +138,8 @@ Podemos definir um apelido para a importação usando a keyword **as**.
 ```kotlin
 import math.E as EULER
 
-writeln EULER
+writeln(EULER)
 
 # Output
 > 2.718281828459045
-```
-
-Para forçar a importação de **pacotes locais** ao invés de um standard ou de terceiros, usamos um **ponto** antes de passar o nome do pacote:
-
-```kotlin
-import .animal.Dog
-
-var dog = Dog(name: 'Scooby Doo', age: 2)
 ```
