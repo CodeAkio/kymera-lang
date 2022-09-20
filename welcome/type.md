@@ -2,9 +2,11 @@
 
 É possível criar tipos customizados utilizando a keyword `type`.
 
+O operador (`|`) nos permite definir que uma variável pode ser mais de um tipo ou restringir os valores aceitos.
+
 ### Restringindo Valores
 
-O operador (`|`) nos permite definir que uma variável pode ser mais de um tipo ou restringir os valores aceitos:
+Podemos definir exatamente quais valores são aceitos:
 
 ```typescript
 type Status = "doing" | "pending" | "completed"
