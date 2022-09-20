@@ -10,7 +10,7 @@ Kym lang is a new programming language based on some parts of Python, Ruby, Elix
 
 ### Sample code
 
-```kotlin
+```ruby
 package main
 
 class Post(
@@ -20,20 +20,21 @@ class Post(
     string body,
 ) end
 
-fun main
+fun main() do
     var post = Post(
         0,
-        "Chewbacca",
-        "Programming language",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
+        'Chewbacca',
+        'Programming language',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
     )
 
-    writeln("The title is: ${post.title}.")
-    writeln("The author is: ${post.author}.")
-    writeln("The body before: ${post.body}")
+    writeln 'The title is: ${post.title}.'
+    writeln 'The author is: ${post.author}.'
 
-    post.body = "Sed pharetra turpis vehicula orci sodales, interdum blandit libero scelerisque."
-    writeln("The body after: ${post.body}")
+    writeln 'The body before: ${post.body}'
+
+    post.body = 'Sed pharetra turpis vehicula orci sodales, interdum blandit libero scelerisque.'
+    writeln 'The body after: ${post.body}'
 end
 
 # The output
