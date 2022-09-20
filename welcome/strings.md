@@ -34,7 +34,7 @@ Make it fast.
 
 Para interpolar strings, basta passar o valor dentro de `${}`.
 
-```typescript
+```kotlin
 var name = "Kym"
 
 writeln("Hello ${name}")
