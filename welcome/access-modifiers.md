@@ -1,18 +1,18 @@
 # Access Modifiers
 
-Os acessos são controlados a nível de pacote que nem no Go e Rust, por padrão classes, funções, enums, interfaces são públicos e o restante é privado.
+Os acessos são controlados ao nível de módulo que nem no Go, Dart e Rust, por padrão tudo é público e possui apenas 2 modificadores:
 
-Para modificar o comportamento padrão deverá usar as keywords:
-
-* `pub` - Público, visível fora do módulo;
-* `priv` - Privado, visível apenas dentro do módulo.
+* **pub** (padrão) - Torna visível para fora do módulo;
+* **priv** - Torna acessível somente dentro do módulo.
 
 ```kotlin
-priv fun _checkValid() do
+// Privado
+priv fun checkValid
     ...
 end
 ```
 
 ```rust
-pub const BASE_URL = 'http://localhost:3000'
+// Público (padrão)
+const BASE_URL = "http://localhost:3000"
 ```

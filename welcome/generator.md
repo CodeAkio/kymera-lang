@@ -7,7 +7,7 @@ Esse retorno é automaticamente convertido de acordo com o tipo de retorno espec
 ```ruby
 var numbers = 1 to 10
 
-fun odd_numbers(int[] numbers) :: List do
+fun odd_numbers(int[] numbers) :: List
     numbers.each((number) => if number % 2 != 0 then yield number)
 end
 

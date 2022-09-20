@@ -13,17 +13,19 @@ O método Read serve para possibilitar a entrada de dados do usuário pelo tecla
 
 O método Read pode receber opcionalmente uma string como argumento. Esta string será mostrada no terminal antes da leitura de dados.
 
+Opcionalmente pode passar o argumento type para dizer para qual tipo de dado o valor retornado deve ser parseado.
+
 **Syntax:**
 
 ```go
-read [text to print]
+read([text_to_print], type: <type_to_parse>)
 ```
 
 **Exemplo:**
 
 ```go
-nome := read 'Informe seu nome: '
-writeln 'Seu nome é ${nome}.'
+var nome = read("Informe seu nome: ")
+writeln("Seu nome é ${nome}.")
 
 # Output
 # Foi digitado 'Júlio' no terminal
@@ -35,23 +37,22 @@ writeln 'Seu nome é ${nome}.'
 
 Existem vários parâmetros utilizados pelo método read e readkey:
 
-#### \<type>
+#### type
 
-É possível definir qual o tipo de dado é aceito como entrada passando o tipo no generic.\
-Definido um tipo além de restringir o tipo de dado a ser aceito como entrada, o método read em vez de retornar uma string, ele retornará o valor recebido com o tipo de dado definido, ou seja, se definir o tipo como inteiro, ele só aceita números inteiros e retorna inteiros.\
+Ele faz o parsing da entrada para o tipo passado para ele.\
 Caso informe um tipo de dado diferente do suportado, será retornado uma exceção do tipo TypeError.
 
 ```go
-name := read(string, "What's your name?") // Jorge
-age := read(int, 'How old are you?') // 23
-gender := read(char, 'Are you man(M) or woman(W)?') // M
+var name = read("What's your name?", type: string) // Jorge
+var age = read("How old are you?", type: int) // 23
+var gender = read("Are you man(M) or woman(W)?", type: char) // M
 
-writeln name
-writeln age
-writeln gender
+writeln(name)
+writeln(age)
+writeln(gender)
 
 # Output
-> 'Jorge'
+> "Jorge"
 > 23
 > 'M'
 ```

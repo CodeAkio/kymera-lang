@@ -7,12 +7,11 @@ struct Person {
 }
 ```
 
-```python
-$ person = Person('Kym', 22)
+```kotlin
+$ var person = Person("Kym", 22)
 $ person.name
-#=> 'Kym'
+# "Kym"
 
 $ person.age
-#=> 22
+# 22
 ```
-

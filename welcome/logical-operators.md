@@ -5,154 +5,152 @@ Kymera tem um conjunto mais completo de operadores lógicos com relação a dema
 ## AND
 
 ```python
-> true and true
-#=> true
+$ true and true
+# true
 
-> false and false
-#=> false
+$ false and false
+# false
 
-> true and fase
-#=> false
+$ true and fase
+# false
 
-> false and true
-#=> false
+$ false and true
+# false
 ```
 
 Também pode ser feito em cadeia:
 
 ```python
-> and(true, true, true)
-#=> true
+$ and(true, true, true)
+# true
 
-> and(true, false, true, false)
-#=> false
+$ and(true, false, true, false)
+# false
 ```
 
 ## OR
 
 ```python
-> true or true
-#=> true
+$ true or true
+# true
 
-> false or false
-#=> false
+$ false or false
+# false
 
-> true or fase
-#=> true
+$ true or fase
+# true
 
-> false or true
-#=> true
+$ false or true
+# true
 ```
 
 ```python
-> or(false, false, false)
-#=> false
+$ or(false, false, false)
+# false
 
-> or(true, false, true, false)
-#=> true
+$ or(true, false, true, false)
+# true
 ```
 
 ## XOR
 
 ```python
-> true xor true
-#=> false
+$ true xor true
+# false
 
-> false xor false
-#=> false
+$ false xor false
+# false
 
-> true xor fase
-#=> true
+$ true xor fase
+# true
 
-> false xor true
-#=> true
+$ false xor true
+# true
 ```
 
 ```python
-> xor(true, true, false)
-#=> false
+$ xor(true, true, false)
+# false
 ```
 
 ## NOT
 
 ```python
-> not true
-#=> false
+$ not true
+# false
 
-> not false
-#=> true
+$ not false
+# true
 ```
 
 ## NOR
 
 ```python
-> not (true or true)
-#=> false
+$ not (true or true)
+# false
 
-> not (false or false)
-#=> true
+$ not (false or false)
+# true
 
-> not (true or fase)
-#=> false
+$ not (true or fase)
+# false
 
-> not (false or true)
-#=> false
+$ not (false or true)
+# false
 ```
 
 ```python
-> not or(false, false, false)
-#=> true
+$ not or(false, false, false)
+# true
 
-> not or(true, false, true, false)
-#=> false
+$ not or(true, false, true, false)
+# false
 ```
 
 ## NAND
 
 ```python
-> not (true and true)
-#=> false
+$ not (true and true)
+# false
 
-> not (false and false)
-#=> true
+$ not (false and false)
+# true
 
-> not (true and fase)
-#=> true
+$ not (true and fase)
+# true
 
-> not (false and true)
-#=> true
+$ not (false and true)
+# true
 ```
 
 Também pode ser feito em cadeia:
 
 ```python
-> not and(true, true, true)
-#=> false
+$ not and(true, true, true)
+# false
 
-> not and(true, false, true, false)
-#=> true
+$ not and(true, false, true, false)
+# true
 ```
 
 ## XNOR
 
 ```python
-> not (true xor true)
-#=> true
+$ not (true xor true)
+# true
 
-> not (false xor false)
-#=> true
+$ not (false xor false)
+# true
 
-> not (true xor fase)
-#=> false
+$ not (true xor fase)
+# false
 
-> not (false xor true)
-#=> false
+$ not (false xor true)
+# false
 ```
 
 ```python
-> not xor(true, true, false)
-#=> true
+$ not xor(true, true, false)
+# true
 ```
-
-
 

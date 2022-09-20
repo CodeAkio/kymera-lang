@@ -1,4 +1,4 @@
-# Exceptions
+# Try / Catch
 
 O tratamento de erros foi fortemente baseado no Python.
 
@@ -12,9 +12,9 @@ O `finally` (opcional) é executado em tanto no se der certo ou se der erro, mui
 try
     writeln(2 / 0)
 except
-    ZeroDivisionError -> writeln('You cannot divide any number by zero')
+    ZeroDivisionError -> writeln("You cannot divide any number by zero")
 finally
-    writeln('Bye!')
+    writeln("Bye!")
 end
 ```
 
@@ -26,9 +26,9 @@ Podemos ter vários dele para tratar erros diferentes:
 try
     # Do something
 except
-    ZeroDivisionError -> writeln('You cannot divide any number by zero')
+    ZeroDivisionError -> writeln("You cannot divide any number by zero")
 except ValueError
-    writeln('It expect a number as input')
+    writeln("It expect a number as input")
 end
 ```
 
@@ -72,7 +72,7 @@ Também podemos passar um Set de erros que serão capturados pela mesma except:
 try
     # Do something
 except
-    (ZeroDivisionError, ValueError), errors -> writeln('Invalid input')
+    (ZeroDivisionError, ValueError), errors -> writeln("Invalid input")
     else -> writeln("There's something wrong")
 end
 ```
