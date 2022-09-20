@@ -214,7 +214,7 @@ writeln(["Hello", "Kym!"].join(' '))
 
 ### replace
 
-Ele substitui trechos que batem com a string o regex.
+Ele substitui trechos que batem com a string ou regex.
 
 ```kotlin
 var result = "Hello Kym!".replace('o', '0')
@@ -226,7 +226,7 @@ writeln(result)
 ```
 
 ```kotlin
-var result = "Hello Kym!".replace(/[aeiou]/, '0')
+var result = "Hello Kym!".replace(re"[aeiou]", '0')
 
 writeln(result)
 
