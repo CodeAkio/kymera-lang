@@ -2,8 +2,6 @@
 
 Uma função é definida pela keywork `fun`, com um identificador, seguido de parênteses abrindo e fechando **()** e utiliza a notação de pascal em sua declaração.
 
-Caso a função não receba argumentos, os parênteses serão opcionais na declaração.
-
 A definição do tipo de retorno é opcional, caso não informe nada, ele utilizará como padrão o tipo **void**.
 
 Os blocos são definidos com `do` e `end`, sendo o `do` opcional e somente indicado o seu uso em casos especiais.
