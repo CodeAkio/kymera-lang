@@ -20,7 +20,7 @@ class Post(
     string body,
 ) end
 
-fun main
+fun main()
     var post = Post(
         0,
         "Chewbacca",

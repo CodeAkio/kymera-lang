@@ -13,7 +13,7 @@ Utilize os métodos **each** e **map** quando possível, deixe o for apenas para
 {% endhint %}
 
 ```csharp
-for (var index = 1, index <= 10, index.inc())
+for (var index = 1, index <= 10, index++)
     writeln(index)
 end
 
@@ -41,7 +41,7 @@ var number = 1
 
 for number <= 10
     writeln(number)
-    number.inc()
+    number++
 end
 
 # Output
@@ -64,7 +64,7 @@ Ele terá o comportamento de um while, mas com a possibilidade de inicializar o 
 ```csharp
 for (var number = 1, number <= 10)
     writeln(number)
-    number.inc()
+    number++
 end
 
 # Output
@@ -82,8 +82,8 @@ end
 
 Também podemos fazer em **uma linha**, para isso utilize arrow function.
 
-```kotlin
-for (var index = 1, index <= 10, index.inc()) => writeln(index)
+```julia
+for (var index = 1, index <= 10, index++) => writeln(index)
 ```
 
 Podemos ainda passar uma expressão usando `in`, neste caso não precisa usar o ~~var~~.

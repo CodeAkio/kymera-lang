@@ -16,7 +16,7 @@ Existem algumas regras de nomenclatura para pacotes:
 ```kotlin
 package hello
 
-fun greeting
+fun greeting()
     writeln("Hello")
 end
 ```
@@ -26,7 +26,7 @@ Existe um módulo especial que é o **main**, ele é obrigatório, pois é por e
 ```kotlin
 package main
 
-fun main
+fun main()
     // Something
 end
 ```
@@ -38,7 +38,7 @@ Por padrão, somente **funções**, **classes**, **interfaces**, **enums**, **co
 ```kotlin
 package hello
 
-fun greeting
+fun greeting()
     writeln("Hello")
 end
 ```
