@@ -138,46 +138,57 @@ t[1, 2, 3] - t[2]
 
 ```python
 8 % 2
-
-# Output
-> 0
+# 0
 ```
 
 ```python
 22.0 % 4
+# 2.0
+```
 
-# Output
-> 2.0
+Ou de forma verbosa
+
+```python
+8 mod 2
+# 0
 ```
 
 ## Potência
 
 ```python
 2 ** 4
-
-# Output
-> 16
+# 16
 ```
 
 ```python
 2 ** 8.0
-
-# Output
-> 256.0
+# 256.0
 ```
 
 ## Flor Division
 
 ```python
 7 // 3
-
-# Output
-> 2
+# 2
 ```
 
 ```python
 7 // 4.0
+# 1
+```
 
-# Output
-> 1
+## Increment
+
+```nim
+var num = 1
+nim.inc
+# 2
+```
+
+## Decrement
+
+```nim
+var num = 1
+nim.dec
+# 0
 ```
