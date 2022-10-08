@@ -31,7 +31,7 @@
   * [LikedList](welcome/likedlist.md)
   * [Stack](welcome/stack.md)
   * [Queue](welcome/queue.md)
-  * [Tuple](welcome/set.md)
+  * [Set](welcome/set.md)
   * [Map](welcome/dictionary.md)
   * [Graph \[Coming Soon\]](welcome/graph.md)
   * [Generator](welcome/generator.md)
