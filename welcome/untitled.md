@@ -19,13 +19,12 @@ write(<mensagem>)
 
 **Exemplo:**
 
-```go
+```csharp
 var nome = "Marcos"
 write("Meu nome é ")
 write(nome)
 
-# Output
-> Meu nome é Marcos
+# Meu nome é Marcos
 ```
 
 ## writeln
@@ -40,12 +39,11 @@ writeln(<mensagem>)
 
 **Exemplo:**
 
-```go
+```csharp
 var nome = "Marcos"
 writeln("Meu nome é ")
 writeln(nome)
 
-# Output
-> Meu nome é 
-> Marcos
+# Meu nome é 
+# Marcos
 ```

@@ -28,17 +28,15 @@ var <variable_name> = <value>
 ```go
 int number = 10
 writeln(number)
+# 10
 
 var animal = "Dog"
 writeln(animal)
+# "Dog"
 
 animal = "Cat"
 writeln(animal)
-
-# Output
-> 10
-> "Dog"
-> "Cat"
+# "Cat"
 ```
 
 ## Constants

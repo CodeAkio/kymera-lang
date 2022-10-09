@@ -36,11 +36,10 @@ fun main()
     writeln("The body after: ${post.body}")
 end
 
-# The output
-> The title is: Programming language.
-> The author is: Chewbacca
-> The body before: Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-> The body after: Sed pharetra turpis vehicula orci sodales, interdum blandit libero scelerisque.
+# The title is: Programming language.
+# The author is: Chewbacca
+# The body before: Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+# The body after: Sed pharetra turpis vehicula orci sodales, interdum blandit libero scelerisque.
 ```
 
 ### Why Kymera?

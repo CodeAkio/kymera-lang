@@ -30,17 +30,15 @@ var <variable name> = <value>
 ```kotlin
 int number = 10
 writeln(number)
+# 10
 
 var animal = "Dog"
 writeln(animal)
+# "Dog"
 
 animal = "Cat"
 writeln(animal)
-
-# Output
-> 10
-> "Dog"
-> "Cat"
+# "Cat"
 ```
 
 #### &#x20;Types of scope
@@ -59,16 +57,14 @@ del <variable | constant | object>
 
 &#x20;**Sample:**
 
-```python
+```csharp
 var number = 10
 writeln(number)
+# 10
 
 del number
 writeln(number)
-
-# Output
-> 10
-> The variable 'number' was not declared.
+# The variable 'number' was not declared.
 ```
 
 #### null
@@ -83,14 +79,13 @@ writeln(number)
 
 &#x20;**Sample:**
 
-```go
+```csharp
 var number = 42
 writeln(number)
 
 number = null
 writeln(number)
 
-# Output
-> 42
-> null
+# 42
+# null
 ```

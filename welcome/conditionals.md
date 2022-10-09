@@ -99,8 +99,7 @@ else
     writeln("Terrible")
 end
 
-# Output
-$ "Excellent"
+# "Excellent"
 ```
 
 ## One line if
@@ -118,8 +117,7 @@ var message = if (age >= 18) then "Is an adult" else "Is not an adult"
 
 writeln(message)
 
-# Output
-> "Is an adult"
+# "Is an adult"
 ```
 
 Uma forma mais elegante e mais indicada é quebrando linha:
@@ -133,8 +131,7 @@ var message = if age >= 18
 
 writeln(message)
 
-# Output
-> "Is an adult"
+# "Is an adult"
 ```
 
 Podemos usar apenas o `then` que quando a expressão é verdadeira, ele retorna o valor, caso contrário, devolve `null`.
@@ -146,8 +143,7 @@ var message = if age >= 18 then "Is an adult"
 
 writeln(message)
 
-# Output
-> "Is an adult"
+# "Is an adult"
 ```
 
 ```ruby
@@ -157,8 +153,7 @@ var message = if age >= 18 then "Is an adult"
 
 writeln(message)
 
-# Output
-> null
+# null
 ```
 
 ## When

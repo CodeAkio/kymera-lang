@@ -11,15 +11,15 @@ Podemos definir exatamente quais valores são aceitos:
 ```typescript
 type Status = "doing" | "pending" | "completed"
 
-Status currentStatus = "doing" // Valid
-currentStatus = "invalid" // Type Error
+Status currentStatus = "doing" # Valid
+currentStatus = "invalid" # Type Error
 ```
 
 ```typescript
 type Rate = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
 
-Rate productRate = 8 // Valid
-poductRate = 0 // Type Error
+Rate productRate = 8 # Valid
+poductRate = 0 # Type Error
 ```
 
 ### Restringindo Tipos
@@ -31,8 +31,8 @@ Para facilitar isso existem tipos genéricos como o `number` que aceita qualquer
 ```typescript
 type Age = number | string
 
-Age myAge = 20 // Valid
-myAge = 22.0 // Valid
-myAge = "21" // Valid
-myAge = Date.now() // Type Error
+Age myAge = 20 # Valid
+myAge = 22.0 # Valid
+myAge = "21" # Valid
+myAge = Date.now() # Type Error
 ```

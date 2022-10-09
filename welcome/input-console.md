@@ -27,10 +27,8 @@ read([text_to_print], type: <type_to_parse>)
 var nome = read("Informe seu nome: ")
 writeln("Seu nome é ${nome}.")
 
-# Output
-# Foi digitado 'Júlio' no terminal
-> Informe seu nome: Júlio
-> Seu nome é Júlio.
+# Informe seu nome: Júlio
+# Seu nome é Júlio.
 ```
 
 ### Parâmetros
@@ -51,10 +49,9 @@ writeln(name)
 writeln(age)
 writeln(gender)
 
-# Output
-> "Jorge"
-> 23
-> 'M'
+# "Jorge"
+# 23
+# 'M'
 ```
 
 #### \<color>

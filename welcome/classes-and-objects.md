@@ -16,20 +16,7 @@ class Pessoa
         this.idade = idade
     end
     
-    fun ola() :: void
-        writeln("Olá ${this.nome}")
-    end
-end
-```
-
-```kotlin
-class Pessoa
-    string nome
-    int idade
-
-    constructor(this.nome, this.idade) end
-    
-    fun ola() :: void
+    fun ola :: void
         writeln("Olá ${this.nome}")
     end
 end

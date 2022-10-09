@@ -29,7 +29,7 @@ sum_numbers:
 ```kotlin
 package operations
 
-@doc("operations.sum_numbers")
+@doc('operations.sum_numbers')
 fun sumNumbers(float num1, float num2) :: float
     num1 + num2
 end

@@ -11,8 +11,7 @@ Uma string pode ser declarada entre `"` (aspas duplas).
 ```kotlin
 writeln("Hello Kym!")
 
-# Output
-> Hello Kym!
+# Hello Kym!
 ```
 
 Quando precisar de uma string de _múltiplas linhas_ basta apenas quebrar a linha e só fechar as aspas no final:
@@ -24,8 +23,7 @@ Make it right;
 Make it fast.
 ")
 
-# Output
-> Make it work;
+# Make it work;
 Make it right;
 Make it fast.
 ```
@@ -39,8 +37,7 @@ var name = "Kym"
 
 writeln("Hello ${name}")
 
-# Output
-> Hello Kym
+# Hello Kym
 ```
 
 ## Operações com String
@@ -56,8 +53,7 @@ var name = "Kym"
 
 writeln("Hello " + name)
 
-# Output
-> Hello Kym
+# Hello Kym
 ```
 
 Também pode ser feito com uma string e outro tipo de valor:
@@ -67,8 +63,7 @@ var age = 20
 
 writeln("He is " + age + " years old")
 
-# Output
-> He is 20 years old
+# He is 20 years old
 ```
 
 {% hint style="info" %}
@@ -82,8 +77,7 @@ Podemos repetir uma string x vezes:
 ```python
 "-" * 5
 
-# Output
-> "-----"
+# "-----"
 ```
 
 ## Posição
@@ -94,8 +88,7 @@ Podemos acessar cada letra como um _List_.
 var some_text = "Hello Kym!"
 writeln(some_text[1])
 
-# Output
-> 'e'
+# 'e'
 ```
 
 Ao passar a posição negativa, ele conta da esquerda para direita:
@@ -104,8 +97,7 @@ Ao passar a posição negativa, ele conta da esquerda para direita:
 var some_text = "Hello Kym!"
 writeln(some_text[-1])
 
-# Output
-> 'm'
+# 'm'
 ```
 
 Podemos iterar como um List:
@@ -115,17 +107,16 @@ var some_text = "Hello Kym!"
 
 some_text.each(c => writeln(c))
 
-# Output
-> 'H'
-> 'e'
-> 'l'
-> 'l'
-> 'o'
-> ' '
-> 'K'
-> 'y'
-> 'm'
-> '!'
+# 'H'
+# 'e'
+# 'l'
+# 'l'
+# 'o'
+# ' '
+# 'K'
+# 'y'
+# 'm'
+# '!'
 ```
 
 ## Métodos
@@ -144,8 +135,7 @@ Diz quantos caracteres possui a string.
 ```kotlin
 writeln("Hello Kym!".length)
 
-# Output
-> 10
+# 10
 ```
 
 ### count
@@ -155,8 +145,7 @@ Conta quantas vezes uma string se repete dentre de outra string.
 ```kotlin
 writeln("Hello Kym!".count('l'))
 
-# Output
-> 2
+# 2
 ```
 
 ### in
@@ -166,8 +155,7 @@ Verifica se uma string está contida em outra.
 ```kotlin
 writeln("Kym" in "Hello Kym!")
 
-# Output
-> true
+# true
 ```
 
 ### contains
@@ -177,8 +165,7 @@ Similar ao in.
 ```kotlin
 writeln("Hello Kym!".contains("Kym"))
 
-# Output
-> true
+# true
 ```
 
 ### split
@@ -188,8 +175,7 @@ Separar a string baseado em um separador do tipo string, retornando um _List\<st
 ```kotlin
 writeln("Hello Kym!".split(' '))
 
-# Output
-> ["Hello", "Kym!"]
+# ["Hello", "Kym!"]
 ```
 
 Se não passar nenhum separador, ele retorna cada um dos caracteres.
@@ -197,8 +183,7 @@ Se não passar nenhum separador, ele retorna cada um dos caracteres.
 ```kotlin
 writeln("Hello Kym!".split())
 
-# Output
-> ['H', 'e', 'l', 'l', 'o', ' ', 'K', 'y', 'm', '!']
+# ['H', 'e', 'l', 'l', 'o', ' ', 'K', 'y', 'm', '!']
 ```
 
 ### join
@@ -208,8 +193,7 @@ Ele une um array de strings, adicionando um separador entra cada elemento.
 ```kotlin
 writeln(["Hello", "Kym!"].join(' '))
 
-# Output
-> "Hello Kym!"
+# "Hello Kym!"
 ```
 
 ### replace
@@ -221,8 +205,7 @@ var result = "Hello Kym!".replace('o', '0')
 
 writeln(result)
 
-# Output
-> "Hell0 Kym!"
+# "Hell0 Kym!"
 ```
 
 ```kotlin
@@ -230,8 +213,7 @@ var result = "Hello Kym!".replace(re"[aeiou]", '0')
 
 writeln(result)
 
-# Output
-> "H0ll0 Kym!"
+# "H0ll0 Kym!"
 ```
 
 ### startsWith
@@ -241,8 +223,7 @@ var result = "Hello Friend!".startsWith("He")
 
 writeln(result)
 
-# Output
-> true
+# true
 ```
 
 ### endsWith
@@ -252,8 +233,7 @@ var result = "Hello Friend!".endsWith('!')
 
 writeln(result)
 
-# Output
-> true
+# true
 ```
 
 ### toChar
@@ -261,8 +241,7 @@ writeln(result)
 ```kotlin
 writeln("a".toChar() is char)
 
-# Output
-> true
+# true
 ```
 
 ### toInt
@@ -272,8 +251,7 @@ Por padrão converte para _int32_, mas é possível usar os específicos: `toInt
 ```kotlin
 writeln("42".toInt() is int)
 
-# Output
-> true
+# true
 ```
 
 ### toFloat
@@ -283,8 +261,7 @@ Por padrão converte para _float32_, mas é possível usar os específicos: `toF
 ```kotlin
 writeln("42".toFloat() is float)
 
-# Output
-> true
+# true
 ```
 
 ### toBool
@@ -292,8 +269,7 @@ writeln("42".toFloat() is float)
 ```kotlin
 writeln("a".toBool())
 
-# Output
-> true
+# true
 ```
 
 ### toList
@@ -303,8 +279,7 @@ Converte para um _List\<dynamic>_.
 ```kotlin
 writeln("[1,2,3]".toList() is List)
 
-# Output
-> true
+# true
 ```
 
 ### toSet
@@ -314,8 +289,7 @@ Converte para um _Set\<dynamic>_.
 ```kotlin
 writeln("(1,2,3)".toSet() is Set)
 
-# Output
-> true
+# true
 ```
 
 ### toMap
@@ -325,8 +299,7 @@ Converte para um Map_\<dynamic>_.
 ```kotlin
 writeln("{ name: \"Kym\", age: \"20\" }".toMap() is Map)
 
-# Output
-> true
+# true
 ```
 
 ### toUpper
@@ -334,8 +307,7 @@ writeln("{ name: \"Kym\", age: \"20\" }".toMap() is Map)
 ```kotlin
 writeln("Hello Kym!".toUpper())
 
-# Output
-> "HELLO KYM!"
+# "HELLO KYM!"
 ```
 
 ### toLower
@@ -343,8 +315,7 @@ writeln("Hello Kym!".toUpper())
 ```kotlin
 writeln("Hello Kym!".toLower())
 
-# Output
-> "hello kym!"
+# "hello kym!"
 ```
 
 ### toCapital
@@ -352,8 +323,7 @@ writeln("Hello Kym!".toLower())
 ```kotlin
 writeln("hello kym!".toCapital())
 
-# Output
-> "Hello Kym!"
+# "Hello Kym!"
 ```
 
 ### toSnake
@@ -361,8 +331,7 @@ writeln("hello kym!".toCapital())
 ```kotlin
 writeln("Hello Kym!".toSnake())
 
-# Output
-> "hello_kym"
+# "hello_kym"
 ```
 
 ### toPascal
@@ -370,8 +339,7 @@ writeln("Hello Kym!".toSnake())
 ```kotlin
 writeln("Hello Kym!".toPascal())
 
-# Output
-> "HelloKym"
+# "HelloKym"
 ```
 
 ### toSkewer
@@ -379,8 +347,7 @@ writeln("Hello Kym!".toPascal())
 ```kotlin
 writeln("Hello Kym!".toSkewer())
 
-# Output
-> "hello-kym"
+# "hello-kym"
 ```
 
 ### toScreamingSnake
@@ -388,8 +355,7 @@ writeln("Hello Kym!".toSkewer())
 ```kotlin
 writeln("Hello Kym!".toScreamingSnake())
 
-# Output
-> "HELLO_KYM"
+# "HELLO_KYM"
 ```
 
 {% embed url="https://ruby-doc.org/core-3.0.2/String.html" %}

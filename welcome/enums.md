@@ -13,7 +13,8 @@ enum Status {
 
 writeln(Status.Online)
 
-# 0
+# Output
+> 0
 ```
 
 Também é possível definir um tipo e valores manualmente a cada um deles.
@@ -29,5 +30,6 @@ enum<symbol> Status {
 
 writeln(Status.Online)
 
-# :online
+# Output
+> :online
 ```
