@@ -47,7 +47,8 @@ Map<string, string> numbers = {
 
 writeln(numbers)
 
-# {
+# Output
+> {
     "name": "Pedro",
     "age": "22"
 }
@@ -69,7 +70,8 @@ user.add(:email, "pedro@email.com")
 
 writeln(user)
 
-# {
+# Output
+> {
     name: "Pedro",
     age: 22,
     email: "pedro@email.com"
@@ -88,7 +90,8 @@ user.add(:name, "Marcos")
 
 writeln(user)
 
-# {
+# Output
+> {
     name: "Marcos",
     age: 22
 }
@@ -106,7 +109,8 @@ user.update(:name, "Marcos")
 
 writeln(user)
 
-# {
+# Output
+> {
     name: "Marcos",
     age: 22
 }
@@ -124,14 +128,15 @@ user.remove(:age)
 
 writeln(user)
 
-# {
+# Output
+> {
     name: "Pedro"
 }
 ```
 
 ### keys
 
-```csharp
+```kotlin
 var user = {
     name: "Pedro",
     age: 22
@@ -139,7 +144,8 @@ var user = {
 
 writeln(user.values)
 
-# [:name, :age]
+# Output
+> [:name, :age]
 ```
 
 ### values
