@@ -7,11 +7,11 @@ struct Person {
 }
 ```
 
-```kotlin
-$ var person = Person("Kym", 22)
-$ person.name
+```csharp
+var person = Person("Kym", 22)
+person.name
 # "Kym"
 
-$ person.age
+person.age
 # 22
 ```

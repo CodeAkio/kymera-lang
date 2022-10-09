@@ -2,8 +2,6 @@
 
 Uma função é definida pela keywork `fun`, com um identificador, seguido de parênteses abrindo e fechando **()** e utiliza a notação de pascal em sua declaração.
 
-Caso a função não receba argumentos, os parênteses serão opcionais na declaração.
-
 A definição do tipo de retorno é opcional, caso não informe nada, ele utilizará como padrão o tipo **void**.
 
 Os blocos são definidos com `do` e `end`, sendo o `do` opcional e somente indicado o seu uso em casos especiais.
@@ -28,8 +26,7 @@ var valor_soma = somarDoisNumeros(10.0, 2.0)
 
 writeln(valor_soma)
 
-# Output
-$ 12.0
+# 12.0
 ```
 
 O retorno é opcional, basta definir o tipo de retorno e ele automaticamente retornará a última linha:
@@ -43,8 +40,7 @@ var valor_soma = somarDoisNumeros(10.0, 2.0)
 
 writeln(valor_soma)
 
-# Output
-$ 12.0
+# 12.0
 ```
 
 Também é possível ter **múltiplos retornos**:
@@ -57,7 +53,7 @@ end
 
 ```kotlin
 fun swap(int num1, int num2) :: (int, int) | null
-    // Some code
+    # Some code
 end
 ```
 
