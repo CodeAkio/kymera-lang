@@ -6,10 +6,10 @@ O `Stack` permite armazenar vários valores de diferentes tipos em uma estrutura
 
 ## Declaração e Atribuição
 
-Pode definir o tipo de variável implicitamente com `stack[]`.
+Pode definir o tipo de variável implicitamente com `s[]`.
 
 ```python
-fruit = stack["Apple", "Orange", "Banana"]
+fruit = s["Apple", "Orange", "Banana"]
 ```
 
 Deverá definir o tipo de variável explicitamente como `Stack`.
@@ -27,7 +27,7 @@ Stack<int> numbers = [1, 2, 3, 4, 5]
 writeln(numbers)
 
 # Output
-> stack[1, 2, 3, 4, 5]
+> [1, 2, 3, 4, 5]
 ```
 
 Também podemos utilizar uma matriz.
@@ -54,7 +54,7 @@ numbers = numbers + [6, 7, 8, 9, 10]
 writeln(numbers)
 
 # Output
-> stack[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ```
 
 ```csharp
@@ -64,7 +64,7 @@ numbers = numbers - [2, 4]
 writeln(numbers)
 
 # Output
-> stack[1, 3, 5]
+> [1, 3, 5]
 ```
 
 ```csharp
@@ -74,7 +74,7 @@ numbers = numbers * 2
 writeln(numbers)
 
 # Output
-> stack[1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
+> [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
 ```
 
 ## Methods
@@ -90,7 +90,7 @@ numbers.push(6)
 writeln(numbers)
 
 # Output
-> stack[1, 2, 3, 4, 5, 6]
+> [1, 2, 3, 4, 5, 6]
 ```
 
 ### pop
@@ -102,7 +102,7 @@ numbers.pop()
 writeln(numbers)
 
 # Output
-> stack[1, 2, 6, 3, 4]
+> [1, 2, 6, 3, 4]
 ```
 
 ### reverse
@@ -113,7 +113,7 @@ Stack<int> numbers = [1, 2, 3, 4, 5]
 writeln(numbers.reverse)
 
 # Output
-> stack[5, 4, 3, 2, 1]
+> [5, 4, 3, 2, 1]
 ```
 
 ### sort
@@ -124,7 +124,7 @@ Stack<int> numbers = [4, 1, 5, 3, 2]
 writeln(numbers.sort)
 
 # Output
-> stack[1, 2, 3, 4, 5]
+> [1, 2, 3, 4, 5]
 ```
 
 ### length

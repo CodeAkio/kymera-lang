@@ -28,7 +28,7 @@
   * [Docs](welcome/docs.md)
   * [Range](welcome/range.md)
   * [List](welcome/arrays.md)
-  * [LikedList](welcome/likedlist.md)
+  * [LinkedList](welcome/likedlist.md)
   * [Stack](welcome/stack.md)
   * [Queue](welcome/queue.md)
   * [Set](welcome/set.md)

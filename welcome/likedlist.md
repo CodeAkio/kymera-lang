@@ -1,4 +1,4 @@
-# LikedList
+# LinkedList
 
 ## Introdução
 
@@ -9,7 +9,7 @@ O `LinkedList` permite armazenar vários valores de diferentes tipos e poderá a
 Pode definir o tipo de variável implicitamente com `l[]`.
 
 ```python
-fruit = l["Apple", "Orange", "Banana"]
+fruit = linked["Apple", "Orange", "Banana"]
 ```
 
 Deverá definir o tipo de variável explicitamente como `LinkedList`.
@@ -26,8 +26,7 @@ LinkedList<int> numbers = [1, 2, 3, 4, 5]
 
 writeln(numbers)
 
-# Output
-> [1, 2, 3, 4, 5]
+# linked[1, 2, 3, 4, 5]
 ```
 
 Também podemos utilizar uma matriz.
@@ -41,8 +40,7 @@ LinkedList<int> matrix = [
 
 writeln(matrix[1][2])
 
-# Output
-> 6
+# 6
 ```
 
 ## Operações
@@ -53,8 +51,7 @@ LinkedList<int> numbers = [1, 2, 3, 4, 5]
 numbers = numbers + [6, 7, 8, 9, 10]
 writeln(numbers)
 
-# Output
-> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# linked[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ```
 
 ```csharp
@@ -63,8 +60,7 @@ LinkedList<int> numbers = [1, 2, 3, 4, 5]
 numbers = numbers - [2, 4]
 writeln(numbers)
 
-# Output
-> [1, 3, 5]
+# linked[1, 3, 5]
 ```
 
 ```csharp
@@ -73,8 +69,7 @@ LinkedList<int> numbers = [1, 2, 3, 4, 5]
 numbers = numbers * 2
 writeln(numbers)
 
-# Output
-> [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
+# linked[1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
 ```
 
 ```csharp
@@ -82,8 +77,7 @@ LinkedList<int> numbers = [1, 2, 3, 4, 5]
 
 writeln(5 in numbers)
 
-# Output
-> true
+# true
 ```
 
 ## Methods
@@ -98,8 +92,7 @@ numbers.addFirst(6)
 
 writeln(numbers)
 
-# Output
-> [6, 1, 2, 3, 4, 5]
+# linked[6, 1, 2, 3, 4, 5]
 ```
 
 ### addLast
@@ -110,8 +103,7 @@ numbers.addLast(6)
 
 writeln(numbers)
 
-# Output
-> [1, 2, 3, 4, 5, 6]
+# linked[1, 2, 3, 4, 5, 6]
 ```
 
 ### addBefore
@@ -122,8 +114,7 @@ numbers.addBefore(4, 7)
 
 writeln(numbers)
 
-# Output
-> [1, 2, 3, 7, 4, 5]
+# linked[1, 2, 3, 7, 4, 5]
 ```
 
 ### addAfter
@@ -134,8 +125,7 @@ numbers.addAfter(4, 7)
 
 writeln(numbers)
 
-# Output
-> [1, 2, 3, 4, 7, 5]
+# linked[1, 2, 3, 4, 7, 5]
 ```
 
 ### remove
@@ -146,8 +136,7 @@ numbers.remove(2)
 
 writeln(numbers)
 
-# Output
-> [1, 6, 3, 4, 5]
+# linked[1, 6, 3, 4, 5]
 ```
 
 ### removeFirst
@@ -158,8 +147,7 @@ numbers.removeFirst()
 
 writeln(numbers)
 
-# Output
-> [2, 6, 3, 4, 5]
+# linked[2, 6, 3, 4, 5]
 ```
 
 ### removeLast
@@ -170,8 +158,7 @@ numbers.removeLast()
 
 writeln(numbers)
 
-# Output
-> [1, 2, 6, 3, 4]
+# linked[1, 2, 6, 3, 4]
 ```
 
 ### reverse
@@ -181,8 +168,7 @@ LinkedList<int> numbers = [1, 2, 3, 4, 5]
 
 writeln(numbers.reverse)
 
-# Output
-> [5, 4, 3, 2, 1]
+# linked[5, 4, 3, 2, 1]
 ```
 
 ### contains
@@ -193,9 +179,8 @@ LinkedList<int> numbers = [1, 2, 3, 4, 5]
 writeln(numbers.contains(1))
 writeln(numbers.contains(6))
 
-# Output
-> true
-> false
+# true
+# false
 ```
 
 ### indexOf
@@ -205,8 +190,7 @@ LinkedList<int> numbers = [1, 2, 3, 4, 5]
 
 writeln(numbers.indexOf(1))
 
-# Output
-> 0
+# 0
 ```
 
 ### sort
@@ -216,8 +200,7 @@ LinkedList<int> numbers = [4, 1, 5, 3, 2]
 
 writeln(numbers.sort())
 
-# Output
-> [1, 2, 3, 4, 5]
+# linked[1, 2, 3, 4, 5]
 ```
 
 ### length
@@ -227,8 +210,7 @@ LinkedList<int> numbers = [1, 2, 3, 4, 5]
 
 writeln(numbers.length)
 
-# Output
-> 5
+# 5
 ```
 
 ### each
@@ -238,12 +220,11 @@ LinkedList<int> numbers = [1, 2, 3, 4, 5]
 
 numbers.each(number => writeln(number))
 
-# Output
-> 1
-> 2
-> 3
-> 4
-> 5
+# 1
+# 2
+# 3
+# 4
+# 5
 ```
 
 ### map
@@ -255,8 +236,7 @@ var newNumbers = numbers.map(number => number * 2)
 
 writeln(newNumbers)
 
-# Output
-> [2, 4, 6, 8, 10]
+# linked[2, 4, 6, 8, 10]
 ```
 
 ### find
@@ -266,17 +246,15 @@ LinkedList<int> numbers = [1, 2, 3, 4, 5]
 
 writeln(numbers.find(3))
 
-# Output
-> 3
+# 3
 ```
 
-```dart
-LinkedList<string> colors = ["Red", "Yellow", "Blue", "Orange", "White"]
+```csharp
+LinkedList<String> colors = ["Red", "Yellow", "Blue", "Orange", "White"]
 
 writeln(colors.find(r"[ed]"))
 
-# Output
-> "Red"
+# "Red"
 ```
 
 ### findAll
@@ -286,8 +264,7 @@ LinkedList<int> numbers = [6, 2, 8, 3, 6]
 
 writeln(numbers.find(6))
 
-# Output
-> [6, 6]
+# linked[6, 6]
 ```
 
 ```csharp
@@ -295,8 +272,7 @@ LinkedList<string> colors = ["Red", "Yellow", "Blue", "Orange", "White"]
 
 writeln(colors.find(r"[w]"))
 
-# Output
-> ["Yellow", "White"]
+# linked["Yellow", "White"]
 ```
 
 ### first
@@ -306,8 +282,7 @@ LinkedList<string> colors = ["Red", "Yellow", "Blue", "Orange", "White"]
 
 writeln(colors.first())
 
-# Output
-> "Red"
+# "Red"
 ```
 
 ### last
@@ -317,8 +292,7 @@ LinkedList<string> colors = ["Red", "Yellow", "Blue", "Orange", "White"]
 
 writeln(colors.last())
 
-# Output
-> "White"
+# "White"
 ```
 
 ### max
@@ -328,8 +302,7 @@ LinkedList<int> numbers = [6, 2, 8, 3, 6]
 
 writeln(numbers.max())
 
-# Output
-> 8
+# 8
 ```
 
 ### min
@@ -339,8 +312,7 @@ LinkedList<int> numbers = [6, 2, 8, 3, 6]
 
 writeln(numbers.min())
 
-# Output
-> 2
+# 2
 ```
 
 ### sum
@@ -350,8 +322,7 @@ LinkedList<int> numbers = [6, 2, 8, 3, 6]
 
 writeln(numbers.sum())
 
-# Output
-> 25
+# 25
 ```
 
 ### avg
@@ -361,6 +332,5 @@ LinkedList<int> numbers = [6, 2, 8, 3, 6]
 
 writeln(numbers.avg())
 
-# Output
-> 5
+# 5
 ```
