@@ -9,7 +9,7 @@ O `Queue` permite armazenar vários valores de diferentes tipos em uma estrutura
 Pode definir o tipo de variável implicitamente com `q[]`.
 
 ```python
-fruit = q["Apple", "Orange", "Banana"]
+fruit = queue["Apple", "Orange", "Banana"]
 ```
 
 Deverá definir o tipo de variável explicitamente como `Queue`.
@@ -26,8 +26,7 @@ Queue<int> numbers = [1, 2, 3, 4, 5]
 
 writeln(numbers)
 
-# Output
-> [1, 2, 3, 4, 5]
+# queue[1, 2, 3, 4, 5]
 ```
 
 Também podemos utilizar uma matriz.
@@ -41,8 +40,7 @@ Queue<int> matrix = [
 
 writeln(matrix[1][2])
 
-# Output
-> 6
+# 6
 ```
 
 ## Operações
@@ -53,8 +51,7 @@ Queue<int> numbers = [1, 2, 3, 4, 5]
 numbers = numbers + [6, 7, 8, 9, 10]
 writeln(numbers)
 
-# Output
-> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# queue[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ```
 
 ```csharp
@@ -63,8 +60,7 @@ Queue<int> numbers = [1, 2, 3, 4, 5]
 numbers = numbers - [2, 4]
 writeln(numbers)
 
-# Output
-> [1, 3, 5]
+# queue[1, 3, 5]
 ```
 
 ```csharp
@@ -73,8 +69,7 @@ Queue<int> numbers = [1, 2, 3, 4, 5]
 numbers = numbers * 2
 writeln(numbers)
 
-# Output
-> [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
+# queue[1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
 ```
 
 ## Methods
@@ -89,8 +84,7 @@ numbers.enqueue(6)
 
 writeln(numbers)
 
-# Output
-> [1, 2, 3, 4, 5, 6]
+# queue[1, 2, 3, 4, 5, 6]
 ```
 
 ### dequeue
@@ -101,8 +95,7 @@ numbers.dequeue()
 
 writeln(numbers)
 
-# Output
-> [2, 6, 3, 4, 5]
+# queue[2, 6, 3, 4, 5]
 ```
 
 ### reverse
@@ -112,8 +105,7 @@ Queue<int> numbers = [1, 2, 3, 4, 5]
 
 writeln(numbers.reverse())
 
-# Output
-> [5, 4, 3, 2, 1]
+# queue[5, 4, 3, 2, 1]
 ```
 
 ### sort
@@ -123,8 +115,7 @@ Queue<int> numbers = [4, 1, 5, 3, 2]
 
 writeln(numbers.sort())
 
-# Output
-> [1, 2, 3, 4, 5]
+# queue[1, 2, 3, 4, 5]
 ```
 
 ### length
@@ -134,8 +125,7 @@ Queue<int> numbers = [1, 2, 3, 4, 5]
 
 writeln(numbers.length)
 
-# Output
-> 5
+# 5
 ```
 
 ### each
@@ -145,12 +135,11 @@ Queue<int> numbers = [1, 2, 3, 4, 5]
 
 numbers.each(number => writeln(number))
 
-# Output
-> 1
-> 2
-> 3
-> 4
-> 5
+# 1
+# 2
+# 3
+# 4
+# 5
 ```
 
 ### map
@@ -162,8 +151,7 @@ var newNumbers = numbers.map(number => number * 2)
 
 writeln(newNumbers)
 
-# Output
-> [2, 4, 6, 8, 10]
+# queue[2, 4, 6, 8, 10]
 ```
 
 ### sum
@@ -173,8 +161,7 @@ Queue<int> numbers = [6, 2, 8, 3, 6]
 
 writeln(numbers.sum())
 
-# Output
-> 25
+# 25
 ```
 
 ### avg
@@ -184,6 +171,5 @@ Queue<int> numbers = [6, 2, 8, 3, 6]
 
 writeln(numbers.avg())
 
-# Output
-> 5
+# 5
 ```
