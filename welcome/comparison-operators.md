@@ -187,3 +187,17 @@ Ou a forma verbal?
 # false
 ```
 
+### Spaceship
+
+Se for menor retorna -1, se for igual retorna 0, se for maior retorna 1:
+
+```ruby
+2 <=> 3
+# -1
+
+2 <=> 2
+# 0
+
+2 <=> 1
+# 1
+```
