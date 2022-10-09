@@ -32,8 +32,7 @@ List<int> numbers = [1, 2, 3, 4, 5]
 
 writeln(numbers)
 
-# Output
-> [1, 2, 3, 4, 5]
+# [1, 2, 3, 4, 5]
 ```
 
 Existe a forma enxuta que é passando o **tipo dos valores** seguido de `[]`.
@@ -43,8 +42,7 @@ int[] numbers = [1, 2, 3, 4, 5]
 
 writeln(numbers)
 
-# Output
-> [1, 2, 3, 4, 5]
+# [1, 2, 3, 4, 5]
 ```
 
 Também podemos utilizar uma matriz.
@@ -58,8 +56,7 @@ int[] matrix = [
 
 writeln(matrix[1][2])
 
-# Output
-> 6
+# 6
 ```
 
 ## Referência de Valores
@@ -69,8 +66,7 @@ int[] numbers = [1, 2, 3, 4, 5]
 
 writeln(numbers[1])
 
-# Output
-> 2
+# 2
 ```
 
 ```csharp
@@ -80,8 +76,7 @@ numbers[2] = 7
 
 writeln(numbers)
 
-# Output
-> [1, 2, 7, 4, 5]
+# [1, 2, 7, 4, 5]
 ```
 
 ## Slice
@@ -93,8 +88,7 @@ int[] numbers = [1, 2, 3, 4, 5]
 
 writeln(numbers[2:3])
 
-# Output
-> [3, 4]
+# [3, 4]
 ```
 
 ```csharp
@@ -102,8 +96,7 @@ int[] numbers = [1, 2, 3, 4, 5]
 
 writeln(numbers[:])
 
-# Output
-> [1, 2, 3, 4, 5]
+# [1, 2, 3, 4, 5]
 ```
 
 ```csharp
@@ -111,8 +104,7 @@ int[] numbers = [1, 2, 3, 4, 5]
 
 writeln(numbers[:2])
 
-# Output
-> [1, 2, 3]
+# [1, 2, 3]
 ```
 
 ```csharp
@@ -120,20 +112,18 @@ int[] numbers = [1, 2, 3, 4, 5]
 
 writeln(numbers[2:])
 
-# Output
-> [3, 4, 5]
+# [3, 4, 5]
 ```
 
 ## Operações
 
-```kotlin
+```csharp
 var numbers = [1, 2, 3, 4, 5]
 
 numbers = numbers + [6, 7, 8, 9, 10]
 writeln(numbers)
 
-# Output
-> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ```
 
 ```csharp
@@ -142,8 +132,7 @@ var numbers = [1, 2, 3, 4, 5]
 numbers = numbers - [2, 4]
 writeln(numbers)
 
-# Output
-> [1, 3, 5]
+# [1, 3, 5]
 ```
 
 ```csharp
@@ -152,8 +141,7 @@ var numbers = [1, 2, 3, 4, 5]
 numbers = numbers * 2
 writeln(numbers)
 
-# Output
-> [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
+# [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
 ```
 
 ```csharp
@@ -161,8 +149,7 @@ var numbers = [1, 2, 3, 4, 5]
 
 writeln(5 in numbers)
 
-# Output
-> true
+# true
 ```
 
 ## Methods
@@ -177,8 +164,7 @@ numbers.add(6)
 
 writeln(numbers)
 
-# Output
-> [1, 2, 3, 4, 5, 6]
+# [1, 2, 3, 4, 5, 6]
 ```
 
 ### insert
@@ -189,8 +175,7 @@ numbers.insert(6, 2)
 
 writeln(numbers)
 
-# Output
-> [1, 2, 6, 3, 4, 5]
+# [1, 2, 6, 3, 4, 5]
 ```
 
 ### remove
@@ -201,8 +186,7 @@ numbers.remove(2)
 
 writeln(numbers)
 
-# Output
-> [1, 6, 3, 4, 5]
+# [1, 6, 3, 4, 5]
 ```
 
 ### pop
@@ -213,8 +197,7 @@ numbers.pop()
 
 writeln(numbers)
 
-# Output
-> [1, 2, 6, 3, 4]
+# [1, 2, 6, 3, 4]
 ```
 
 ### reverse
@@ -224,8 +207,7 @@ int[] numbers = [1, 2, 3, 4, 5]
 
 writeln(numbers.reverse)
 
-# Output
-> [5, 4, 3, 2, 1]
+# [5, 4, 3, 2, 1]
 ```
 
 ### contains
@@ -236,9 +218,8 @@ int[] numbers = [1, 2, 3, 4, 5]
 writeln(numbers.contains(1))
 writeln(numbers.contains(6))
 
-# Output
-> true
-> false
+# true
+# false
 ```
 
 ### indexOf
@@ -248,8 +229,7 @@ int[] numbers = [1, 2, 3, 4, 5]
 
 writeln(numbers.indexOf(1))
 
-# Output
-> 0
+# 0
 ```
 
 ### sort
@@ -259,8 +239,7 @@ int[] numbers = [4, 1, 5, 3, 2]
 
 writeln(numbers.sort)
 
-# Output
-> [1, 2, 3, 4, 5]
+# [1, 2, 3, 4, 5]
 ```
 
 ### length
@@ -270,8 +249,7 @@ int[] numbers = [1, 2, 3, 4, 5]
 
 writeln(numbers.length)
 
-# Output
-> 5
+# 5
 ```
 
 ### each
@@ -281,12 +259,11 @@ int[] numbers = [1, 2, 3, 4, 5]
 
 numbers.each(number => writeln(number))
 
-# Output
-> 1
-> 2
-> 3
-> 4
-> 5
+# 1
+# 2
+# 3
+# 4
+# 5
 ```
 
 ### map
@@ -298,8 +275,7 @@ var newNumbers = numbers.map(number => number * 2)
 
 writeln(newNumbers)
 
-# Output
-> [2, 4, 6, 8, 10]
+# [2, 4, 6, 8, 10]
 ```
 
 ### find
@@ -309,17 +285,15 @@ int[] numbers = [1, 2, 3, 4, 5]
 
 writeln(numbers.find(3))
 
-# Output
-> 3
+# 3
 ```
 
-```dart
+```csharp
 String[] colors = ["Red", "Yellow", "Blue", "Orange", "White"]
 
 writeln(colors.find(r"[ed]"))
 
-# Output
-> "Red"
+# "Red"
 ```
 
 ### findAll
@@ -329,8 +303,7 @@ int[] numbers = [6, 2, 8, 3, 6]
 
 writeln(numbers.find(6))
 
-# Output
-> [6, 6]
+# [6, 6]
 ```
 
 ```csharp
@@ -338,8 +311,7 @@ String[] colors = ["Red", "Yellow", "Blue", "Orange", "White"]
 
 writeln(colors.find(r"[w]"))
 
-# Output
-> ["Yellow", "White"]
+# ["Yellow", "White"]
 ```
 
 ### first
@@ -349,8 +321,7 @@ String[] colors = ["Red", "Yellow", "Blue", "Orange", "White"]
 
 writeln(colors.first())
 
-# Output
-> "Red"
+# "Red"
 ```
 
 ### last
@@ -360,8 +331,7 @@ String[] colors = ["Red", "Yellow", "Blue", "Orange", "White"]
 
 writeln(colors.last())
 
-# Output
-> "White"
+# "White"
 ```
 
 ### sample
@@ -373,8 +343,7 @@ String[] colors = ["Red", "Yellow", "Blue", "Orange", "White"]
 
 writeln(colors.sample())
 
-# Output
-> "Yellow"
+# "Yellow"
 ```
 
 ### max
@@ -384,8 +353,7 @@ int[] numbers = [6, 2, 8, 3, 6]
 
 writeln(numbers.max())
 
-# Output
-> 8
+# 8
 ```
 
 ### min
@@ -395,8 +363,7 @@ int[] numbers = [6, 2, 8, 3, 6]
 
 writeln(numbers.min())
 
-# Output
-> 2
+# 2
 ```
 
 ### sum
@@ -406,8 +373,7 @@ int[] numbers = [6, 2, 8, 3, 6]
 
 writeln(numbers.sum())
 
-# Output
-> 25
+# 25
 ```
 
 ### avg
@@ -417,6 +383,5 @@ int[] numbers = [6, 2, 8, 3, 6]
 
 writeln(numbers.avg())
 
-# Output
-> 5
+# 5
 ```
