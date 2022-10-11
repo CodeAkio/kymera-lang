@@ -8,15 +8,28 @@ description: Junta o Dart, Kotlin e C#
 
 ```kotlin
 class Pessoa
-    string nome
-    int idade
+    nome string
+    idade int
 
-    constructor(string nome, int idade)
+    constructor(nome string, idade int)
         this.nome = nome
         this.idade = idade
     end
     
-    fun ola :: void
+    fun ola()
+        writeln("Olá ${this.nome}")
+    end
+end
+```
+
+```kotlin
+class Pessoa
+    nome string
+    idade int
+
+    constructor(this.nome, this.idade) end
+    
+    fun ola()
         writeln("Olá ${this.nome}")
     end
 end
@@ -24,18 +37,16 @@ end
 
 ```ruby
 class Pessoa
-    constructor(pub string nome, pub int idade) end
+    constructor(pub nome string, pub idade int) end
 end
 ```
 
 ```ruby
-class Pessoa(priv string nome, priv int idade)
-    ...
-end
+class Pessoa(priv nome string, priv idade int) end
 ```
 
 ```ruby
-class Pessoa(priv string nome, priv int idade)
+class Pessoa(priv nome string, priv idade int)
     get nome() :: string
         return this.nome.toUpper()
     end
@@ -50,8 +61,8 @@ end
 
 ```ruby
 class Pessoa
-    constructor(priv string nome, priv int idade, priv string cpf) end
-    constructor.juridica(priv string nome, priv string cnpj) end
+    constructor(priv nome string, priv idade int, priv cpf string) end
+    constructor.juridica(priv nome string, priv cnpj string) end
 end
 ```
 
