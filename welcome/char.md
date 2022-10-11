@@ -9,5 +9,5 @@ var gender = c"M"
 ```
 
 ```csharp
-gender char = "M"
+char gender = "M"
 ```

@@ -8,6 +8,8 @@ Ele é uma variação de **List\<char>**, então possui todos os recursos de um 
 
 Uma string pode ser declarada entre aspas duplas (`"`) ou aspas simples (`'`).
 
+Para especificar seu tipo, use a keywork `string`.
+
 ```csharp
 text string = "Hello Kym!"
 writeln(text)
