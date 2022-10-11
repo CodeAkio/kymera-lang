@@ -1,22 +1,21 @@
-# Decorator
+# Decorator \[WIP]
 
 Utilize o `@` antes do nome da função para declarar um decorator:
 
-```kotlin
-fun @greeting
+```csharp
+fun @greeting()
     writeln("Hello")
 end
 ```
 
-```kotlin
+```csharp
 @greeting()
-fun snake
+fun snake()
     writeln("Snake")
 end
 
 snake()
 
-# Output
-> "Hello"
-> "Snake"
+# "Hello"
+# "Snake"
 ```
