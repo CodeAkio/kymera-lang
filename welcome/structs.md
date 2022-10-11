@@ -2,16 +2,16 @@
 
 ```csharp
 struct Person {
-    name string
-    age int
+    string name
+    int age
 }
 ```
 
-```csharp
-var person = Person("Kym", 22)
-person.name
+```kotlin
+$ var person = Person("Kym", 22)
+$ person.name
 # "Kym"
 
-person.age
+$ person.age
 # 22
 ```

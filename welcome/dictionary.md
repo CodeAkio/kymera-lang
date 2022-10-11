@@ -47,8 +47,7 @@ Map<string, string> numbers = {
 
 writeln(numbers)
 
-# Output
-> {
+# {
     "name": "Pedro",
     "age": "22"
 }
@@ -70,8 +69,7 @@ user.add(:email, "pedro@email.com")
 
 writeln(user)
 
-# Output
-> {
+# {
     name: "Pedro",
     age: 22,
     email: "pedro@email.com"
@@ -90,8 +88,7 @@ user.add(:name, "Marcos")
 
 writeln(user)
 
-# Output
-> {
+# {
     name: "Marcos",
     age: 22
 }
@@ -109,8 +106,7 @@ user.update(:name, "Marcos")
 
 writeln(user)
 
-# Output
-> {
+# {
     name: "Marcos",
     age: 22
 }
@@ -128,15 +124,14 @@ user.remove(:age)
 
 writeln(user)
 
-# Output
-> {
+# {
     name: "Pedro"
 }
 ```
 
 ### keys
 
-```kotlin
+```csharp
 var user = {
     name: "Pedro",
     age: 22
@@ -144,8 +139,7 @@ var user = {
 
 writeln(user.values)
 
-# Output
-> [:name, :age]
+# [:name, :age]
 ```
 
 ### values
@@ -158,8 +152,7 @@ var user = {
 
 writeln(user.values)
 
-# Output
-> ["Pedro", 22]
+# ["Pedro", 22]
 ```
 
 ### any
@@ -172,8 +165,7 @@ var user = {
 
 writeln(user.has(:age, 22))
 
-# Output
-> true
+# true
 ```
 
 ```csharp
@@ -184,8 +176,7 @@ var user = {
 
 writeln(user.has(:age, 23))
 
-# Output
-> false
+# false
 ```
 
 ### hasKey
@@ -198,8 +189,7 @@ var user = {
 
 writeln(user.hasKey(:age))
 
-# Output
-> true
+# true
 ```
 
 ### hasValue
@@ -212,8 +202,7 @@ var user = {
 
 writeln(user.hasValue("Pedro"))
 
-# Output
-> t[:name]
+# set[:name]
 ```
 
 [https://ruby-doc.org/core-3.0.2/Hash.html](https://ruby-doc.org/core-3.0.2/Hash.html)
