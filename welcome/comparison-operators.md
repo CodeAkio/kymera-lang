@@ -26,18 +26,16 @@ Ou a forma verbal:
 # true
 ```
 
-## Parecido
-
-Mesmo valor, mas tipos diferentes
+## Igual (tipo diferente)
 
 ```python
-10 like "10"
+10 ~= "10"
 # true
 
-10 like 10.0
+10 ~= 10.0
 # true
 
-10 like 10
+10 ~= 10
 # true
 ```
 
@@ -189,17 +187,3 @@ Ou a forma verbal?
 # false
 ```
 
-### Spaceship
-
-Se for menor retorna -1, se for igual retorna 0, se for maior retorna 1:
-
-```ruby
-2 <=> 3
-# -1
-
-2 <=> 2
-# 0
-
-2 <=> 1
-# 1
-```
