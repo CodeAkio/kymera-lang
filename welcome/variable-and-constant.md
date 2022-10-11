@@ -22,7 +22,7 @@ var <variable_name> = <value>
 **Sample:**
 
 ```go
-int number = 10
+number int = 10
 writeln(number)
 # 10
 
