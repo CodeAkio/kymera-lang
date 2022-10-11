@@ -7,7 +7,7 @@ Os acessos são controlados ao nível de módulo que nem no Go, Dart e Rust, por
 
 ```kotlin
 // Privado
-priv fun checkValid()
+priv fun checkValid
     ...
 end
 ```
