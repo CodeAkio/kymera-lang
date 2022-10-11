@@ -14,7 +14,7 @@ The variables work with optional typing similar to TypeScript and Go, but with t
 
 ```go
 # With type definition
-<type> <variable_name> = <value>
+<variable_name> <type> = <value>
 
 # With type inference
 var <variable_name> = <value>
