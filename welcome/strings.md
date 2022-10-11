@@ -9,16 +9,16 @@ Ele é uma variação de **List\<char>**, então possui todos os recursos de um 
 Uma string pode ser declarada entre aspas duplas (`"`) ou aspas simples (`'`).
 
 ```csharp
-writeln("Hello Kym!")
+text string = "Hello Kym!"
+writeln(text)
 
 # Hello Kym!
 ```
 
-```csharp
-writeln("It's awesome!")
-
-# It's awesome!
-```
+<pre class="language-csharp"><code class="lang-csharp"><strong>let text = "It's awesome!"
+</strong><strong>writeln(text)
+</strong>
+# It's awesome!</code></pre>
 
 ```csharp
 writeln('Ever ask "why"')
