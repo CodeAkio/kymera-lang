@@ -2,34 +2,30 @@
 
 Por padrão os enums são do tipo int32 e recebem os valores de acordo com sua posição começando do número 0.
 
-**Exemplo:**
-
 ```java
-enum Status {
-    Online,
-    Offline,
-    Away,
-}
+enum Status
+    Online
+    Offline
+    Away
+end
 
 writeln(Status.Online)
 
-# Output
-> 0
+# 0
 ```
 
-Também é possível definir um tipo e valores manualmente a cada um deles.
 
-**Exemplo:**
+
+Pode definir um tipo e valores manualmente a cada um deles.
 
 ```csharp
-enum<symbol> Status {
-    Online = :online,
-    Offline = :offline,
-    Away = :away,
-}
+enum Status symbol
+    Online = :online
+    Offline = :offline
+    Away = :away
+end
 
 writeln(Status.Online)
 
-# Output
-> :online
+# :online
 ```
