@@ -1,17 +1,18 @@
 # Structs
 
 ```csharp
-struct Person {
-    string name
-    int age
-}
+struct Person
+    name string
+    age int
+end
 ```
 
-```kotlin
-$ var person = Person("Kym", 22)
-$ person.name
+```csharp
+var person = Person("Kym", 22)
+
+person.name
 # "Kym"
 
-$ person.age
+person.age
 # 22
 ```
