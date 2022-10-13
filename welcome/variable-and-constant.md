@@ -2,15 +2,19 @@
 description: Syntax and semantics of variables and constants
 ---
 
-# Variable
+# Variable and Constant
+
+## Variables
 
 The variables work with optional typing similar to TypeScript and Go, but with the possibility to use the types available through C# language.
+
+### Declaration and Assignment
 
 &#x20;**Syntax:**
 
 ```go
 # With type definition
-<variable_name> <type> = <value>
+<type> <variable_name> = <value>
 
 # With type inference
 var <variable_name> = <value>
@@ -22,7 +26,7 @@ var <variable_name> = <value>
 **Sample:**
 
 ```go
-number int = 10
+int number = 10
 writeln(number)
 # 10
 
@@ -33,4 +37,22 @@ writeln(animal)
 animal = "Cat"
 writeln(animal)
 # "Cat"
+```
+
+## Constants
+
+Constants need to be declared with the keyword **const** and have **uppercase** name.
+
+**Syntaxe:**
+
+```csharp
+const <CONSTANT_NAME> = <value>
+const <type> <CONSTANT_NAME> = <value>
+```
+
+**Sample:**
+
+```csharp
+const PI = 3.141592653589793
+const string NAME = "Maria"
 ```

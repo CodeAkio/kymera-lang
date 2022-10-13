@@ -16,6 +16,7 @@
   * [Null](welcome/null.md)
   * [Strings](welcome/strings.md)
   * [Char](welcome/char.md)
+  * [Dynamic](welcome/dynamic.md)
   * [Type](welcome/type.md)
   * [Package](welcome/package.md)
   * [Output Console](welcome/untitled.md)

@@ -73,15 +73,15 @@ end
 ```kotlin
 package secrets
 
-let SECRET_KEY string = env.master_key
+const string SECRET_KEY = env.master_key
 ```
 
-Caso não queira que algum deles não seja exportado, deverá declara-lo com `priv` **** que o definirá como **privado**.
+Caso não queira que algum deles não seja exportado, deverá declara-lo com **priv** que o definirá como **privado**.
 
 ```kotlin
 package animal
 
-priv interface IAnimal
+interface priv IAnimal
     # Something
 end
 

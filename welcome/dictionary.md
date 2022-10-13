@@ -21,7 +21,7 @@ A declaração de uma variável ou constante Map pode ser feita de forma duas fo
 * **Explícita:** Deverá definir o tipo de variável explicitamente como `Map`.
 
 ```csharp
-user Map = {
+Map user = {
     name: "Pedro",
     age: 22
 }
@@ -36,20 +36,19 @@ var user = {
 }
 ```
 
-
-
 Também é possível restringir o tipo de dados que o Map pode receber usando generics, dessa forma deverá usar sempre a forma explícita de declaração.\
 Caso tente atribuir um valor com um tipo de dado diferente, será retornado uma exceção do tipo TypeError.
 
 ```csharp
-numbers Map<string, string> = {
+Map<string, string> numbers = {
     "name": "Pedro",
     "age": "22"
 }
 
 writeln(numbers)
 
-# {
+# Output
+> {
     "name": "Pedro",
     "age": "22"
 }
@@ -71,7 +70,8 @@ user.add(:email, "pedro@email.com")
 
 writeln(user)
 
-# {
+# Output
+> {
     name: "Pedro",
     age: 22,
     email: "pedro@email.com"
@@ -90,7 +90,8 @@ user.add(:name, "Marcos")
 
 writeln(user)
 
-# {
+# Output
+> {
     name: "Marcos",
     age: 22
 }
@@ -108,7 +109,8 @@ user.update(:name, "Marcos")
 
 writeln(user)
 
-# {
+# Output
+> {
     name: "Marcos",
     age: 22
 }
@@ -126,14 +128,15 @@ user.remove(:age)
 
 writeln(user)
 
-# {
+# Output
+> {
     name: "Pedro"
 }
 ```
 
 ### keys
 
-```csharp
+```kotlin
 var user = {
     name: "Pedro",
     age: 22
@@ -141,7 +144,8 @@ var user = {
 
 writeln(user.values)
 
-# [:name, :age]
+# Output
+> [:name, :age]
 ```
 
 ### values
@@ -154,7 +158,8 @@ var user = {
 
 writeln(user.values)
 
-# ["Pedro", 22]
+# Output
+> ["Pedro", 22]
 ```
 
 ### any
@@ -167,7 +172,8 @@ var user = {
 
 writeln(user.has(:age, 22))
 
-# true
+# Output
+> true
 ```
 
 ```csharp
@@ -178,7 +184,8 @@ var user = {
 
 writeln(user.has(:age, 23))
 
-# false
+# Output
+> false
 ```
 
 ### hasKey
@@ -191,7 +198,8 @@ var user = {
 
 writeln(user.hasKey(:age))
 
-# true
+# Output
+> true
 ```
 
 ### hasValue
@@ -204,7 +212,8 @@ var user = {
 
 writeln(user.hasValue("Pedro"))
 
-# set[:name]
+# Output
+> t[:name]
 ```
 
 [https://ruby-doc.org/core-3.0.2/Hash.html](https://ruby-doc.org/core-3.0.2/Hash.html)
