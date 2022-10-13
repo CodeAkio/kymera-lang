@@ -34,6 +34,7 @@
   * [Range](welcome/range.md)
   * [List](welcome/arrays.md)
   * [LinkedList](welcome/likedlist.md)
+  * [Tuple \[WIP\]](welcome/tuple-wip.md)
   * [Stack](welcome/stack.md)
   * [Queue](welcome/queue.md)
   * [Set](welcome/set.md)
