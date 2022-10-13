@@ -6,13 +6,29 @@ Ele é uma variação de **List\<char>**, então possui todos os recursos de um 
 
 ## Declaração
 
-Uma string pode ser declarada entre `"` (aspas duplas).
+Uma string pode ser declarada entre aspas duplas (`"`) ou aspas simples (`'`).
 
-```kotlin
-writeln("Hello Kym!")
+Para especificar seu tipo, use a keywork `string`.
+
+```csharp
+text string = "Hello Kym!"
+writeln(text)
 
 # Hello Kym!
 ```
+
+<pre class="language-csharp"><code class="lang-csharp"><strong>let text = "It's awesome!"
+</strong><strong>writeln(text)
+</strong>
+# It's awesome!</code></pre>
+
+```csharp
+writeln('Ever ask "why"')
+
+# Ever ask "why"
+```
+
+
 
 Quando precisar de uma string de _múltiplas linhas_ basta apenas quebrar a linha e só fechar as aspas no final:
 
@@ -88,7 +104,7 @@ Podemos acessar cada letra como um _List_.
 var some_text = "Hello Kym!"
 writeln(some_text[1])
 
-# 'e'
+# "e"
 ```
 
 Ao passar a posição negativa, ele conta da esquerda para direita:
@@ -97,7 +113,7 @@ Ao passar a posição negativa, ele conta da esquerda para direita:
 var some_text = "Hello Kym!"
 writeln(some_text[-1])
 
-# 'm'
+# "m"
 ```
 
 Podemos iterar como um List:
@@ -107,16 +123,16 @@ var some_text = "Hello Kym!"
 
 some_text.each(c => writeln(c))
 
-# 'H'
-# 'e'
-# 'l'
-# 'l'
-# 'o'
-# ' '
-# 'K'
-# 'y'
-# 'm'
-# '!'
+# "H"
+# "e"
+# "l"
+# "l"
+# "o"
+# " "
+# "K"
+# "y"
+# "m"
+# "!"
 ```
 
 ## Métodos
@@ -173,7 +189,7 @@ writeln("Hello Kym!".contains("Kym"))
 Separar a string baseado em um separador do tipo string, retornando um _List\<string>_.
 
 ```kotlin
-writeln("Hello Kym!".split(' '))
+writeln("Hello Kym!".split(" "))
 
 # ["Hello", "Kym!"]
 ```
@@ -183,7 +199,7 @@ Se não passar nenhum separador, ele retorna cada um dos caracteres.
 ```kotlin
 writeln("Hello Kym!".split())
 
-# ['H', 'e', 'l', 'l', 'o', ' ', 'K', 'y', 'm', '!']
+# ["H", "e", "l", "l", "o", " ", "K", "y", "m", "!"]
 ```
 
 ### join
@@ -191,7 +207,7 @@ writeln("Hello Kym!".split())
 Ele une um array de strings, adicionando um separador entra cada elemento.
 
 ```kotlin
-writeln(["Hello", "Kym!"].join(' '))
+writeln(["Hello", "Kym!"].join(" "))
 
 # "Hello Kym!"
 ```
@@ -201,7 +217,7 @@ writeln(["Hello", "Kym!"].join(' '))
 Ele substitui trechos que batem com a string ou regex.
 
 ```kotlin
-var result = "Hello Kym!".replace('o', '0')
+var result = "Hello Kym!".replace("o", "0")
 
 writeln(result)
 
@@ -209,7 +225,7 @@ writeln(result)
 ```
 
 ```kotlin
-var result = "Hello Kym!".replace(re"[aeiou]", '0')
+var result = "Hello Kym!".replace(re"[aeiou]", "0")
 
 writeln(result)
 
@@ -229,7 +245,7 @@ writeln(result)
 ### endsWith
 
 ```kotlin
-var result = "Hello Friend!".endsWith('!')
+var result = "Hello Friend!".endsWith("!")
 
 writeln(result)
 

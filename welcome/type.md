@@ -11,14 +11,14 @@ Podemos definir exatamente quais valores são aceitos:
 ```typescript
 type Status = "doing" | "pending" | "completed"
 
-Status currentStatus = "doing" # Valid
+currentStatus Status = "doing" # Valid
 currentStatus = "invalid" # Type Error
 ```
 
 ```typescript
 type Rate = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
 
-Rate productRate = 8 # Valid
+productRate Rate = 8 # Valid
 poductRate = 0 # Type Error
 ```
 

@@ -1,4 +1,4 @@
-# Tuple \[WIP]
+# Tuple
 
 
 
@@ -65,98 +65,92 @@ writeln(error)
 
 Uma lista possui vários métodos úteis que podem ser utilizados.
 
-### contains
-
-```csharp
-numbers = t[1, 2, 3, 4, 5]
-
-writeln(numbers.contains(1))
-writeln(numbers.contains(6))
-
-# true
-# false
-```
-
-### indexOf
-
-```csharp
-numbers int[] = [1, 2, 3, 4, 5]
-
-writeln(numbers.indexOf(1))
-
-# 0
-```
-
 ### length
 
 ```csharp
-numbers int[] = [1, 2, 3, 4, 5]
+user = t[22, "Pedro", 2000.00]
 
-writeln(numbers.length())
+writeln(user.length())
 
-# 5
+# 3
 ```
 
 ### each
 
 ```csharp
-numbers int[] = [1, 2, 3, 4, 5]
+user = t[22, "Pedro", 2000.00]
 
-numbers.each(number => writeln(number))
+user.each(data => writeln(data))
 
-# 1
-# 2
-# 3
-# 4
-# 5
+# 22
+# Pedro
+# 2000.00
 ```
 
 ### map
 
 ```csharp
-numbers int[] = [1, 2, 3, 4, 5]
+user = t[22, "Pedro", 2000.00]
 
-var newNumbers = numbers.map(number => number * 2)
+var newUser = user.map(data => if data is string then data.toUpper() else data)
 
-writeln(newNumbers)
+writeln(newUser)
 
-# [2, 4, 6, 8, 10]
+# t[22, "PEDRO", 2000.00]
 ```
 
 ### find
 
 ```csharp
-numbers int[] = [1, 2, 3, 4, 5]
+user = t[22, "Pedro", 2000.00]
 
-writeln(numbers.find(3))
+writeln(user.find(22))
 
-# 3
+# 22
 ```
 
 ```csharp
-colors string[] = ["Red", "Yellow", "Blue", "Orange", "White"]
+user = t[22, "Pedro", 2000.00]
 
-writeln(colors.find(r"[ed]"))
+writeln(user.find(r"[dro]"))
 
-# "Red"
+# "Pedro"
+```
+
+### findAll
+
+```csharp
+user = t[22, "Pedro", 2000.00]
+
+writeln(user.findAll(22))
+
+# [22]
+```
+
+```csharp
+user = t[22, "Pedro", 2000.00]
+
+writeln(user.findAll(r"[dro]"))
+
+# ["Pedro"]
 ```
 
 ### first
 
 ```csharp
-colors string[] = ["Red", "Yellow", "Blue", "Orange", "White"]
+user = t[22, "Pedro", 2000.00]
 
-writeln(colors.first())
+writeln(user.first())
 
-# "Red"
+# 22
 ```
 
 ### last
 
 ```csharp
-colors string[] = ["Red", "Yellow", "Blue", "Orange", "White"]
+user = t[22, "Pedro", 2000.00]
 
-writeln(colors.last())
+writeln(user.last())
 
-# "White"
+# 2000.00
 ```
