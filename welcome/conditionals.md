@@ -6,15 +6,13 @@ description: The parenthesis is optional to pass expression.
 
 ## if
 
-O `then` é opcional para a abertura de bloco, é indicado utiliza-lo apenas em casos especiais.
-
 ```ruby
-if <expression> [then]
+if <expression>
     <commands>
 end
 ```
 
-```kotlin
+```ruby
 if 10 > 1
     writeln("10 é maior")
 end
@@ -25,6 +23,8 @@ if 2 in (1 to 10)
     writeln("It is in range 1 to 10")
 end
 ```
+
+
 
 Para evitar uma expressão gigante ou um grande encadeamento de ifs e ands, baseado no with do Elixir, o if permite passar múltiplas expressões separadas por vírgula.
 
@@ -52,7 +52,7 @@ Ao usar este if, é indicado abstrair as expressões utilizando funções que re
 
 ```ruby
 
-if <expression> [then]
+if <expression>
     <commands>
 else
     <commands>
