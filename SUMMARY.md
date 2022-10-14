@@ -33,6 +33,7 @@
   * [Pipe Operator](welcome/pipe-operator.md)
   * [Docs](welcome/docs.md)
   * [Range](welcome/range.md)
+  * [IEnumerable](welcome/ienumerable.md)
   * [List](welcome/arrays.md)
   * [LinkedList](welcome/likedlist.md)
   * [Tuple](welcome/tuple.md)
