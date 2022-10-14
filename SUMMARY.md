@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Welcome](README.md)
+* [Why Kym Lang?](why-kym-lang.md)
 * [Philosophy](philosophy.md)
 * [Naming](naming.md)
 * [Getting Started \[Coming Soon\]](getting-started.md)
