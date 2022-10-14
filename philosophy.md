@@ -1,15 +1,41 @@
 # Philosophy
 
-Kym usa algumas filosofias do python ([PEP 20](https://en.wikipedia.org/wiki/Zen\_of\_Python)), Rails ([DRY](https://en.wikipedia.org/wiki/Don't\_repeat\_yourself) and [CoC](https://en.wikipedia.org/wiki/Convention\_over\_configuration)) e [Unix Philosophy](https://en.wikipedia.org/wiki/Unix\_philosophy).
+Kymera use python \([PEP 20](https://en.wikipedia.org/wiki/Zen_of_Python)\) and ruby on rails \([DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) and [CoC](https://en.wikipedia.org/wiki/Convention_over_configuration)\) philosophy.
 
-* Segurança, performance e elegância, essa é a nossa trindade;
-* Faça mais com menos código;
-* Simplicidade é a chave (KISS);
-* Sempre tenha em mente o SRP do SOLID;
-* Clean Code é obrigatório;
-* Pare de reinventar a roda, use o que tem ou crie algo que seja reutilizável;
-* Torne as coisas transparentes, nada de  mágicas;
-* Verbosidade é o caminho errado, não siga o exemplo do Java;
-* Ter um grande repositório de métodos uteis realmente é útil;
-* Evite ter várias maneiras de fazer a mesma coisa só por sintaxe, pense em funcionalidade;
-* Go é poderoso, vamos pegar um pouco desse poder;
+Besides these philosophies, Kymera uses some of the [Unix Philosophy](https://en.wikipedia.org/wiki/Unix_philosophy) below:
+
+**Note:** In some cases, replace the word 'program' by module or package.
+
+* Write programs that do one thing and do it well.
+* Write programs to work together.
+* Small is beautiful.
+* Build a prototype as soon as possible.
+* Choose portability over efficiency.
+* Rule of Modularity.
+* Rule of Composition.
+* Rule of Separation.
+* Rule of Simplicity.
+* Rule of Parsimony.
+* Rule of Transparency.
+* Rule of Robustness.
+* Rule of Representation.
+* Rule of Least Surprise.
+* Rule of Silence.
+* Rule of Repair.
+* Rule of Economy.
+* Rule of Generation.
+* Rule of Optimization.
+* Rule of Extensibility.
+
+Kymera also has its own philosophy:
+
+* Ever use Kymera design pattern.
+* Do more, write less.
+* Make Kymera very secure and speed.
+* Make standard library rich.
+* Modern, flexible, powerfull and compact.
+* Just import modules that you really need.
+* Help us to make it a very good language.
+* Stop to use Java now.
+* Play Ragnarok.
+

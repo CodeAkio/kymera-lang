@@ -1,19 +1,18 @@
 # Naming
 
-&#x20;Kym is based on word **"Chimera"** that is:
+&#x20;Kym vem de **"Quimera"**, um monstro mitológico com partes de outros animais, no nosso caso, partes de outras linguagens.
 
-> &#x20;_"...a mythological, fire-breathing monster, commonly represented with a lion's head, a goat's body, and a serpent's tail."_ [\[1\]](http://www.dictionary.com/browse/chimera)
+Essa mistura tenta pegar o melhor de cada um, como:
 
-&#x20;Like a chimera, Kym (Kymera) is created based on some parts of another languages:
-
-* Use the simple syntax and semantics like Python 3.x and Ruby;
-* Use Object-oriented programming from C#;
-* Use pointer Go;
-* Use .Net Core 2.x to compile like C#;
-* Use parallel programming like Go;
-* Use module system like Ruby and Go;
-* Use package manager like npm;
-* Use matrix operations and other some math methods of matlab;
-* Work with text like python and ruby;
-* Use braces like C# to define blocks;
-* And other things from this languages.
+* A produtividade na hora de escrever do Pyhton and Ruby;
+* A sintaxe amigável e fluída do Ruby;
+* A grande quantidade de métodos auxiliares como Ruby e Python;
+* O poder dos ponteiros do Go;
+* POO amigável do TypeScript;
+* O vasto repositório de collections do C# e Kotlin;
+* Um pouco da cultura do Go de não ter tantas formas de fazer a mesma coisa;
+* As mensagens claras de erro do C#;
+* As tipagens estáticas do Julia, com a flexibilidade do TypeScript;
+* Paralelismo do Go;
+* Gerenciador de pacotes útil como Yarn e Nimble;
+* O sistema de pacotes do Go;
