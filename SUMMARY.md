@@ -8,6 +8,7 @@
 * [Project Structure](project-structure.md)
 * [Syntax and Semantics](welcome/README.md)
   * [Scopes \[WIP\]](welcome/scopes-wip.md)
+  * [Quit \[WIP\]](welcome/quit-wip.md)
   * [Variable](welcome/variable-and-constant.md)
   * [Constant](welcome/constant.md)
   * [Let](welcome/let.md)
