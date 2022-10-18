@@ -11,7 +11,7 @@ class Pessoa
     nome string
     idade int
 
-    constructor(nome string, idade int)
+    _init(nome string, idade int)
         this.nome = nome
         this.idade = idade
     end
@@ -27,7 +27,7 @@ class Pessoa
     nome string
     idade int
 
-    constructor(this.nome, this.idade) end
+    _init(this.nome, this.idade) end
     
     fun ola()
         writeln("Olá ${this.nome}")
@@ -37,7 +37,7 @@ end
 
 ```ruby
 class Pessoa
-    constructor(pub nome string, pub idade int) end
+    _init(pub nome string, pub idade int) end
 end
 ```
 
@@ -61,13 +61,22 @@ end
 
 ```ruby
 class Pessoa
-    constructor(priv nome string, priv idade int, priv cpf string) end
-    constructor.juridica(priv nome string, priv cnpj string) end
+    _init(priv nome string, priv idade int, priv cpf string) end
+    _init.juridica(priv nome string, priv cnpj string) end
 end
 ```
 
 ```kotlin
 class Cachorro is Animal
-    constructor() end
+    _init() end
+end
+```
+
+```kotlin
+class Database
+    ...
+    _destroy()
+        db.close()
+    end
 end
 ```
