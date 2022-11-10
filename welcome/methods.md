@@ -4,23 +4,21 @@ Uma função é definida pela keywork `fun`, com um identificador, seguido de pa
 
 A definição do tipo de retorno é opcional, caso não informe nada, ele utilizará como padrão o tipo **void**.
 
-Os blocos são definidos com `do` e `end`, sendo o `do` opcional e somente indicado o seu uso em casos especiais.
+Os blocos são definidos com a abertura com `:` e o corpo pela indentação que nem o Python.
 
 **Syntax:**
 
 ```kotlin
-fun <identificador>(<parâmetro> <tipo>) :: [tipo retorno] [do]
+fun <identificador>(<parâmetro> <tipo>) :: [tipo retorno]:
     <código>
-end
 ```
 
 **Exemplo:**
 
 ```kotlin
-fun somarDoisNumeros(num1 float, num2 float) :: float
+fun somarDoisNumeros(num1 float, num2 float) :: float:
     var soma = num1 + num2
     return soma
-end
 
 var valor_soma = somarDoisNumeros(10.0, 2.0)
 
@@ -34,9 +32,8 @@ writeln(valor_soma)
 O retorno é opcional, basta definir o tipo de retorno e ele automaticamente retornará a última linha:
 
 ```kotlin
-fun somarDoisNumeros(num1 folat, num2 float) :: float
+fun somarDoisNumeros(num1 folat, num2 float) :: float:
     num1 + num2
-end
 
 var valor_soma = somarDoisNumeros(10.0, 2.0)
 
@@ -50,9 +47,8 @@ writeln(valor_soma)
 Quando os parâmetros são do mesmo tipo, basta apenas informar no último:
 
 ```kotlin
-fun somarDoisNumeros(num1, num2 float) :: float
+fun somarDoisNumeros(num1, num2 float) :: float:
     num1 + num2
-end
 
 var valor_soma = somarDoisNumeros(10.0, 2.0)
 
@@ -66,15 +62,13 @@ writeln(valor_soma)
 Também é possível ter **múltiplos retornos**:
 
 ```kotlin
-fun swap(num1, num2 int) :: (int, int)
+fun swap(num1, num2 int) :: (int, int):
     return num2, num1
-end
 ```
 
 ```kotlin
-fun swap(num1, num2 int) :: (int, int) | null
+fun swap(num1, num2 int) :: (int, int) | null:
     # Some code
-end
 ```
 
 
@@ -82,13 +76,11 @@ end
 Podemos trabalhar com sobre carga que funciona em cima de **pattern matching**.
 
 ```kotlin
-fun log(%[ :error, message string ])
+fun log(%[:error, message string]):
     writeln("Something went wrong: ${message}")
-end
 
-fun log(%[ :ok, message string ])
+fun log(%[:ok, message string]):
     writeln("It works: ${message}")
-end
 ```
 
 
@@ -97,14 +89,12 @@ As funções podem ter cláusula de guarda, que são decorators que definem uma 
 
 ```kotlin
 @when(idade >= 18)
-fun verificaIdade(idade int)
+fun verificaIdade(idade int):
     writeln("Maior de idade'")
-end
 
 @when(idade < 18)
-fun verificaIdade(idade int)
+fun verificaIdade(idade int):
     writeln("Menor de idade")
-end
 ```
 
 
@@ -112,9 +102,8 @@ end
 Podemos trabalhar com funções anônimas, criando funções sem identificadores:
 
 ```typescript
-(num1, num2 float) :: float
+(num1, num2 float) :: float:
     num1 + num2
-end
 ```
 
 

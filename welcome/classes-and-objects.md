@@ -7,76 +7,57 @@ description: Junta o Dart, Kotlin e C#
 ## Sintaxe
 
 ```kotlin
-class Pessoa
+class Pessoa:
     nome string
     idade int
 
-    _init(nome string, idade int)
+    _init(nome string, idade int):
         this.nome = nome
         this.idade = idade
-    end
     
-    fun ola()
+    fun ola():
         writeln("Olá ${this.nome}")
-    end
-end
 ```
 
 ```kotlin
-class Pessoa
+class Pessoa:
     nome string
     idade int
 
-    _init(this.nome, this.idade) end
+    _init(this.nome, this.idade)
     
-    fun ola()
+    fun ola():
         writeln("Olá ${this.nome}")
-    end
-end
 ```
 
 ```ruby
-class Pessoa
-    _init(pub nome string, pub idade int) end
-end
-```
-
-```ruby
-class Pessoa(priv nome string, priv idade int) end
+class Pessoa:
+    _init(pub nome string, pub idade int)
 ```
 
 ```ruby
 class Pessoa(priv nome string, priv idade int)
-    get nome() :: string
-        return this.nome.toUpper()
-    end
-    
-    set nome(nome)
-        if nome.len() < 100
-            this.nome = nome
-        end
-    end
-end
 ```
 
 ```ruby
-class Pessoa
-    _init(priv nome string, priv idade int, priv cpf string) end
-    _init.juridica(priv nome string, priv cnpj string) end
-end
+class Pessoa(priv nome string, priv idade int):
+    get nome() :: string:
+        return this.nome.toUpper()
+    
+    set nome(nome):
+        if nome.len() < 100:
+            this.nome = nome
+```
+
+```ruby
+class Pessoa:
+    _init(priv nome string, priv idade int, priv cpf string)
+    _init.juridica(priv nome string, priv cnpj string)
 ```
 
 ```kotlin
-class Cachorro is Animal
-    _init() end
-end
-```
-
-```kotlin
-class Database
+class Database:
     ...
-    _destroy()
+    _destroy():
         db.close()
-    end
-end
 ```

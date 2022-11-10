@@ -27,7 +27,7 @@ user Map = {
 }
 ```
 
-* **Implícita:** Basta atribuir diretamente as chaves e valores a variável e o interpretador vai declara-lo implicitamente como `Map<atom, dynamic>`, sendo que as chaves e valores ficaram dentro de chaves e separados por vírgula.
+* **Implícita:** Basta atribuir diretamente as chaves e valores a variável e o interpretador vai declara-lo implicitamente como `Map<atom, dyn>`, sendo que as chaves e valores ficaram dentro de chaves e separados por vírgula.
 
 ```go
 var user = {

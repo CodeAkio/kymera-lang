@@ -43,13 +43,12 @@ Após abrir o arquivo, precisamos fechá-lo para que ele não fique bloqueado.
 ```python
 import file.*
 
-try
+try:
     var my_file = open("some_file.txt")
-except
+except:
     FileNotFoundError, error -> writeln(error)
-finally
+finally:
     my_file.close()
-end
 ```
 
 ### read

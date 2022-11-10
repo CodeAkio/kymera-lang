@@ -29,7 +29,7 @@
   * [Atom](welcome/symbol.md)
   * [Conditionals](welcome/conditionals.md)
   * [Loops](welcome/loops.md)
-  * [Pointer](welcome/pointer.md)
+  * [Pointer \[WIP\]](welcome/pointer.md)
   * [Functions](welcome/methods.md)
   * [Pipe Operator](welcome/pipe-operator.md)
   * [Docs](welcome/docs.md)

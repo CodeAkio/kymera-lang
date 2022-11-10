@@ -14,9 +14,9 @@ class Post(
     author string,
     title string,
     body string,
-) end
+)
 
-fun main()
+fun main():
     var post = Post(
         0,
         "Chewbacca",
@@ -30,7 +30,6 @@ fun main()
 
     post.body = "Sed pharetra turpis vehicula orci sodales, interdum blandit libero scelerisque."
     writeln("The body after: ${post.body}")
-end
 
 # The title is: Programming language.
 # The author is: Chewbacca
