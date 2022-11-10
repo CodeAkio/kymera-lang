@@ -7,7 +7,7 @@ Esse retorno é automaticamente convertido de acordo com o tipo de retorno espec
 ```csharp
 var numbers = 1 to 10
 
-fun odd_numbers(numbers int[]) :: List:
+fun odd_numbers(numbers int[]) -> List:
     numbers.each((number) => if number % 2 != 0 then yield number)
 
 writeln(odd_numbers())

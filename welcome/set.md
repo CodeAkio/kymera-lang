@@ -20,7 +20,7 @@ A declaração de uma variável ou constante Set pode ser feita de forma duas fo
 fruit Set = ["Apple", "Orange", "Banana"]
 ```
 
-* **Implícita:** Basta atribuir diretamente os valores a variável dentro de `set[]` e o interpretador vai declara-lo implicitamente como `Set<dyn>`, sendo que os valores ficaram dentro dos parênteses e separados por vírgula.
+* **Implícita:** Basta atribuir diretamente os valores a variável dentro de `set[]` e o interpretador vai declara-lo implicitamente como `Set<dynamic>`, sendo que os valores ficaram dentro dos parênteses e separados por vírgula.
 
 ```go
 var fruit = set["Apple", "Orange", "Banana"]

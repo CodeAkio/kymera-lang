@@ -1,9 +1,10 @@
 # Structs
 
 ```csharp
-struct Person:
+struct Person
     name string
     age int
+end
 ```
 
 ```csharp

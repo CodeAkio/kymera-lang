@@ -9,14 +9,14 @@ Os blocos são definidos com a abertura com `:` e o corpo pela indentação que 
 **Syntax:**
 
 ```kotlin
-fun <identificador>(<parâmetro> <tipo>) :: [tipo retorno]:
+fun <identificador>(<parâmetro> <tipo>) -> [tipo retorno]:
     <código>
 ```
 
 **Exemplo:**
 
 ```kotlin
-fun somarDoisNumeros(num1 float, num2 float) :: float:
+fun somarDoisNumeros(num1 float, num2 float) -> float:
     var soma = num1 + num2
     return soma
 
@@ -32,7 +32,7 @@ writeln(valor_soma)
 O retorno é opcional, basta definir o tipo de retorno e ele automaticamente retornará a última linha:
 
 ```kotlin
-fun somarDoisNumeros(num1 folat, num2 float) :: float:
+fun somarDoisNumeros(num1 folat, num2 float) -> float:
     num1 + num2
 
 var valor_soma = somarDoisNumeros(10.0, 2.0)
@@ -47,7 +47,7 @@ writeln(valor_soma)
 Quando os parâmetros são do mesmo tipo, basta apenas informar no último:
 
 ```kotlin
-fun somarDoisNumeros(num1, num2 float) :: float:
+fun somarDoisNumeros(num1, num2 float) -> float:
     num1 + num2
 
 var valor_soma = somarDoisNumeros(10.0, 2.0)
@@ -62,12 +62,12 @@ writeln(valor_soma)
 Também é possível ter **múltiplos retornos**:
 
 ```kotlin
-fun swap(num1, num2 int) :: (int, int):
+fun swap(num1, num2 int) -> (int, int):
     return num2, num1
 ```
 
 ```kotlin
-fun swap(num1, num2 int) :: (int, int) | null:
+fun swap(num1, num2 int) -> (int, int) | null:
     # Some code
 ```
 
@@ -102,7 +102,7 @@ fun verificaIdade(idade int):
 Podemos trabalhar com funções anônimas, criando funções sem identificadores:
 
 ```typescript
-(num1, num2 float) :: float:
+(num1, num2 float) -> float:
     num1 + num2
 ```
 

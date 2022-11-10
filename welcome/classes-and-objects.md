@@ -41,7 +41,7 @@ class Pessoa(priv nome string, priv idade int)
 
 ```ruby
 class Pessoa(priv nome string, priv idade int):
-    get nome() :: string:
+    get nome() -> string:
         return this.nome.toUpper()
     
     set nome(nome):
