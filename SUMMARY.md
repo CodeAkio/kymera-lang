@@ -27,7 +27,7 @@
   * [Comparison Operators](welcome/comparison-operators.md)
   * [Logical Operators](welcome/logical-operators.md)
   * [Atom](welcome/symbol.md)
-  * [Conditionals](welcome/conditionals.md)
+  * [Conditionals \[WIP\]](welcome/conditionals.md)
   * [Loops](welcome/loops.md)
   * [Pointer \[WIP\]](welcome/pointer.md)
   * [Functions](welcome/methods.md)
