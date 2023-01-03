@@ -34,3 +34,11 @@ animal = "Cat"
 writeln(animal)
 # "Cat"
 ```
+
+Também pode usar a declaração curta com (`:=`):
+
+```go
+animal := "Cat"
+writeln(animal)
+# "Cat"
+```
