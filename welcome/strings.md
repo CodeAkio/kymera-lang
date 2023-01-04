@@ -20,7 +20,8 @@ writeln(text)
 <pre class="language-csharp"><code class="lang-csharp"><strong>let text = "It's awesome!"
 </strong><strong>writeln(text)
 </strong>
-# It's awesome!</code></pre>
+# It's awesome!
+</code></pre>
 
 ```csharp
 writeln('Ever ask "why"')
@@ -49,7 +50,7 @@ Make it fast.
 Para interpolar strings, basta passar o valor dentro de `${}`.
 
 ```kotlin
-var name = "Kym"
+name := "Kym"
 
 writeln("Hello ${name}")
 
@@ -65,7 +66,7 @@ Assim como Python e Ruby, podemos utilizar operações aritméticas com strings.
 Podemos utilizar o + para unir duas strings:
 
 ```kotlin
-var name = "Kym"
+name := "Kym"
 
 writeln("Hello " + name)
 
@@ -75,7 +76,7 @@ writeln("Hello " + name)
 Também pode ser feito com uma string e outro tipo de valor:
 
 ```kotlin
-var age = 20
+age := 20
 
 writeln("He is " + age + " years old")
 
@@ -101,7 +102,7 @@ Podemos repetir uma string x vezes:
 Podemos acessar cada letra como um _List_.
 
 ```kotlin
-var some_text = "Hello Kym!"
+some_text := "Hello Kym!"
 writeln(some_text[1])
 
 # "e"
@@ -110,7 +111,7 @@ writeln(some_text[1])
 Ao passar a posição negativa, ele conta da esquerda para direita:
 
 ```kotlin
-var some_text = "Hello Kym!"
+some_text := "Hello Kym!"
 writeln(some_text[-1])
 
 # "m"
@@ -119,7 +120,7 @@ writeln(some_text[-1])
 Podemos iterar como um List:
 
 ```kotlin
-var some_text = "Hello Kym!"
+some_text := "Hello Kym!"
 
 some_text.each(c => writeln(c))
 

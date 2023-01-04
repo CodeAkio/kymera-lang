@@ -16,9 +16,8 @@ Existem algumas regras de nomenclatura para pacotes:
 ```kotlin
 package hello
 
-fun greeting()
+fun greeting():
     writeln("Hello")
-end
 ```
 
 Existe um módulo especial que é o **main**, ele é obrigatório, pois é por ele que a aplicação inicia a execução e obrigatoriamente ele terá um método **main**.
@@ -26,21 +25,19 @@ Existe um módulo especial que é o **main**, ele é obrigatório, pois é por e
 ```kotlin
 package main
 
-fun main()
+fun main():
     # Something
-end
 ```
 
 ## Exportação
 
-Por padrão, somente **funções**, **classes**, **interfaces**, **enums**, **constantes** e **structs** são exportados dos pacotes.
+Somente **funções**, **classes**, **interfaces**, **enums**, **constantes** e **structs** podem exportados dos pacotes.
 
 ```kotlin
 package hello
 
-fun greeting()
+fun greeting():
     writeln("Hello")
-end
 ```
 
 ```kotlin
@@ -61,13 +58,11 @@ enum Colors {
 ```kotlin
 package animal
 
-interface IAnimal
+interface IAnimal:
     # Something
-end
 
-class Dog is IAnimal
+pub class Dog is IAnimal:
     # Something
-end
 ```
 
 ```kotlin
@@ -81,13 +76,11 @@ Caso não queira que algum deles não seja exportado, deverá declara-lo com `pr
 ```kotlin
 package animal
 
-priv interface IAnimal
+interface IAnimal:
     # Something
-end
 
-class Dog is IAnimal
+pub class Dog is IAnimal:
     # Something
-end
 ```
 
 ## Importação
@@ -125,7 +118,8 @@ writeln(PI)
 # 3.141592653589793
 
 writeln(E)
-<strong># 2.718281828459045</strong></code></pre>
+<strong># 2.718281828459045
+</strong></code></pre>
 
 Podemos definir um apelido para a importação usando a keyword **as**.
 

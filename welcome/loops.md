@@ -13,7 +13,7 @@ Utilize os métodos **each** e **map** quando possível, deixe o for apenas para
 {% endhint %}
 
 ```csharp
-for index := 1, index <= 10, index++:
+for (var index = 1, index <= 10, index.inc()):
     writeln(index)
 
 # 1
@@ -41,7 +41,7 @@ var number = 1
 
 for number <= 10:
     writeln(number)
-    number++
+    number.inc()
 
 # 1
 # 2
@@ -62,9 +62,9 @@ Podemos passar **dois parâmetros** apenas, neles caso ele receberá a **inicial
 Ele terá o comportamento de um while, mas com a possibilidade de inicializar o valor dentro da própria estrutura
 
 ```csharp
-for number := 1, number <= 10:
+for (var number = 1, number <= 10):
     writeln(number)
-    number++
+    number.inc()
 
 # 1
 # 2
@@ -83,7 +83,7 @@ for number := 1, number <= 10:
 Também podemos fazer em **uma linha**, para isso utilize arrow function.
 
 ```kotlin
-for (index := 1, index <= 10, index++) => writeln(index)
+for (var index = 1, index <= 10, index.inc()) => writeln(index)
 ```
 
 

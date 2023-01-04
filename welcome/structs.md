@@ -1,14 +1,13 @@
 # Structs
 
 ```csharp
-struct Person
+struct Person:
     name string
-    age int
-end
+    age  int
 ```
 
 ```csharp
-var person = Person("Kym", 22)
+person := Person("Kym", 22)
 
 person.name
 # "Kym"

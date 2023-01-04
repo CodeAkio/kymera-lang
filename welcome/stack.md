@@ -153,7 +153,7 @@ numbers.each(number => writeln(number))
 ```csharp
 numbers Stack<int> = [1, 2, 3, 4, 5]
 
-var newNumbers = numbers.map(number => number * 2)
+newNumbers := numbers.map(number => number * 2)
 
 writeln(newNumbers)
 

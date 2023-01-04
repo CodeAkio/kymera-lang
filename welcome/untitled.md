@@ -20,7 +20,7 @@ write(<mensagem>)
 **Exemplo:**
 
 ```csharp
-var nome = "Marcos"
+nome := "Marcos"
 write("Meu nome é ")
 write(nome)
 
@@ -40,7 +40,7 @@ writeln(<mensagem>)
 **Exemplo:**
 
 ```csharp
-var nome = "Marcos"
+nome := "Marcos"
 writeln("Meu nome é ")
 writeln(nome)
 

@@ -27,8 +27,8 @@ Para evitar uma expressão gigante ou um grande encadeamento de ifs e ands, base
 
 Nesses caso se deve usar o `then`:
 
-```ruby
-var user = User(name: "Kym", age: 20, payment: :ok)
+```go
+user := User(name: "Kym", age: 20, payment: :ok)
 
 if (isAdult(user.age),
    isDefaulter(user.payment)):
@@ -54,7 +54,7 @@ else:
     <commands>
 ```
 
-```ruby
+```go
 if 10 > 1:
   writeln("10 é maior")
 else:
@@ -80,7 +80,7 @@ else:
 ```
 
 ```ruby
-var nota = 8.0
+nota := 8.0
 
 if nota >= 9.0:
     writeln("Excellent")
@@ -103,9 +103,9 @@ Não existe if ternário, mas a ideia dele é a mesma usando o `then` e `else`, 
 ```
 
 ```ruby
-var age = 22
+age := 22
 
-var message = if (age >= 18) then "Is an adult" else "Is not an adult"
+message := if (age >= 18) then "Is an adult" else "Is not an adult"
 
 writeln(message)
 
@@ -115,9 +115,9 @@ writeln(message)
 Uma forma mais elegante e mais indicada é quebrando linha:
 
 ```ruby
-var age = 22
+age := 22
 
-var message = if age >= 18
+message := if age >= 18
     then "Is an adult"
     else "Is not an adult"
 
@@ -139,9 +139,9 @@ writeln(message)
 ```
 
 ```ruby
-var age = 17
+age := 17
 
-var message = if age >= 18 then "Is an adult"
+message := if age >= 18 then "Is an adult"
 
 writeln(message)
 
