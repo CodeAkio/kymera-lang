@@ -31,7 +31,7 @@ Para facilitar isso existem tipos genéricos como o `number` que aceita qualquer
 ```typescript
 type Age = number | string
 
-myAge Age = 20 # Valid
+Age myAge = 20 # Valid
 myAge = 22.0 # Valid
 myAge = "21" # Valid
 myAge = Date.now() # Type Error
