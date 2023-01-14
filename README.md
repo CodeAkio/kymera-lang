@@ -6,15 +6,14 @@ description: Welcome to the kymera-lang!
 
 Kym lang é um protótipo de uma nova linguagem de programação brasileira que usa como base outras linguagens como: Python 3, Ruby, Elixir, Go, C#, Kotlin, Dart, Julia, Crystal, Nim, Rust, Swift e TypeScript.
 
-```kotlin
+```csharp
 package main
 
-class Post(
-    id     int,
-    author string,
-    title  string,
-    body   string,
-)
+struct Post:
+    id     int
+    author string
+    title  string
+    body   string
 
 fun main():
     post := Post(
