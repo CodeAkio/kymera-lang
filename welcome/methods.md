@@ -90,7 +90,7 @@ As funções podem ter cláusula de guarda, que são decorators que definem uma 
 ```kotlin
 @when(idade >= 18)
 fun verificaIdade(idade int):
-    writeln("Maior de idade'")
+    writeln("Maior de idade")
 
 @when(idade < 18)
 fun verificaIdade(idade int):
@@ -116,4 +116,24 @@ Para fazer o **in line**, basta usar o _arrow function_ e o tipo de retorno se t
 
 ```kotlin
 (name string) => "Hello ${name}"
+```
+
+
+
+Podemos usar o receiver que é um argumento que recebemos antes do nome da função, ele tem um comportamento similar ao de um método de POO, mas ele é mais flexivel:
+
+```kotlin
+fun (p Person) andar():
+    writeln("Andando...")
+
+p := Person()
+p.andar()
+```
+
+```kotlin
+fun (*i ItemPedido) adicionar(quantidade int):
+    i.quantidade += quantidade
+
+item := ItemPedido(nome: "Tênis", quantidade: 1)
+item.adicionar(2) // 3
 ```
