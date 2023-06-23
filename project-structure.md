@@ -6,7 +6,7 @@ description: Os projetos possuem uma estrutura básica de pastas e arquivos.
 
 Todos os arquivos do projeto, ficam dentro de uma **pasta** com o mesmo **nome do projeto** em **snake\_case**.
 
-```text
+```
 project_name/
 |-- .build/
 |-- config/
@@ -20,7 +20,8 @@ project_name/
 |-- src/
 |---- main.kym
 |-- tests/
-|---- main_test.kyms
+|---- unit/
+|------ main_test.kyms
 |-- deps.yml
 |-- deps.lock
 |-- LICENSE.md
@@ -58,4 +59,3 @@ O arquivo **deps.yml** é onde ficam todas as dependências do projeto, separado
 O arquivo **deps.lock** é o arquivo que registra a versão exata e o hash do pacote que instalou, isso evita que ocorra erros de versão;
 
 O **.env** é um arquivo que armazena as variáveis de ambiente.
-

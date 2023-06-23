@@ -10,7 +10,7 @@ O atom é um recurso vindo do Elixir e Ruby. Ele faz a declaração de uma vari�
 
 **Sample:**
 
-```csharp
+```nim
 writeln(:foo)
 writeln(:foo == "foo")
 

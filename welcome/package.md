@@ -13,11 +13,12 @@ Existem algumas regras de nomenclatura para pacotes:
 * Deve ser no formato de caixa baixa;
 * Não deve ter espaço no nome, utilize o underline para isto.
 
-```kotlin
+```nim
 package hello
 
-fun greeting():
+fun greeting() {
     writeln("Hello")
+}
 ```
 
 Existe um módulo especial que é o **main**, ele é obrigatório, pois é por ele que a aplicação inicia a execução e obrigatoriamente ele terá um método **main**.
@@ -71,7 +72,7 @@ package secrets
 let SECRET_KEY string = env.master_key
 ```
 
-Caso não queira que algum deles não seja exportado, deverá declara-lo com `priv` **** que o definirá como **privado**.
+Caso não queira que algum deles não seja exportado, deverá declara-lo com `priv` que o definirá como **privado**.
 
 ```kotlin
 package animal

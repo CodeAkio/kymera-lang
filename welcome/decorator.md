@@ -3,16 +3,16 @@
 Utilize o `@` antes do nome da função para declarar um decorator:
 
 ```csharp
-fun @greeting()
+fun @greeting() {
     writeln("Hello")
-end
+}
 ```
 
 ```csharp
 @greeting()
-fun snake()
+fun snake() {
     writeln("Snake")
-end
+}
 
 snake()
 

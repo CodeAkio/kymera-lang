@@ -9,19 +9,18 @@ Kym lang é um protótipo de uma nova linguagem de programação brasileira que 
 ```csharp
 package main
 
-struct Post:
+struct Post {
     id     int
     author string
     title  string
     body   string
+}
 
-fun main():
-    post := Post(
-        0,
-        "Chewbacca",
-        "Programming language",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
-    )
+fun main() {
+    var post = Post(0,
+                    "Chewbacca",
+                    "Programming language",
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit...")
 
     writeln("The title is: ${post.title}
             The author is: ${post.author}
@@ -30,7 +29,10 @@ fun main():
 
     post.body = "Sed pharetra turpis vehicula orci sodales, interdum blandit libero scelerisque."
     writeln("The body after: ${post.body}")
+}
+```
 
+```ruby
 # The title is: Programming language
 # The author is: Chewbacca
 # The body before: Lorem ipsum dolor sit amet, consectetur adipiscing elit...

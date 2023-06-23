@@ -7,33 +7,34 @@ description: The parenthesis is optional to pass expression.
 ## if
 
 ```ruby
-if <expression>:
+if <expression> {
     <commands>
+}
 ```
 
 ```ruby
-if 10 > 1:
+if 10 > 1 {
     writeln("10 é maior")
+}
 ```
 
 ```kotlin
-if 2 in 1..10:
+if 2 in 1..10 {
     writeln("It is in range 1 to 10")
+}
 ```
 
 
 
 Para evitar uma expressão gigante ou um grande encadeamento de ifs e ands, baseado no with do Elixir, o if permite passar múltiplas expressões separadas por vírgula.
 
-Nesses caso se deve usar o `then`:
-
 ```go
-user := User(name: "Kym", age: 20, payment: :ok)
+let user = User(name: "Kym", age: 20, payment: :ok)
 
 if (isAdult(user.age),
-   isDefaulter(user.payment)):
-then:
-    writeln("Can access!")
+   isDefaulter(user.payment)) {
+   writeln("Can access!")
+}
 ```
 
 {% hint style="info" %}
@@ -48,17 +49,19 @@ Ao usar este if, é indicado abstrair as expressões utilizando funções que re
 
 ```ruby
 
-if <expression>:
+if <expression> {
     <commands>
-else:
+} else {
     <commands>
+}
 ```
 
 ```go
-if 10 > 1:
+if 10 > 1 {
   writeln("10 é maior")
-else:
+} else {
   writeln("10 não é maior")
+}
 ```
 
 ## elsif
@@ -69,30 +72,31 @@ Devido ao **efeito sonoro** e **encurtamento da sintaxe** do _else if_ em uma pa
 
 ```ruby
 
-if <expression>:
+if <expression> {
     <commands>
-elsif <expression>:
+} elsif <expression> {
     <commands>
-elsif <expression>:
+} elsif <expression> {
     <commands>
-else:
+} else {
     <commands>
+}
 ```
 
-```ruby
-nota := 8.0
+<pre class="language-ruby"><code class="lang-ruby">let nota = 8.0
 
-if nota >= 9.0:
+if nota >= 9.0 {
     writeln("Excellent")
-elsif nota >= 7.0 and nota < 9.0:
+} elsif nota >= 7.0 and nota &#x3C; 9.0 {
     writeln("Good")
-elsif nota >= 4.0 and nota < 7.0:
-    writeln("Bad")
-else:
+<strong>} elsif nota >= 4.0 and nota &#x3C; 7.0 {
+</strong>    writeln("Bad")
+} else {
     writeln("Terrible")
+}
 
 # "Excellent"
-```
+</code></pre>
 
 ## One line if
 
@@ -102,22 +106,20 @@ Não existe if ternário, mas a ideia dele é a mesma usando o `then` e `else`, 
 <variable or constant> = if <expression> then <command 1> else <command 2>
 ```
 
-```ruby
-age := 22
-
-message := if (age >= 18) then "Is an adult" else "Is not an adult"
-
+<pre class="language-ruby"><code class="lang-ruby">let age = 22
+<strong>let message = if (age >= 18) then "Is an adult" else "Is not an adult"
+</strong>
 writeln(message)
 
 # "Is an adult"
-```
+</code></pre>
 
 Uma forma mais elegante e mais indicada é quebrando linha:
 
 ```ruby
-age := 22
+let age = 22
 
-message := if age >= 18
+let message = if age >= 18
     then "Is an adult"
     else "Is not an adult"
 
@@ -129,9 +131,8 @@ writeln(message)
 Podemos usar apenas o `then` que quando a expressão é verdadeira, ele retorna o valor, caso contrário, devolve `null`.
 
 ```ruby
-var age = 22
-
-var message = if age >= 18 then "Is an adult"
+let age = 22
+let message = if age >= 18 then "Is an adult"
 
 writeln(message)
 
@@ -139,9 +140,8 @@ writeln(message)
 ```
 
 ```ruby
-age := 17
-
-message := if age >= 18 then "Is an adult"
+let age = 17
+let message = if age >= 18 then "Is an adult"
 
 writeln(message)
 
@@ -150,52 +150,60 @@ writeln(message)
 
 ## When
 
+Usamos o `_` quando não queremos armazenar o valor em uma variável.
+
 ```kotlin
-when [<expression>]:
+when [<expression>] {
     <value | expression> -> <commands>
     <value | expression> -> <commands>
     <value | expression> ->
         <commands>
-    [else] -> <commands>
+    _ -> <commands>
+}
 ```
 
 ```kotlin
-var gender = 1
+let gender = 1
 
-when gender:
+when gender {
     0 -> writeln("Male")
     1 -> writeln("Female")
-    else -> writeln("Other")
+    _ -> writeln("Other")
+}
 ```
 
 ```kotlin
-var rate = 4
+let rate = 4
 
-when:
+when {
     rate => 4 -> writeln("Good")
     rate <= 2 -> writeln("Bad")
     rate == 3 -> writeln("Fair")
-    else -> writeln("Invalid")
+    _ -> writeln("Invalid")
+}
 ```
 
 ```kotlin
-var x, y = 4, 5
+let x, y = 4, 5
 
-when:
+when {
     isOdd(x) -> writeln("x is odd")
     isEven(y) -> writeln("y is even")
+}
 ```
 
 ```kotlin
-when:
+when {
     0, 2, 4, 6, 8 -> writeln("Even")
     1, 3, 5, 7, 9 -> writeln("Odd")
+}
 ```
 
 ```kotlin
-when:
+when {
     1..7 -> writeln("Bad")
     7..<10 -> writeln("Good")
+}
 ```
 
 [https://kotlinlang.org/docs/control-flow.html#when-expression](https://kotlinlang.org/docs/control-flow.html#when-expression)

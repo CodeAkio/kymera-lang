@@ -50,7 +50,7 @@ Make it fast.
 Para interpolar strings, basta passar o valor dentro de `${}`.
 
 ```kotlin
-name := "Kym"
+var name = "Kym"
 
 writeln("Hello ${name}")
 
@@ -66,7 +66,7 @@ Assim como Python e Ruby, podemos utilizar operações aritméticas com strings.
 Podemos utilizar o + para unir duas strings:
 
 ```kotlin
-name := "Kym"
+var name = "Kym"
 
 writeln("Hello " + name)
 
@@ -76,7 +76,7 @@ writeln("Hello " + name)
 Também pode ser feito com uma string e outro tipo de valor:
 
 ```kotlin
-age := 20
+var age = 20
 
 writeln("He is " + age + " years old")
 
@@ -102,7 +102,7 @@ Podemos repetir uma string x vezes:
 Podemos acessar cada letra como um _List_.
 
 ```kotlin
-some_text := "Hello Kym!"
+var some_text = "Hello Kym!"
 writeln(some_text[1])
 
 # "e"
@@ -111,7 +111,7 @@ writeln(some_text[1])
 Ao passar a posição negativa, ele conta da esquerda para direita:
 
 ```kotlin
-some_text := "Hello Kym!"
+var some_text = "Hello Kym!"
 writeln(some_text[-1])
 
 # "m"
@@ -120,7 +120,7 @@ writeln(some_text[-1])
 Podemos iterar como um List:
 
 ```kotlin
-some_text := "Hello Kym!"
+var some_text = "Hello Kym!"
 
 some_text.each(c => writeln(c))
 

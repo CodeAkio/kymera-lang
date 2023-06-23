@@ -7,11 +7,12 @@ Os acessos são controlados ao nível de módulo que nem no Go, Dart e Rust, por
 
 ```kotlin
 // Privado
-fun checkValid():
+fun checkValid() {
     ...
+}
 ```
 
 ```rust
-// Público (padrão)
+// Público
 pub const BASE_URL = "http://localhost:3000"
 ```

@@ -11,7 +11,7 @@ To set a variable value as null in some languages, you can do it using the keywo
 &#x20;**Sample:**
 
 ```csharp
-number := 42
+var number = 42
 writeln(number)
 
 number = null

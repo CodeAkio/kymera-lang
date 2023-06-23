@@ -2,7 +2,7 @@
 description: Criando documentação.
 ---
 
-# Docs
+# Docs \[WIP]
 
 Muitas documentações de código geram uma enorme sujeira, dessa forma foi criado o decorator `@doc` para documentação de classes e funções que aponta para um arquivo **docs/\*\*/\*.yml**.
 
@@ -30,8 +30,9 @@ sum_numbers:
 package operations
 
 @doc("operations.sum_numbers")
-fun sumNumbers(num1, num2 float) -> float:
+fun sumNumbers(num1, num2 float) -> float {
     num1 + num2
+}
 ```
 
 Também pode ser feito de forma implícita através da convenção do nome de pacotes e funções:
@@ -40,8 +41,9 @@ Também pode ser feito de forma implícita através da convenção do nome de pa
 package operations
 
 @doc()
-fun sumNumbers(num1, num2 float) -> float:
+fun sumNumbers(num1, num2 float) -> float {
     num1 + num2
+}
 ```
 
 

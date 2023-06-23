@@ -15,15 +15,15 @@ Apesar dele existir, deve ser usado com muita cautela, na dúvida, não use ele.
 
 global name string
 
-fun main()
+fun main() {
     ...
-end
+}
 ```
 
-```csharp
+```nim
 # person.kym
 
-name = "Pedro"
+let name = "Pedro"
 ```
 
 ### Bloco

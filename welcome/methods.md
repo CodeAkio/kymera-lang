@@ -4,23 +4,23 @@ Uma função é definida pela keywork `fun`, com um identificador, seguido de pa
 
 A definição do tipo de retorno é opcional, caso não informe nada, ele utilizará como padrão o tipo **void**.
 
-Os blocos são definidos com a abertura com `:` e o corpo pela indentação que nem o Python.
-
 **Syntax:**
 
-```kotlin
-fun <identificador>(<parâmetro> <tipo>) -> [tipo retorno]:
+```nim
+fun <identificador>(<parâmetro> <tipo>) -> [tipo retorno] {
     <código>
+}
 ```
 
 **Exemplo:**
 
-```kotlin
-fun somarDoisNumeros(num1 float, num2 float) -> float:
-    var soma = num1 + num2
+```nim
+fun somarDoisNumeros(num1 float, num2 float) -> float {
+    let soma = num1 + num2
     return soma
+}
 
-var valor_soma = somarDoisNumeros(10.0, 2.0)
+let valor_soma = somarDoisNumeros(10.0, 2.0)
 
 writeln(valor_soma)
 
@@ -29,13 +29,14 @@ writeln(valor_soma)
 
 
 
-O retorno é opcional, basta definir o tipo de retorno e ele automaticamente retornará a última linha:
+O `retorn` é opcional, basta definir o tipo de retorno e ele automaticamente retornará a última linha:
 
-```kotlin
-fun somarDoisNumeros(num1 folat, num2 float) -> float:
+```nim
+fun somarDoisNumeros(num1 folat, num2 float) -> float {
     num1 + num2
+}
 
-var valor_soma = somarDoisNumeros(10.0, 2.0)
+let valor_soma = somarDoisNumeros(10.0, 2.0)
 
 writeln(valor_soma)
 
@@ -46,9 +47,10 @@ writeln(valor_soma)
 
 Quando os parâmetros são do mesmo tipo, basta apenas informar no último:
 
-```kotlin
-fun somarDoisNumeros(num1, num2 float) -> float:
+```nim
+fun somarDoisNumeros(num1, num2 float) -> float {
     num1 + num2
+}
 
 var valor_soma = somarDoisNumeros(10.0, 2.0)
 
@@ -62,13 +64,15 @@ writeln(valor_soma)
 Também é possível ter **múltiplos retornos**:
 
 ```kotlin
-fun swap(num1, num2 int) -> (int, int):
+fun swap(num1, num2 int) -> (int, int) {
     return num2, num1
+}
 ```
 
 ```kotlin
-fun swap(num1, num2 int) -> (int, int) | null:
+fun swap(num1, num2 int) -> (int, int) | null {
     # Some code
+}
 ```
 
 
@@ -76,11 +80,13 @@ fun swap(num1, num2 int) -> (int, int) | null:
 Podemos trabalhar com sobre carga que funciona em cima de **pattern matching**.
 
 ```kotlin
-fun log(%[:error, message string]):
+fun log(%[:error, message string]) {
     writeln("Something went wrong: ${message}")
+}
 
-fun log(%[:ok, message string]):
+fun log(%[:ok, message string]) {
     writeln("It works: ${message}")
+}
 ```
 
 
@@ -89,12 +95,14 @@ As funções podem ter cláusula de guarda, que são decorators que definem uma 
 
 ```kotlin
 @when(idade >= 18)
-fun verificaIdade(idade int):
+fun verificaIdade(idade int) {
     writeln("Maior de idade")
+}
 
 @when(idade < 18)
-fun verificaIdade(idade int):
+fun verificaIdade(idade int) {
     writeln("Menor de idade")
+}
 ```
 
 
@@ -102,8 +110,9 @@ fun verificaIdade(idade int):
 Podemos trabalhar com funções anônimas, criando funções sem identificadores:
 
 ```typescript
-(num1, num2 float) -> float:
+(num1, num2 float) -> float {
     num1 + num2
+}
 ```
 
 
@@ -120,20 +129,22 @@ Para fazer o **in line**, basta usar o _arrow function_ e o tipo de retorno se t
 
 
 
-Podemos usar o receiver que é um argumento que recebemos antes do nome da função, ele tem um comportamento similar ao de um método de POO, mas ele é mais flexivel:
+Podemos usar o receiver que é um argumento que recebemos antes do nome da função, ele tem um comportamento similar ao de um método de POO, mas ele é mais flexível:
 
 ```kotlin
-fun (p Person) andar():
+fun (p Person) andar() {
     writeln("Andando...")
+}
 
-p := Person()
+let p = Person()
 p.andar()
 ```
 
 ```kotlin
-fun (*i ItemPedido) adicionar(quantidade int):
+fun (*i ItemPedido) adicionar(quantidade int) {
     i.quantidade += quantidade
+}
 
-item := ItemPedido(nome: "Tênis", quantidade: 1)
+let item = ItemPedido(nome: "Tênis", quantidade: 1)
 item.adicionar(2) // 3
 ```

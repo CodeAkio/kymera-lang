@@ -4,20 +4,20 @@ O let é parecido com var, mas é de **atribuição única**, após a primeira a
 
 Diferente da constante, ele é processado em **tempo de execução** e permite postergar a atribuição.
 
-**Syntax:**
+**Sintaxe:**
 
 ```go
 # With type definition
 <variable_name> <type> = <value>
 
 # With type inference
-var <variable_name> = <value>
+let <variable_name> = <value>
 
 # Assignment value after declaration
 <variable_name> = <value>
 ```
 
-**Sample:**
+**Exemplo:**
 
 ```nim
 let number int

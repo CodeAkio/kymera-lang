@@ -111,7 +111,7 @@ Ou de forma verbosa
 
 ```nim
 var num = 1
-nim.inc
+nim.inc()
 # 2
 ```
 
@@ -119,6 +119,6 @@ nim.inc
 
 ```nim
 var num = 1
-nim.dec
+nim.dec()
 # 0
 ```
