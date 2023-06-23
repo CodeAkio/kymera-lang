@@ -6,7 +6,7 @@ description: Syntax and semantics of variables and constants
 
 The variables work with optional typing similar to TypeScript and Go, but with the possibility to use the types available through C# language.
 
-&#x20;**Syntax:**
+&#x20;**Sintaxe:**
 
 ```go
 # With type definition
@@ -19,7 +19,7 @@ var <variable_name> = <value>
 <variable_name> = <value>
 ```
 
-**Sample:**
+**Exemplo:**
 
 ```go
 number int = 10

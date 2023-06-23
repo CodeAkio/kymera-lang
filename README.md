@@ -4,7 +4,7 @@ description: Welcome to the kymera-lang!
 
 # Welcome
 
-Kym lang é um protótipo de uma nova linguagem de programação brasileira que usa como base outras linguagens como: Python 3, Ruby, Elixir, Go, C#, Kotlin, Dart, Julia, Crystal, Nim, Rust, Swift e TypeScript.
+Kym lang é um protótipo de uma nova linguagem de programação brasileira que usa como base outras linguagens como: Python 3, Ruby, Elixir, Go, Kotlin, Dart, Julia, Crystal, Nim, Rust, Swift e TypeScript.
 
 ```csharp
 package main
