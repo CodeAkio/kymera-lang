@@ -29,7 +29,7 @@ if 2 in 1..10 {
 Para evitar uma expressão gigante ou um grande encadeamento de ifs e ands, baseado no with do Elixir, o if permite passar múltiplas expressões separadas por vírgula.
 
 ```go
-let user = User(name: "Kym", age: 20, payment: :ok)
+let user = User(name: "Kim", age: 20, payment: :ok)
 
 if (isAdult(user.age),
    isDefaulter(user.payment)) {

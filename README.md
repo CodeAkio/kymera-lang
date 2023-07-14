@@ -1,10 +1,10 @@
 ---
-description: Welcome to the kymera-lang!
+description: Welcome to the kim-lang!
 ---
 
 # Welcome
 
-Kym lang é um protótipo de uma nova linguagem de programação brasileira que usa como base outras linguagens como: Python 3, Ruby, Elixir, Go, Kotlin, Dart, Julia, Crystal, Nim, Rust, Swift e TypeScript.
+Kim lang é um protótipo de uma nova linguagem de programação brasileira que usa como base outras linguagens como: Python 3, Ruby, Elixir, Go, Kotlin, Dart, Julia, Crystal, Nim, Rust, Swift e TypeScript.
 
 ```csharp
 package main
@@ -24,8 +24,7 @@ fun main() {
 
     writeln("The title is: ${post.title}
             The author is: ${post.author}
-            The body before: ${post.body}
-            ")
+            The body before: ${post.body}")
 
     post.body = "Sed pharetra turpis vehicula orci sodales, interdum blandit libero scelerisque."
     writeln("The body after: ${post.body}")

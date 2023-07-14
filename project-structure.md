@@ -10,18 +10,18 @@ Todos os arquivos do projeto, ficam dentro de uma **pasta** com o mesmo **nome d
 project_name/
 |-- .build/
 |-- config/
-|---- config.kym
-|---- dev.kym
-|---- prod.kym
-|---- stage.kym
-|---- test.kym
+|---- config.kim
+|---- dev.kim
+|---- prod.kim
+|---- stage.kim
+|---- test.kim
 |-- docs/
 |---- main.yml
 |-- src/
-|---- main.kym
+|---- main.kim
 |-- tests/
 |---- unit/
-|------ main_test.kyms
+|------ main_test.kims
 |-- deps.yml
 |-- deps.lock
 |-- LICENSE.md
@@ -31,28 +31,28 @@ project_name/
 |-- .gitignore
 ```
 
-Os arquivos do Kymera possuem duas extensões:
+Os arquivos do Kim possuem duas extensões:
 
-* **.kym** - Ele é compilado para binário;
-* **.kyms** - Ele é apenas interpretado.
+* **.kim** - Ele é compilado para binário;
+* **.kims** - Ele é apenas interpretado.
 
 A pasta **.build/** é onde fica os arquivos compilados, prontos para produção;
 
 A pasta **config/** é onde ficam as configurações da aplicação:
 
-* **config.kym** - É onde ficam as configurações gerais que servem para todo o ambiente, nele ficam configurações como nome do projeto, versão, banco de dados, etc.
-* **dev.kym** - São as configurações específicas para ambiente de desenvolvimento;
-* **prod.kym** - São as configurações específicas para ambiente de produção;
-* **stage.kym** - São as configurações específicas para ambiente de staging;
-* **test.kym** - São as configurações específicas para ambiente de teste;
+* **config.kim** - É onde ficam as configurações gerais que servem para todo o ambiente, nele ficam configurações como nome do projeto, versão, banco de dados, etc.
+* **dev.kim** - São as configurações específicas para ambiente de desenvolvimento;
+* **prod.kim** - São as configurações específicas para ambiente de produção;
+* **stage.kim** - São as configurações específicas para ambiente de staging;
+* **test.kim** - São as configurações específicas para ambiente de teste;
 
 A pasta **docs/** mantém toda a documentação do projeto.
 
 A pasta **src/** é onde vai residir o nosso código fonte.
 
-* O **src/main.kym** é o _entrypoint_ da aplicação.
+* O **src/main.kim** é o _entrypoint_ da aplicação.
 
-A pasta **test/** é onde ficam todos os nossos testes da aplicação e os arquivos possuem a extensão **.kyms**;
+A pasta **test/** é onde ficam todos os nossos testes da aplicação e os arquivos possuem a extensão **.kims**;
 
 O arquivo **deps.yml** é onde ficam todas as dependências do projeto, separado por ambiente;
 

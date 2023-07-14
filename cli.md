@@ -1,5 +1,5 @@
 ---
-description: Kymera possui sua própria CLI que ajuda a realizar diversas tarefas.
+description: Kimera possui sua própria CLI que ajuda a realizar diversas tarefas.
 ---
 
 # CLI
@@ -7,7 +7,7 @@ description: Kymera possui sua própria CLI que ajuda a realizar diversas tarefa
 ## Criando Projeto
 
 ```bash
-$ kym new <project_name>
+$ kim new <project_name>
 ```
 
 Com `--type` ou `-t` poderá especificar o tipo de projeto:
@@ -19,7 +19,7 @@ Com `--type` ou `-t` poderá especificar o tipo de projeto:
 * **micro** - Para aplicações web API voltadas para micro serviços.
 
 ```bash
-$ kym new <project_name> -t  <cli | desktop | web | api | micro>
+$ kim new <project_name> -t  <cli | desktop | web | api | micro>
 ```
 
 Cada tipo de projeto faz várias perguntas sobre o seu projeto e já tenta pré-configurar o ambiente, como:
@@ -45,39 +45,39 @@ Cada tipo de projeto faz várias perguntas sobre o seu projeto e já tenta pré-
 Adicionando dependência local:
 
 ```bash
-$ kym add <package>
+$ kim add <package>
 ```
 
 Adicionando dependência local para ambiente de desenvolvimento:
 
 ```bash
-$ kym add --dev <package>
+$ kim add --dev <package>
 ```
 
 ```bash
-$ kym add -d <package>
+$ kim add -d <package>
 ```
 
 Adicionando dependência local para ambiente de teste:
 
 ```bash
-$ kym add --test <package>
+$ kim add --test <package>
 ```
 
 ```bash
-$ kym add -t <package>
+$ kim add -t <package>
 ```
 
 Instala todas as dependências _deps.yml_:
 
 ```bash
-$ kym install
+$ kim install
 ```
 
 Adicionando dependência global:
 
 ```bash
-$ kym global add <package>
+$ kim global add <package>
 ```
 
 ### Removendo Dependência
@@ -85,33 +85,33 @@ $ kym global add <package>
 Remove dependência local:
 
 ```bash
-$ kym remove <package>
+$ kim remove <package>
 ```
 
 Remove dependência local em ambiente de desenvolvimento:
 
 ```bash
-$ kym remove --dev <package>
+$ kim remove --dev <package>
 ```
 
 ```bash
-$ kym remove -d <package>
+$ kim remove -d <package>
 ```
 
 Remove dependência local em ambiente de teste:
 
 ```bash
-$ kym remove --test <package>
+$ kim remove --test <package>
 ```
 
 ```bash
-$ kym remove -t <package>
+$ kim remove -t <package>
 ```
 
 Remove dependência global:
 
 ```bash
-$ kym global remove <package>
+$ kim global remove <package>
 ```
 
 ### Atualizar Dependência
@@ -119,65 +119,65 @@ $ kym global remove <package>
 Atualiza todas as dependências locais:
 
 ```bash
-$ kym update
+$ kim update
 ```
 
 Atualiza dependência local específica:
 
 ```bash
-$ kym update <package>
+$ kim update <package>
 ```
 
 Atualiza todas as dependências locais de desenvolvimento:
 
 ```bash
-$ kym update --dev
+$ kim update --dev
 ```
 
 ```bash
-$ kym update -d
+$ kim update -d
 ```
 
 Atualiza dependência local de desenvolvimento específica:
 
 ```bash
-$ kym update --dev <package>
+$ kim update --dev <package>
 ```
 
 ```bash
-$ kym update -d <package>
+$ kim update -d <package>
 ```
 
 Atualiza todas as dependências locais de teste:
 
 ```bash
-$ kym update --test
+$ kim update --test
 ```
 
 ```bash
-$ kym update -t
+$ kim update -t
 ```
 
 Atualiza dependência local de teste específica:
 
 ```bash
-$ kym update --test <package>
+$ kim update --test <package>
 ```
 
 ```bash
-$ kym update -t <package>
+$ kim update -t <package>
 ```
 
 Atualiza todas as dependências globais:
 
 ```bash
-$ kym global update
+$ kim global update
 ```
 
 Atualiza dependência global específica:
 
 ```bash
-$ kym global update <package>
+$ kim global update <package>
 ```
 
 ## Execução
@@ -185,25 +185,25 @@ $ kym global update <package>
 Para executar um projeto:
 
 ```bash
-$ kym run
+$ kim run
 ```
 
 Para executar um arquivo específico:
 
 ```bash
-$ kym run <nome_arquivo.kym>
+$ kim run <nome_arquivo.kim>
 ```
 
 Para executar em modo de debug, adicione `--debug` ou `-d`:
 
 ```bash
-$ kym run -d
+$ kim run -d
 ```
 
 Para abrir o modo interativo passe `--interactive` ou `-i`:
 
 ```bash
-$ kym -i
+$ kim -i
 ```
 
 ## Compilação
@@ -211,13 +211,13 @@ $ kym -i
 Para fazer o build de um projeto:
 
 ```bash
-$ kym build
+$ kim build
 ```
 
 Para fazer o build de um arquivo:
 
 ```bash
-$ kym build <arquivo.kym>
+$ kim build <arquivo.kim>
 ```
 
 ## Checagem
@@ -231,24 +231,24 @@ Se um arquivo não for especificado ele faz com o projeto
 Faz checagem de erros no código:
 
 ```bash
-$ kym check --error [arquivo.kym]
+$ kim check --error [arquivo.kim]
 ```
 
 Faz checagem de formatação, convenções de código e boas práticas, mas não as corrige, apenas alerta o que deve ser feito:
 
 ```bash
-$ kym check --format [arquivo.kym]
+$ kim check --format [arquivo.kim]
 ```
 
 Faz checagem de vulnerabilidades relacionadas a pacotes ou versão do projeto:
 
 ```
-$ kym check --sec [arquivo.kym]
+$ kim check --sec [arquivo.kim]
 ```
 
 Faz checagem de atualizações disponíveis relacionadas a pacotes ou versão do projeto:
 
 ```bash
-$ kym check --update [arquivo.kym]
+$ kim check --update [arquivo.kim]
 ```
 

@@ -1,8 +1,6 @@
 # Strings
 
-{% hint style="info" %}
 Ele é uma variação de **List\<char>**, então possui todos os recursos de um List.
-{% endhint %}
 
 ## Declaração
 
@@ -11,10 +9,10 @@ Uma string pode ser declarada entre aspas duplas (`"`) ou aspas simples (`'`).
 Para especificar seu tipo, use a keywork `string`.
 
 ```csharp
-text string = "Hello Kym!"
+text string = "Hello Kim!"
 writeln(text)
 
-# Hello Kym!
+# Hello Kim!
 ```
 
 <pre class="language-csharp"><code class="lang-csharp"><strong>let text = "It's awesome!"
@@ -50,11 +48,11 @@ Make it fast.
 Para interpolar strings, basta passar o valor dentro de `${}`.
 
 ```kotlin
-var name = "Kym"
+var name = "Kim"
 
 writeln("Hello ${name}")
 
-# Hello Kym
+# Hello Kim
 ```
 
 ## Operações com String
@@ -66,11 +64,11 @@ Assim como Python e Ruby, podemos utilizar operações aritméticas com strings.
 Podemos utilizar o + para unir duas strings:
 
 ```kotlin
-var name = "Kym"
+var name = "Kim"
 
 writeln("Hello " + name)
 
-# Hello Kym
+# Hello Kim
 ```
 
 Também pode ser feito com uma string e outro tipo de valor:
@@ -102,7 +100,7 @@ Podemos repetir uma string x vezes:
 Podemos acessar cada letra como um _List_.
 
 ```kotlin
-var some_text = "Hello Kym!"
+var some_text = "Hello Kim!"
 writeln(some_text[1])
 
 # "e"
@@ -111,7 +109,7 @@ writeln(some_text[1])
 Ao passar a posição negativa, ele conta da esquerda para direita:
 
 ```kotlin
-var some_text = "Hello Kym!"
+var some_text = "Hello Kim!"
 writeln(some_text[-1])
 
 # "m"
@@ -120,7 +118,7 @@ writeln(some_text[-1])
 Podemos iterar como um List:
 
 ```kotlin
-var some_text = "Hello Kym!"
+var some_text = "Hello Kim!"
 
 some_text.each(c => writeln(c))
 
@@ -150,7 +148,7 @@ Isso dá uma grande flexibilidade quando for utilizar o _pipe operator_.
 Diz quantos caracteres possui a string.
 
 ```kotlin
-writeln("Hello Kym!".length)
+writeln("Hello Kim!".length)
 
 # 10
 ```
@@ -160,7 +158,7 @@ writeln("Hello Kym!".length)
 Conta quantas vezes uma string se repete dentre de outra string.
 
 ```kotlin
-writeln("Hello Kym!".count('l'))
+writeln("Hello Kim!".count('l'))
 
 # 2
 ```
@@ -170,7 +168,7 @@ writeln("Hello Kym!".count('l'))
 Verifica se uma string está contida em outra.
 
 ```kotlin
-writeln("Kym" in "Hello Kym!")
+writeln("Kim" in "Hello Kim!")
 
 # true
 ```
@@ -180,7 +178,7 @@ writeln("Kym" in "Hello Kym!")
 Similar ao in.
 
 ```kotlin
-writeln("Hello Kym!".contains("Kym"))
+writeln("Hello Kim!".contains("Kim"))
 
 # true
 ```
@@ -190,15 +188,15 @@ writeln("Hello Kym!".contains("Kym"))
 Separar a string baseado em um separador do tipo string, retornando um _List\<string>_.
 
 ```kotlin
-writeln("Hello Kym!".split(" "))
+writeln("Hello Kim!".split(" "))
 
-# ["Hello", "Kym!"]
+# ["Hello", "Kim!"]
 ```
 
 Se não passar nenhum separador, ele retorna cada um dos caracteres.
 
 ```kotlin
-writeln("Hello Kym!".split())
+writeln("Hello Kim!".split())
 
 # ["H", "e", "l", "l", "o", " ", "K", "y", "m", "!"]
 ```
@@ -208,9 +206,9 @@ writeln("Hello Kym!".split())
 Ele une um array de strings, adicionando um separador entra cada elemento.
 
 ```kotlin
-writeln(["Hello", "Kym!"].join(" "))
+writeln(["Hello", "Kim!"].join(" "))
 
-# "Hello Kym!"
+# "Hello Kim!"
 ```
 
 ### replace
@@ -218,19 +216,19 @@ writeln(["Hello", "Kym!"].join(" "))
 Ele substitui trechos que batem com a string ou regex.
 
 ```kotlin
-var result = "Hello Kym!".replace("o", "0")
+var result = "Hello Kim!".replace("o", "0")
 
 writeln(result)
 
-# "Hell0 Kym!"
+# "Hell0 Kim!"
 ```
 
 ```kotlin
-var result = "Hello Kym!".replace(re"[aeiou]", "0")
+var result = "Hello Kim!".replace(re"[aeiou]", "0")
 
 writeln(result)
 
-# "H0ll0 Kym!"
+# "H0ll0 Kim!"
 ```
 
 ### startsWith
@@ -314,7 +312,7 @@ writeln("(1,2,3)".toSet() is Set)
 Converte para um Map_\<dynamic>_.
 
 ```kotlin
-writeln("{ name: \"Kym\", age: \"20\" }".toMap() is Map)
+writeln("{ name: \"Kim\", age: \"20\" }".toMap() is Map)
 
 # true
 ```
@@ -322,57 +320,57 @@ writeln("{ name: \"Kym\", age: \"20\" }".toMap() is Map)
 ### toUpper
 
 ```kotlin
-writeln("Hello Kym!".toUpper())
+writeln("Hello Kim!".toUpper())
 
-# "HELLO KYM!"
+# "HELLO KIM!"
 ```
 
 ### toLower
 
 ```kotlin
-writeln("Hello Kym!".toLower())
+writeln("Hello Kim!".toLower())
 
-# "hello kym!"
+# "hello kim!"
 ```
 
 ### toCapital
 
 ```kotlin
-writeln("hello kym!".toCapital())
+writeln("hello kim!".toCapital())
 
-# "Hello Kym!"
+# "Hello Kim!"
 ```
 
 ### toSnake
 
 ```kotlin
-writeln("Hello Kym!".toSnake())
+writeln("Hello Kim!".toSnake())
 
-# "hello_kym"
+# "hello_kim"
 ```
 
 ### toPascal
 
 ```kotlin
-writeln("Hello Kym!".toPascal())
+writeln("Hello Kim!".toPascal())
 
-# "HelloKym"
+# "HelloKim"
 ```
 
 ### toSkewer
 
 ```kotlin
-writeln("Hello Kym!".toSkewer())
+writeln("Hello Kim!".toSkewer())
 
-# "hello-kym"
+# "hello-kim"
 ```
 
 ### toScreamingSnake
 
 ```kotlin
-writeln("Hello Kym!".toScreamingSnake())
+writeln("Hello Kim!".toScreamingSnake())
 
-# "HELLO_KYM"
+# "HELLO_KIM"
 ```
 
 {% embed url="https://ruby-doc.org/core-3.0.2/String.html" %}

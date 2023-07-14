@@ -8,10 +8,10 @@ struct Person {
 ```
 
 ```csharp
-let person = Person("Kym", 22)
+let person = Person("Kim", 22)
 
 person.name
-# "Kym"
+# "Kim"
 
 person.age
 # 22
